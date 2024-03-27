@@ -1,8 +1,10 @@
 ### Commit 类型
 add: 新功能
-fix: 修复bug
-refactor: 代码重构
 
+fix: 修复bug
+
+refactor: 代码重构
+```
 ├── cmd
 │   ├── api
 │   │   ├── news
@@ -45,3 +47,4 @@ refactor: 代码重构
 │   │   └── repo
 │   ├── pkg
 │   └── router
+```
