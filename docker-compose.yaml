@@ -1,0 +1,135 @@
+version: '3.8'
+
+services:
+  es01:
+    container_name: es01
+    image: elasticsearch:8.10.2
+    networks:
+      my-custom-network:
+    volumes:
+      - /Users/wangcheng/es/data01:/Applications/Docker.app/elasticsearch/data
+      - /Users/wangcheng/es/logs01:/Applications/Docker.app/elasticsearch/logs
+      - /Users/wangcheng/es/plugins01:/Applications/Docker.app/elasticsearch/plugins
+    ports:
+      - "9201:9200"
+      - "9301:9300"
+    environment:
+      - node.name=es01
+      - cluster.name=my-cluster
+      - cluster.initial_master_nodes=es01
+      - discovery.seed_hosts=es02,es03
+      - bootstrap.memory_lock=true
+      - xpack.security.enabled=false
+      - xpack.security.http.ssl.enabled=false
+      - xpack.security.transport.ssl.enabled=false
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    privileged: true
+
+  es02:
+    container_name: es02
+    image: elasticsearch:8.10.2
+    networks:
+      my-custom-network:
+    volumes:
+      - /Users/wangcheng/es/data02:/Applications/Docker.app/elasticsearch/data
+      - /Users/wangcheng/es/logs02:/Applications/Docker.app/elasticsearch/logs
+      - /Users/wangcheng/es/plugins02:/Applications/Docker.app/elasticsearch/plugins
+    ports:
+      - "9202:9200"
+      - "9302:9300"
+    environment:
+      - node.name=es02
+      - cluster.name=my-cluster
+      - discovery.seed_hosts=es01,es03
+      - bootstrap.memory_lock=true
+      - xpack.security.enabled=false
+      - xpack.security.http.ssl.enabled=false
+      - xpack.security.transport.ssl.enabled=false
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    privileged: true
+  es03:
+    container_name: es03
+    image: elasticsearch:8.10.2
+    networks:
+      my-custom-network:
+    volumes:
+      - /Users/wangcheng/es/data03:/Applications/Docker.app/elasticsearch/data
+      - /Users/wangcheng/es/logs03:/Applications/Docker.app/elasticsearch/logs
+      - /Users/wangcheng/es/plugins03:/Applications/Docker.app/elasticsearch/plugins
+    ports:
+      - "9203:9200"
+      - "9303:9300"
+    environment:
+      - node.name=es03
+      - cluster.name=my-cluster
+      - discovery.seed_hosts=es01,es02
+      - bootstrap.memory_lock=true
+      - xpack.security.enabled=false
+      - xpack.security.http.ssl.enabled=false
+      - xpack.security.transport.ssl.enabled=false
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    privileged: true
+
+  kibana01:
+    image: kibana:8.10.2
+    container_name: kibana01
+    networks:
+      my-custom-network:
+    depends_on:
+      - es01
+      - es02
+      - es03
+    environment:
+      SERVER_NAME: kibana01
+      SERVER_HOST: "0.0.0.0"
+      ELASTICSEARCH_HOSTS: http://es01:9200
+    ports:
+      - 5601:5601
+  minio:
+    container_name: minio
+    image: bitnami/minio:2023
+    networks:
+      my-custom-network:
+    ports:
+      - '9009:9000'
+      - '9001:9001'
+    environment:
+      - MINIO_ROOT_USER=admin
+      - MINIO_ROOT_PASSWORD=admin123456
+    volumes:
+      - /Users/wangcheng/minio/data:/Applications/Docker.app/minio/data
+  Etcd:
+    container_name: etcd3
+    image: bitnami/etcd:latest
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+    environment:
+      - ALLOW_NONE_AUTHENTICATION=yes
+    privileged: true
+    volumes:
+      - /Users/wangcheng/etcd/data:/Applications/Docker.app/etcd/data
+    ports:
+      - 2379:2379
+      - 2380:2380
+networks:
+  my-custom-network:
+    driver: bridge
+  minio:
+
+#docker exec -u 0 -it {容器id} /bin/bash
+#apt-get update
+#apt-get install vim
