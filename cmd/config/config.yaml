@@ -1,0 +1,19 @@
+server:
+  name: "api"
+  addr: "127.0.0.1:8300"
+zap:
+  debugFileName: "newsCenter/logs/debug/project-debug.logs"
+  infoFileName: "newsCenter/logs/info/project-info.logs"
+  warnFileName: "newsCenter/logs/error/project-error.logs"
+  maxSize: 500,
+  maxAge: 28,
+  MaxBackups: 3,
+etcd:
+  addr:
+    - "127.0.0.1:2379"
+mysql:
+  username: root
+  password: root
+  host: 127.0.0.1
+  port: 3309
+  db: newsCenter
