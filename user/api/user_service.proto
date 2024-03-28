@@ -1,0 +1,35 @@
+syntax = "proto3";
+package user.service;
+option go_package = "user/pkg/service/user.service";
+
+message RegisterReq{
+  string username = 1;
+  string password = 2;
+  string confirm_password = 3;
+}
+
+message RegisterRes {
+
+}
+
+message LoginReq {
+  string username = 1;
+  string password = 2;
+  string token = 3;
+}
+
+message LoginRes{
+  TokenReq token = 1;
+}
+
+message TokenReq{
+  string accessToken = 1;
+  string refreshToken = 2;
+  string tokenType = 3;
+  int64 accessTokenExp = 4;
+}
+
+service UserService {
+  rpc Register(RegisterReq) returns (RegisterRes){}
+  rpc Login(LoginReq) returns (LoginRes){}
+}
