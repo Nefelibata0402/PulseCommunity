@@ -1,6 +1,6 @@
 server:
-  name: "interfaces"
-  addr: "127.0.0.1:8300"
+  name: "user"
+  addr: "127.0.0.1:8301"
 zap:
   debugFileName: "/newsCenter/logs/debug/newsCenter-debug.logs"
   infoFileName: "/newsCenter/logs/info/newsCenter-info.logs"
@@ -17,3 +17,18 @@ mysql:
   host: 127.0.0.1
   port: 3309
   db: newsCenter
+redis:
+  host: "localhost"
+  port: 6379
+  password: ""
+  db: 0
+grpc:
+  addr: "127.0.0.1:8302"
+  name: "user"
+  version: "1.0.0"
+  weight: 2
+jwt:
+  accessExp: 7
+  refreshExp: 14
+  accessSecret: newsCenter
+  refreshSecret: newsCenter

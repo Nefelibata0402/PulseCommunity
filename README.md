@@ -1,22 +1,25 @@
+
+https://mp.weixin.qq.com/s/BdRPXmp3OkgY-TH6Pffp_Q
 ### Commit 类型
-add: 新功能
+add: 新功能  
 
 fix: 修复bug
 
 refactor: 代码重构
 ```
 ├── cmd
-│   ├── api
+│   ├── config
+│   ├── interfaces #用户接口层
 │   │   ├── news
 │   │   ├── rpc
 │   │   └── user
-│   ├── config
 │   ├── middlewares
 │   ├── model
-│   │   ├── news_model
-│   │   └── user_model
+│   │   ├── newsModel
+│   │   └── userModel
 │   └── router
-├── grpc
+├── idl #接口描述语言
+│   ├── gen #临时proto文件
 │   ├── news
 │   └── user
 ├── logs
@@ -24,27 +27,34 @@ refactor: 代码重构
 │   ├── error
 │   └── info
 ├── news
-│   ├── api
-│   ├── └── gen
+│   ├── application #应用层
+│   │   ├── code
+│   │   ├── pkg
+│   │   └──service
 │   ├── config
-│   ├── internal
-│   │   ├── dao
-│   │   ├── data
-│   │   │   └── database
+│   ├── domain #领域层
+│   │   └── respository #仓库
+│   ├── infrastructure # 基础设施层
 │   │   ├── interceptor
-│   │   └── repo
-│   ├── pkg
+│   │   ├── persistence    # 数据库相关
+│   │   │   ├── dal
+│   │   │   ├── database
+│   │   │   └── newsData
 │   └── router
 ├── user
-│   ├── api
-│   ├── └── gen
+│   ├── application #应用层
+│   │   ├── code
+│   │   ├── pkg
+│   │   └──service
 │   ├── config
-│   ├── internal
-│   │   ├── dao
-│   │   ├── data
-│   │   │   └── database
+│   ├── domain #领域层
+│   │   └── respository #仓库
+│   ├── infrastructure # 基础设施层
 │   │   ├── interceptor
-│   │   └── repo
+│   │   ├── persistence    # 数据库相关
+│   │   │   ├── dal
+│   │   │   ├── database
+│   │   │   └── userData
 │   ├── pkg
 │   └── router
 ```
