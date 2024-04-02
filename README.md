@@ -1,5 +1,3 @@
-
-https://mp.weixin.qq.com/s/BdRPXmp3OkgY-TH6Pffp_Q
 ### Commit 类型
 add: 新功能  
 
