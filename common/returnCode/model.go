@@ -1,4 +1,4 @@
-package code
+package returnCode
 
 type Result struct {
 	Code int    `json:"code"`

@@ -5,14 +5,14 @@ import (
 	"github.com/gin-gonic/gin"
 	"net/http"
 	"newsCenter/cmd/interfaces/rpc"
-	"newsCenter/common/code"
 	"newsCenter/common/errs"
+	"newsCenter/common/returnCode"
 	"newsCenter/idl/userGrpc"
 	"time"
 )
 
 func TokenVerify() func(*gin.Context) {
-	result := &code.Result{}
+	result := &returnCode.Result{}
 	return func(c *gin.Context) {
 		//1. 从header中获取token
 		token := c.GetHeader("Authorization")

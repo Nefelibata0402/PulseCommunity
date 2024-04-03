@@ -3,7 +3,7 @@ package userModel
 import "errors"
 
 type RegisterRequest struct {
-	UserName        string `json:"userName" form:"userName"`
+	Username        string `json:"username" form:"username"`
 	Password        string `json:"password" form:"password"`
 	ConfirmPassword string `json:"confirmPassword" form:"confirmPassword"`
 }

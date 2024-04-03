@@ -4,6 +4,9 @@ add: 新功能
 fix: 修复bug
 
 refactor: 代码重构
+
+air热重载
+
 ```
 ├── cmd
 │   ├── config

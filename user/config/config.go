@@ -17,6 +17,10 @@ type Config struct {
 	EtcdConfig   *EtcdConfig
 	MysqlConfig  *MysqlConfig
 	JwtConfig    *JwtConfig
+	JaegerConfig *JaegerConfig
+}
+type JaegerConfig struct {
+	Endpoints string
 }
 
 type ServerConfig struct {
@@ -73,6 +77,7 @@ func InitConfig() *Config {
 	conf.InitMysqlConfig()
 	conf.InitJwtConfig()
 	conf.ReadGrpcConfig()
+	conf.InitJaegerConfig()
 	return conf
 }
 
@@ -137,4 +142,11 @@ func (c *Config) ReadGrpcConfig() {
 	grpc.Version = c.Viper.GetString("grpc.version")
 	grpc.Weight = c.Viper.GetInt64("grpc.weight")
 	c.GrpcConfig = grpc
+}
+
+func (c *Config) InitJaegerConfig() {
+	jc := &JaegerConfig{
+		Endpoints: c.Viper.GetString("jaeger.endpoints"),
+	}
+	c.JaegerConfig = jc
 }

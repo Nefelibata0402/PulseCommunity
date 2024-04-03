@@ -17,3 +17,5 @@ mysql:
   host: 127.0.0.1
   port: 3309
   db: newsCenter
+jaeger:
+  endpoints: "http://localhost:14268/api/traces"

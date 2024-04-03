@@ -14,6 +14,10 @@ type Config struct {
 	ServerConfig *ServerConfig
 	GrpcConfig   *GrpcConfig
 	EtcdConfig   *EtcdConfig
+	JaegerConfig *JaegerConfig
+}
+type JaegerConfig struct {
+	Endpoints string
 }
 
 type ServerConfig struct {
@@ -48,6 +52,7 @@ func InitConfig() *Config {
 	conf.ReadServerConfig()
 	conf.InitZapLog()
 	conf.ReadEtcdConfig()
+	conf.InitJaegerConfig()
 	return conf
 }
 
@@ -83,4 +88,11 @@ func (c *Config) ReadEtcdConfig() {
 	}
 	ec.Addr = addr
 	c.EtcdConfig = ec
+}
+
+func (c *Config) InitJaegerConfig() {
+	jc := &JaegerConfig{
+		Endpoints: c.viper.GetString("jaeger.endpoints"),
+	}
+	c.JaegerConfig = jc
 }
