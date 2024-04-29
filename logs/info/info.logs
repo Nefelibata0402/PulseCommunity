@@ -1,0 +1,4 @@
+{"level":"INFO","time":"2024-04-29T20:03:06.428+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-04-29T20:18:15.889+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-04-29T21:23:05.960+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-04-29T21:23:06.605+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}

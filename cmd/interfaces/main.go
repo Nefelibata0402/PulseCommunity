@@ -7,13 +7,15 @@ import (
 	"go.opentelemetry.io/otel/propagation"
 	"log"
 	"newsCenter/cmd/config"
-	"newsCenter/cmd/interfaces/rpc"
+	"newsCenter/cmd/interfaces/article"
+	"newsCenter/cmd/interfaces/user"
 	"newsCenter/cmd/trace"
 )
 
 func initAll(r *gin.Engine) {
 	initRouter(r)
-	rpc.InitRpcUserClient()
+	user.InitRpcUserClient()
+	article.InitRpcArticleClient()
 	tp, tpErr := trace.JaegerTraceProvider(config.ApiConfig.JaegerConfig.Endpoints)
 	if tpErr != nil {
 		log.Fatal(tpErr)
@@ -30,4 +32,5 @@ func main() {
 	if err != nil {
 		return
 	}
+
 }

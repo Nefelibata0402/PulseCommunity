@@ -1,0 +1,65 @@
+syntax = "proto3";
+package userGrpc;
+option go_package = "user/application/service/user";
+
+import "user_model.proto";
+
+message RegisterRequest{
+  string username = 1; // 注册用户名
+  string password = 2; // 密码
+  string confirm_password = 3; // 确认密码
+}
+
+message RegisterResponse {
+  int32 status_code = 1; // 状态码，0-成功，其他值-失败
+  string status_msg = 2; // 返回状态描述
+  uint64 user_id = 3; // 用户id
+  TokenMessage token = 4; // 用户鉴权token
+}
+
+message LoginRequest {
+  string username = 1; // 登录用户名
+  string password = 2; // 登录密码
+}
+
+message LoginResponse{
+  int32 status_code = 1; // 状态码，0-成功，其他值-失败
+  string status_msg = 2; // 返回状态描述
+  uint64 user_id = 3;
+  TokenMessage token = 4;
+}
+
+message TokenMessage{
+  string accessToken = 1;
+  string refreshToken = 2;
+  string tokenType = 3;
+  int64 accessTokenExp = 4;
+}
+
+message TokenRequest {
+  string token = 1;
+}
+
+message TokenResponse {
+  int32 status_code = 1; // 状态码，0-成功，其他值-失败
+  string status_msg = 2; // 返回状态描述
+  uint64 user_id = 3;
+}
+
+message UserInfoRequest {
+  uint64 user_id = 1; // 用户id
+  string token = 2; // 用户鉴权token
+}
+
+message UserInfoResponse {
+  int32 status_code = 1; // 状态码，0-成功，其他值-失败
+  string status_msg = 2; // 返回状态描述
+  User user = 3; // 用户信息
+}
+
+service UserService {
+  rpc Register(RegisterRequest) returns (RegisterResponse){}
+  rpc Login(LoginRequest) returns (LoginResponse){}
+  rpc TokenAuth(TokenRequest) returns (TokenResponse) {}
+  rpc GetUserinfo(UserInfoRequest) returns (UserInfoResponse) {}
+}

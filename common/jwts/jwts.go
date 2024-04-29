@@ -14,34 +14,39 @@ type JwtToken struct {
 	RefreshExp   int64
 }
 
-func CreateToken(val string, exp time.Duration, secret string, refreshExp time.Duration, refreshSecret string) *JwtToken {
+func CreateToken(val string, exp time.Duration, secret string, refreshExp time.Duration, refreshSecret string) (*JwtToken, error) {
 	aExp := time.Now().Add(exp).Unix()
 	accessToken := jwt.NewWithClaims(jwt.SigningMethodHS256, jwt.MapClaims{
 		"token": val,
+		"exp":   aExp,
 	})
-	aToken, _ := accessToken.SignedString([]byte(secret))
+	aToken, err := accessToken.SignedString([]byte(secret))
+	if err != nil {
+		return nil, err
+	}
 	rExp := time.Now().Add(refreshExp).Unix()
 	refreshToken := jwt.NewWithClaims(jwt.SigningMethodHS256, jwt.MapClaims{
 		"token": val,
-		"exp":   aExp,
+		"exp":   rExp,
 	})
-	rToken, _ := refreshToken.SignedString([]byte(refreshSecret))
-	return &JwtToken{
-		AccessExp:    aExp,
-		AccessToken:  aToken,
-		RefreshExp:   rExp,
-		RefreshToken: rToken,
+	rToken, err := refreshToken.SignedString([]byte(refreshSecret))
+	if err != nil {
+		return nil, err
 	}
+	return &JwtToken{
+		AccessExp:    aExp,   //访问时间
+		AccessToken:  aToken, //访问令牌
+		RefreshExp:   rExp,   //刷新时间
+		RefreshToken: rToken, //刷新令牌
+	}, nil
 }
 
-func ParseToken(tokenString string, secret string, ip string) (string, error) {
+func ParseToken(tokenString string, secret string) (string, error) {
+	//解析token 验证签名
 	token, err := jwt.Parse(tokenString, func(token *jwt.Token) (interface{}, error) {
-		// Don't forget to validate the alg is what you expect:
 		if _, ok := token.Method.(*jwt.SigningMethodHMAC); !ok {
 			return nil, fmt.Errorf("unexpected signing method: %v", token.Header["alg"])
 		}
-
-		// hmacSampleSecret is a []byte containing your secret, e.g. []byte("my_secret_key")
 		return []byte(secret), nil
 	})
 	if err != nil {

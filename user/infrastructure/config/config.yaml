@@ -1,0 +1,36 @@
+server:
+  name: "user"
+  addr: "127.0.0.1:8301"
+zap:
+  debugFileName: "/Users/wangcheng/Documents/golang/src/newsCenter/logs/debug/debug.logs"
+  infoFileName: "/Users/wangcheng/Documents/golang/src/newsCenter/logs/info/info.logs"
+  warnFileName: "/Users/wangcheng/Documents/golang/src/newsCenter/logs/error/error.logs"
+  maxSize: 5,
+  maxAge: 28,
+  MaxBackups: 3,
+etcd:
+  addr:
+    - "127.0.0.1:12379"
+mysql:
+  username: root
+  password: root
+  host: 127.0.0.1
+  port: 3310
+  db: newsCenter
+redis:
+  host: "localhost"
+  port: 6379
+  password: ""
+  db: 0
+grpc:
+  addr: "127.0.0.1:8302"
+  name: "user"
+  version: "1.0.0"
+  weight: 2
+jwt:
+  accessExp: 7
+  refreshExp: 14
+  accessSecret: newsCenter
+  refreshSecret: newsCenter
+jaeger:
+  endpoints: "http://localhost:14268/api/traces"

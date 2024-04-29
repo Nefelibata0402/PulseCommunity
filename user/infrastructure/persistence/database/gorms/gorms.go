@@ -6,7 +6,7 @@ import (
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
-	"newsCenter/user/config"
+	"newsCenter/user/infrastructure/config"
 )
 
 var _db *gorm.DB

@@ -5,10 +5,10 @@ import (
 	"go.opentelemetry.io/otel"
 	"go.opentelemetry.io/otel/propagation"
 	"log"
-	"newsCenter/user/application/pkg/snowflake"
-	"newsCenter/user/application/trace"
-	"newsCenter/user/config"
-	"newsCenter/user/router"
+	"newsCenter/common/snowflake"
+	"newsCenter/user/application/router"
+	"newsCenter/user/infrastructure/config"
+	"newsCenter/user/infrastructure/trace"
 )
 
 func initAll(r *gin.Engine) {

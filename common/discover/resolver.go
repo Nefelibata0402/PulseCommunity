@@ -140,7 +140,7 @@ func (r *Resolver) update(events []*clientv3.Event) {
 
 // sync 同步获取所有地址信息
 func (r *Resolver) sync() error {
-	ctx, cancel := context.WithTimeout(context.Background(), 3*time.Second)
+	ctx, cancel := context.WithTimeout(context.Background(), 180*time.Second)
 	defer cancel()
 	res, err := r.cli.Get(ctx, r.keyPrifix, clientv3.WithPrefix())
 	if err != nil {
