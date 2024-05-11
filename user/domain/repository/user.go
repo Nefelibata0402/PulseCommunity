@@ -11,4 +11,5 @@ type UserRepository interface {
 	// SaveUserInfo SaveUserName 将注册信息插入数据库
 	SaveUserInfo(c context.Context, userInfo *entity.UserInfo) error
 	FindUsernameAndPassword(c context.Context, userName, password string) (userInfo *entity.UserInfo, err error)
+	GetUserInfo(c context.Context, id int64) (userInfo *entity.UserInfo, err error)
 }

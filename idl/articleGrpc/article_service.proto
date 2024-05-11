@@ -2,18 +2,108 @@ syntax = "proto3";
 package articleGrpc;
 option go_package = "article/application/service/article";
 
+import "article_model.proto";
+
+message EditRequest {
+  uint64 article_id = 1; //文章id
+  uint64 author_id = 2;//作者id
+  string title = 3; // 文章标题
+  string data = 4; // 文章数据
+  string category = 5;  //文章种类
+}
+
+message EditResponse {
+  int32 status_code = 1; // 状态码，0-成功，其他值-失败
+  string status_msg = 2; // 返回状态描述
+}
+
 message PublishRequest {
-  string token = 1;
-  string title = 2;
-  string data = 3;
+  uint64 article_id = 1; //文章id
+  uint64 author_id = 2;//作者id
+  string title = 3; // 文章标题
+  string data = 4; // 文章数据
+  string category = 5;  //文章种类
 }
 
 message PublishResponse {
-  repeated PublishRequest re = 1;
-  int64 article_id = 2;
-  int64 total = 3;
+  int32 status_code = 1; // 状态码，0-成功，其他值-失败
+  string status_msg = 2; // 返回状态描述
 }
 
+message GetDetailRequest {
+  uint64 article_id = 1;
+  uint64 author_id = 2;//作者id
+}
+
+message GetDetailResponse {
+  int32 status_code = 1;
+  string status_msg = 2;
+  Article article = 3;
+}
+
+message WithdrawRequest {
+  uint64 article_id = 1; //文章id
+  uint64 author_id = 2;//作者id
+}
+
+message WithdrawResponse {
+  int32 status_code = 1;
+  string status_msg = 2;
+}
+
+message GetListByAuthorRequest {
+  uint64 author_id = 1;//作者id
+  int64 offset = 2;
+  int64 limit = 3;
+}
+
+message GetListByAuthorResponse {
+  int32 status_code = 1;
+  string status_msg = 2;
+  repeated Article article_list = 3;
+}
+
+message ReadRequest {
+  uint64 article_id = 1;
+  uint64 user_id = 2;
+}
+
+message ReadResponse {
+  int32 status_code = 1;
+  string status_msg = 2;
+  Article article = 3;
+}
+
+message LikeRequest{
+  int64 id = 1;
+  bool like = 2; //点赞true 或者取消点赞false
+  uint64 user_id = 3; //点赞者id
+}
+
+message LikeResponse{
+  int32 status_code = 1;
+  string status_msg = 2;
+}
+
+message CollectRequest{
+  int64 id = 1;
+  bool collect = 2; //收藏true或取消收藏false
+  int64 collect_list = 4;//属于哪个收藏夹
+  uint64 user_id = 3; //收藏者id
+}
+
+message CollectResponse{
+  int32 status_code = 1;
+  string status_msg = 2;
+}
+
+
 service ArticleService {
-  rpc Publish(PublishRequest) returns(PublishResponse){}
+  rpc Edit(EditRequest) returns(EditResponse);
+  rpc Publish(PublishRequest) returns(PublishResponse);
+  rpc GetDetail(GetDetailRequest) returns(GetDetailResponse);
+  rpc WithdrawArticle(WithdrawRequest) returns(WithdrawResponse);
+  rpc GetList(GetListByAuthorRequest) returns(GetListByAuthorResponse);
+  rpc Read(ReadRequest) returns(ReadResponse);
+  rpc Like(LikeRequest) returns(LikeResponse);
 }

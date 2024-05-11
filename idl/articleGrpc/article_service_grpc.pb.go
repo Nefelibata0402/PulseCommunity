@@ -22,7 +22,13 @@ const _ = grpc.SupportPackageIsVersion7
 //
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
 type ArticleServiceClient interface {
+	Edit(ctx context.Context, in *EditRequest, opts ...grpc.CallOption) (*EditResponse, error)
 	Publish(ctx context.Context, in *PublishRequest, opts ...grpc.CallOption) (*PublishResponse, error)
+	GetDetail(ctx context.Context, in *GetDetailRequest, opts ...grpc.CallOption) (*GetDetailResponse, error)
+	WithdrawArticle(ctx context.Context, in *WithdrawRequest, opts ...grpc.CallOption) (*WithdrawResponse, error)
+	GetList(ctx context.Context, in *GetListByAuthorRequest, opts ...grpc.CallOption) (*GetListByAuthorResponse, error)
+	Read(ctx context.Context, in *ReadRequest, opts ...grpc.CallOption) (*ReadResponse, error)
+	Like(ctx context.Context, in *LikeRequest, opts ...grpc.CallOption) (*LikeResponse, error)
 }
 
 type articleServiceClient struct {
@@ -31,6 +37,15 @@ type articleServiceClient struct {
 
 func NewArticleServiceClient(cc grpc.ClientConnInterface) ArticleServiceClient {
 	return &articleServiceClient{cc}
+}
+
+func (c *articleServiceClient) Edit(ctx context.Context, in *EditRequest, opts ...grpc.CallOption) (*EditResponse, error) {
+	out := new(EditResponse)
+	err := c.cc.Invoke(ctx, "/articleGrpc.ArticleService/Edit", in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
 }
 
 func (c *articleServiceClient) Publish(ctx context.Context, in *PublishRequest, opts ...grpc.CallOption) (*PublishResponse, error) {
@@ -42,11 +57,62 @@ func (c *articleServiceClient) Publish(ctx context.Context, in *PublishRequest, 
 	return out, nil
 }
 
+func (c *articleServiceClient) GetDetail(ctx context.Context, in *GetDetailRequest, opts ...grpc.CallOption) (*GetDetailResponse, error) {
+	out := new(GetDetailResponse)
+	err := c.cc.Invoke(ctx, "/articleGrpc.ArticleService/GetDetail", in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *articleServiceClient) WithdrawArticle(ctx context.Context, in *WithdrawRequest, opts ...grpc.CallOption) (*WithdrawResponse, error) {
+	out := new(WithdrawResponse)
+	err := c.cc.Invoke(ctx, "/articleGrpc.ArticleService/WithdrawArticle", in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *articleServiceClient) GetList(ctx context.Context, in *GetListByAuthorRequest, opts ...grpc.CallOption) (*GetListByAuthorResponse, error) {
+	out := new(GetListByAuthorResponse)
+	err := c.cc.Invoke(ctx, "/articleGrpc.ArticleService/GetList", in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *articleServiceClient) Read(ctx context.Context, in *ReadRequest, opts ...grpc.CallOption) (*ReadResponse, error) {
+	out := new(ReadResponse)
+	err := c.cc.Invoke(ctx, "/articleGrpc.ArticleService/Read", in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *articleServiceClient) Like(ctx context.Context, in *LikeRequest, opts ...grpc.CallOption) (*LikeResponse, error) {
+	out := new(LikeResponse)
+	err := c.cc.Invoke(ctx, "/articleGrpc.ArticleService/Like", in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // ArticleServiceServer is the server API for ArticleService service.
 // All implementations must embed UnimplementedArticleServiceServer
 // for forward compatibility
 type ArticleServiceServer interface {
+	Edit(context.Context, *EditRequest) (*EditResponse, error)
 	Publish(context.Context, *PublishRequest) (*PublishResponse, error)
+	GetDetail(context.Context, *GetDetailRequest) (*GetDetailResponse, error)
+	WithdrawArticle(context.Context, *WithdrawRequest) (*WithdrawResponse, error)
+	GetList(context.Context, *GetListByAuthorRequest) (*GetListByAuthorResponse, error)
+	Read(context.Context, *ReadRequest) (*ReadResponse, error)
+	Like(context.Context, *LikeRequest) (*LikeResponse, error)
 	mustEmbedUnimplementedArticleServiceServer()
 }
 
@@ -54,8 +120,26 @@ type ArticleServiceServer interface {
 type UnimplementedArticleServiceServer struct {
 }
 
+func (UnimplementedArticleServiceServer) Edit(context.Context, *EditRequest) (*EditResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method Edit not implemented")
+}
 func (UnimplementedArticleServiceServer) Publish(context.Context, *PublishRequest) (*PublishResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method Publish not implemented")
+}
+func (UnimplementedArticleServiceServer) GetDetail(context.Context, *GetDetailRequest) (*GetDetailResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method GetDetail not implemented")
+}
+func (UnimplementedArticleServiceServer) WithdrawArticle(context.Context, *WithdrawRequest) (*WithdrawResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method WithdrawArticle not implemented")
+}
+func (UnimplementedArticleServiceServer) GetList(context.Context, *GetListByAuthorRequest) (*GetListByAuthorResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method GetList not implemented")
+}
+func (UnimplementedArticleServiceServer) Read(context.Context, *ReadRequest) (*ReadResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method Read not implemented")
+}
+func (UnimplementedArticleServiceServer) Like(context.Context, *LikeRequest) (*LikeResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method Like not implemented")
 }
 func (UnimplementedArticleServiceServer) mustEmbedUnimplementedArticleServiceServer() {}
 
@@ -68,6 +152,24 @@ type UnsafeArticleServiceServer interface {
 
 func RegisterArticleServiceServer(s grpc.ServiceRegistrar, srv ArticleServiceServer) {
 	s.RegisterService(&ArticleService_ServiceDesc, srv)
+}
+
+func _ArticleService_Edit_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(EditRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ArticleServiceServer).Edit(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/articleGrpc.ArticleService/Edit",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ArticleServiceServer).Edit(ctx, req.(*EditRequest))
+	}
+	return interceptor(ctx, in, info, handler)
 }
 
 func _ArticleService_Publish_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
@@ -88,6 +190,96 @@ func _ArticleService_Publish_Handler(srv interface{}, ctx context.Context, dec f
 	return interceptor(ctx, in, info, handler)
 }
 
+func _ArticleService_GetDetail_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(GetDetailRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ArticleServiceServer).GetDetail(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/articleGrpc.ArticleService/GetDetail",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ArticleServiceServer).GetDetail(ctx, req.(*GetDetailRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _ArticleService_WithdrawArticle_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(WithdrawRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ArticleServiceServer).WithdrawArticle(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/articleGrpc.ArticleService/WithdrawArticle",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ArticleServiceServer).WithdrawArticle(ctx, req.(*WithdrawRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _ArticleService_GetList_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(GetListByAuthorRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ArticleServiceServer).GetList(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/articleGrpc.ArticleService/GetList",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ArticleServiceServer).GetList(ctx, req.(*GetListByAuthorRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _ArticleService_Read_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(ReadRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ArticleServiceServer).Read(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/articleGrpc.ArticleService/Read",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ArticleServiceServer).Read(ctx, req.(*ReadRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _ArticleService_Like_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(LikeRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ArticleServiceServer).Like(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/articleGrpc.ArticleService/Like",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ArticleServiceServer).Like(ctx, req.(*LikeRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // ArticleService_ServiceDesc is the grpc.ServiceDesc for ArticleService service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -96,8 +288,32 @@ var ArticleService_ServiceDesc = grpc.ServiceDesc{
 	HandlerType: (*ArticleServiceServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
+			MethodName: "Edit",
+			Handler:    _ArticleService_Edit_Handler,
+		},
+		{
 			MethodName: "Publish",
 			Handler:    _ArticleService_Publish_Handler,
+		},
+		{
+			MethodName: "GetDetail",
+			Handler:    _ArticleService_GetDetail_Handler,
+		},
+		{
+			MethodName: "WithdrawArticle",
+			Handler:    _ArticleService_WithdrawArticle_Handler,
+		},
+		{
+			MethodName: "GetList",
+			Handler:    _ArticleService_GetList_Handler,
+		},
+		{
+			MethodName: "Read",
+			Handler:    _ArticleService_Read_Handler,
+		},
+		{
+			MethodName: "Like",
+			Handler:    _ArticleService_Like_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},

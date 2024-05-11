@@ -1,11 +1,19 @@
 package userModel
 
-import "errors"
+import (
+	"errors"
+	"github.com/go-playground/validator/v10"
+)
 
 type RegisterRequest struct {
-	Username        string `json:"username" form:"username"`
-	Password        string `json:"password" form:"password"`
-	ConfirmPassword string `json:"confirmPassword" form:"confirmPassword"`
+	Username        string `json:"username" form:"username" validate:"required"`
+	Password        string `json:"password" form:"password" validate:"required"`
+	ConfirmPassword string `json:"confirmPassword" form:"confirmPassword" validate:"required"`
+}
+
+func ValidateRegisterRequest(registerReq *RegisterRequest) error {
+	validate := validator.New()
+	return validate.Struct(registerReq)
 }
 
 func (r RegisterRequest) Verify() error {
@@ -20,6 +28,11 @@ func (r RegisterRequest) VerifyPassword() bool {
 }
 
 type LoginRequest struct {
-	Username string `json:"username" form:"username"`
-	Password string `json:"password" form:"password"`
+	Username string `json:"username" form:"username" validate:"required"`
+	Password string `json:"password" form:"password" validate:"required"`
+}
+
+func ValidateLoginRequest(loginReq *LoginRequest) error {
+	validate := validator.New()
+	return validate.Struct(loginReq)
 }

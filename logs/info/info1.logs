@@ -1,0 +1,335 @@
+{"level":"INFO","time":"2024-04-29T20:03:06.428+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-04-29T20:18:15.889+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-04-29T21:23:05.960+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-04-29T21:23:06.605+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-04-30T19:04:08.991+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-01T15:39:43.618+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-01T15:49:15.715+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-01T15:50:31.975+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-01T15:51:27.957+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-01T15:52:01.195+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-01T15:52:41.969+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-01T15:53:06.923+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-01T15:53:18.428+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-01T15:53:36.951+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-01T15:54:33.648+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-01T15:55:52.466+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-01T15:56:34.097+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-01T15:57:07.911+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-01T16:03:02.893+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-01T16:03:32.134+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-01T16:03:38.467+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-01T16:04:39.680+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-01T16:06:03.926+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-01T16:08:55.368+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-01T16:09:23.460+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-01T16:13:34.861+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-01T16:13:44.550+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-01T16:15:54.165+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-01T16:18:16.835+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-01T16:19:27.289+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-01T16:20:39.451+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-01T16:21:08.147+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-01T16:22:07.960+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-01T16:22:39.374+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-01T16:23:28.395+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-01T16:24:17.563+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-01T16:24:45.137+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-01T16:25:03.284+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-01T16:26:12.824+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-01T16:26:40.738+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-01T16:29:22.180+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-01T16:29:28.714+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-01T16:33:55.647+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"ERROR","time":"2024-05-01T16:34:01.500+0800","caller":"service/user.go:48","msg":"Register 用户名存在"}
+{"level":"INFO","time":"2024-05-01T16:34:32.827+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"ERROR","time":"2024-05-01T16:34:34.000+0800","caller":"service/user.go:47","msg":"Register 用户名存在"}
+{"level":"INFO","time":"2024-05-01T16:35:31.287+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-01T16:35:42.741+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"ERROR","time":"2024-05-01T17:11:13.593+0800","caller":"service/user.go:80","msg":"Login userInfo"}
+{"level":"ERROR","time":"2024-05-01T17:14:51.900+0800","caller":"service/user.go:80","msg":"Login userInfo"}
+{"level":"ERROR","time":"2024-05-01T17:19:00.734+0800","caller":"service/user.go:132","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-01T17:19:32.266+0800","caller":"service/user.go:132","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-01T17:20:13.583+0800","caller":"service/user.go:166","msg":"TokenAuth Unmarshal userJson Fail","error":"json: Unmarshal(nil *entity.UserInfo)"}
+{"level":"ERROR","time":"2024-05-01T17:20:26.893+0800","caller":"service/user.go:166","msg":"TokenAuth Unmarshal userJson Fail","error":"json: Unmarshal(nil *entity.UserInfo)"}
+{"level":"ERROR","time":"2024-05-01T17:20:58.263+0800","caller":"service/user.go:166","msg":"TokenAuth Unmarshal userJson Fail","error":"json: Unmarshal(nil *entity.UserInfo)"}
+{"level":"ERROR","time":"2024-05-01T17:21:39.185+0800","caller":"service/user.go:166","msg":"TokenAuth Unmarshal userJson Fail","error":"json: Unmarshal(nil *entity.UserInfo)"}
+{"level":"ERROR","time":"2024-05-01T17:21:44.869+0800","caller":"service/user.go:166","msg":"TokenAuth Unmarshal userJson Fail","error":"json: Unmarshal(nil *entity.UserInfo)"}
+{"level":"INFO","time":"2024-05-01T17:27:44.115+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-01T17:28:21.032+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-01T17:29:03.526+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-01T17:37:06.237+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-01T21:28:14.203+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-01T21:36:56.715+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-01T21:37:49.823+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-02T17:16:05.046+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-02T17:16:38.792+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"ERROR","time":"2024-05-02T17:16:46.568+0800","caller":"service/user.go:76","msg":"Login userInfo"}
+{"level":"ERROR","time":"2024-05-02T17:17:22.354+0800","caller":"service/user.go:44","msg":"Register 用户名存在"}
+{"level":"INFO","time":"2024-05-02T17:35:17.634+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"ERROR","time":"2024-05-02T17:35:33.019+0800","caller":"service/user.go:44","msg":"Register 用户名存在"}
+{"level":"ERROR","time":"2024-05-02T17:35:44.473+0800","caller":"service/user.go:76","msg":"Login userInfo"}
+{"level":"INFO","time":"2024-05-02T17:40:23.524+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-02T20:04:32.936+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-03T10:52:02.419+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"ERROR","time":"2024-05-03T10:52:05.807+0800","caller":"service/user.go:65","msg":"Login userInfo"}
+{"level":"ERROR","time":"2024-05-03T10:52:20.933+0800","caller":"service/user.go:65","msg":"Login userInfo"}
+{"level":"ERROR","time":"2024-05-03T10:52:23.175+0800","caller":"service/user.go:65","msg":"Login userInfo"}
+{"level":"INFO","time":"2024-05-03T15:52:36.090+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"ERROR","time":"2024-05-03T15:55:11.893+0800","caller":"service/user.go:112","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"INFO","time":"2024-05-03T15:59:34.741+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"ERROR","time":"2024-05-03T15:59:36.568+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-03T15:59:38.646+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-03T16:00:20.015+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-03T16:00:27.685+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-03T16:01:44.445+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-03T16:01:52.372+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-03T16:05:58.226+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-03T16:06:32.065+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-03T16:06:36.225+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-03T16:08:18.026+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-03T16:08:46.861+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-03T16:08:57.051+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-03T16:09:15.353+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"INFO","time":"2024-05-03T16:12:29.245+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-03T16:12:31.627+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-03T16:15:43.607+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-03T16:15:46.069+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-03T16:16:55.828+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-03T16:17:28.640+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-03T16:17:36.353+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-03T16:20:50.910+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-03T16:22:42.178+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-03T16:23:59.878+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-03T16:27:32.575+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-03T16:27:34.524+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-03T16:38:19.657+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-03T16:38:45.615+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-03T16:43:10.562+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-03T16:43:14.240+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-03T16:43:15.299+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-03T16:45:42.462+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-03T16:46:28.264+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8303"}
+{"level":"INFO","time":"2024-05-03T16:47:28.763+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"INFO","time":"2024-05-03T17:02:55.663+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-03T17:03:55.843+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"ERROR","time":"2024-05-03T17:04:12.666+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-03T17:04:13.794+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-03T17:04:32.763+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-03T17:04:55.193+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-03T17:05:50.415+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-03T17:07:23.463+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-03T17:08:00.617+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"INFO","time":"2024-05-03T17:08:30.442+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"ERROR","time":"2024-05-03T17:08:32.384+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"INFO","time":"2024-05-03T17:08:44.544+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"ERROR","time":"2024-05-03T17:09:15.227+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-03T17:09:41.329+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-03T17:09:56.116+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-03T17:10:54.884+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"invalid character 'Â' after object key:value pair"}
+{"level":"ERROR","time":"2024-05-03T17:11:25.154+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"INFO","time":"2024-05-03T17:16:21.219+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-03T17:16:23.201+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"ERROR","time":"2024-05-03T17:16:26.754+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-03T17:16:35.088+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"invalid character 'È' looking for beginning of value"}
+{"level":"INFO","time":"2024-05-03T20:11:59.671+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-03T20:12:03.586+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"INFO","time":"2024-05-03T20:12:11.608+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"INFO","time":"2024-05-03T20:27:25.651+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"ERROR","time":"2024-05-03T20:27:28.410+0800","caller":"dao/article_mongodb.go:60","msg":"创作者ID不正确"}
+{"level":"ERROR","time":"2024-05-03T20:29:21.497+0800","caller":"dao/article_mongodb.go:60","msg":"创作者ID不正确"}
+{"level":"INFO","time":"2024-05-03T20:30:14.282+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"ERROR","time":"2024-05-03T20:30:22.076+0800","caller":"dao/article_mongodb.go:61","msg":"创作者ID不正确"}
+{"level":"INFO","time":"2024-05-03T20:33:28.541+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"INFO","time":"2024-05-03T20:34:30.934+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"INFO","time":"2024-05-03T20:35:00.487+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"ERROR","time":"2024-05-03T20:35:49.456+0800","caller":"discover/discover.go:115","msg":"register failed","error":"context deadline exceeded"}
+{"level":"INFO","time":"2024-05-03T20:39:20.708+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"INFO","time":"2024-05-03T20:41:03.734+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"INFO","time":"2024-05-03T20:43:04.270+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"INFO","time":"2024-05-03T21:34:32.324+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"INFO","time":"2024-05-03T21:34:35.316+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"ERROR","time":"2024-05-03T21:35:33.596+0800","caller":"dao/article_mongodb.go:63","msg":"创作者ID不正确"}
+{"level":"ERROR","time":"2024-05-03T21:35:42.229+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-03T21:35:48.167+0800","caller":"dao/article_mongodb.go:63","msg":"创作者ID不正确"}
+{"level":"ERROR","time":"2024-05-03T21:36:09.155+0800","caller":"dao/article_mongodb.go:63","msg":"创作者ID不正确"}
+{"level":"ERROR","time":"2024-05-03T21:36:28.544+0800","caller":"dao/article_mongodb.go:63","msg":"创作者ID不正确"}
+{"level":"ERROR","time":"2024-05-03T21:36:43.587+0800","caller":"dao/article_mongodb.go:63","msg":"创作者ID不正确"}
+{"level":"INFO","time":"2024-05-03T21:39:38.871+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"INFO","time":"2024-05-04T10:15:22.388+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-04T10:16:25.399+0800","caller":"article/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"INFO","time":"2024-05-04T11:19:58.182+0800","caller":"article/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"ERROR","time":"2024-05-04T11:20:37.535+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-04T11:21:26.918+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-04T11:21:49.326+0800","caller":"dao/article_mongodb.go:107","msg":"创作者ID不正确"}
+{"level":"ERROR","time":"2024-05-04T11:21:49.327+0800","caller":"service/article.go:76","msg":"Withdraw Withdraw Fail","error":"你不是作者（ID不正确）"}
+{"level":"ERROR","time":"2024-05-04T11:21:49.327+0800","caller":"service/article.go:74","msg":"WithdrawArticle Withdraw Fail","error":"你不是作者（ID不正确）"}
+{"level":"ERROR","time":"2024-05-04T11:22:03.633+0800","caller":"dao/article_mongodb.go:107","msg":"创作者ID不正确"}
+{"level":"ERROR","time":"2024-05-04T11:22:03.634+0800","caller":"service/article.go:76","msg":"Withdraw Withdraw Fail","error":"你不是作者（ID不正确）"}
+{"level":"ERROR","time":"2024-05-04T11:22:03.634+0800","caller":"service/article.go:74","msg":"WithdrawArticle Withdraw Fail","error":"你不是作者（ID不正确）"}
+{"level":"ERROR","time":"2024-05-04T11:22:15.912+0800","caller":"dao/article_mongodb.go:107","msg":"创作者ID不正确"}
+{"level":"ERROR","time":"2024-05-04T11:22:15.912+0800","caller":"service/article.go:76","msg":"Withdraw Withdraw Fail","error":"你不是作者（ID不正确）"}
+{"level":"ERROR","time":"2024-05-04T11:22:15.912+0800","caller":"service/article.go:74","msg":"WithdrawArticle Withdraw Fail","error":"你不是作者（ID不正确）"}
+{"level":"INFO","time":"2024-05-04T11:23:07.376+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-04T11:23:07.711+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-04T11:23:58.406+0800","caller":"article/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"ERROR","time":"2024-05-04T11:24:20.008+0800","caller":"dao/article_mongodb.go:107","msg":"创作者ID不正确"}
+{"level":"ERROR","time":"2024-05-04T11:24:20.009+0800","caller":"service/article.go:76","msg":"Withdraw Withdraw Fail","error":"你不是作者（ID不正确）"}
+{"level":"ERROR","time":"2024-05-04T11:24:20.009+0800","caller":"service/article.go:74","msg":"WithdrawArticle Withdraw Fail","error":"你不是作者（ID不正确）"}
+{"level":"INFO","time":"2024-05-04T11:25:03.421+0800","caller":"article/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"ERROR","time":"2024-05-04T11:25:14.215+0800","caller":"dao/article_mongodb.go:107","msg":"创作者ID不正确"}
+{"level":"ERROR","time":"2024-05-04T11:25:14.215+0800","caller":"service/article.go:76","msg":"Withdraw Withdraw Fail","error":"你不是作者（ID不正确）"}
+{"level":"ERROR","time":"2024-05-04T11:25:14.215+0800","caller":"service/article.go:74","msg":"WithdrawArticle Withdraw Fail","error":"你不是作者（ID不正确）"}
+{"level":"ERROR","time":"2024-05-04T11:25:22.686+0800","caller":"dao/article_mongodb.go:107","msg":"创作者ID不正确"}
+{"level":"ERROR","time":"2024-05-04T11:25:22.687+0800","caller":"service/article.go:76","msg":"Withdraw Withdraw Fail","error":"你不是作者（ID不正确）"}
+{"level":"ERROR","time":"2024-05-04T11:25:22.687+0800","caller":"service/article.go:74","msg":"WithdrawArticle Withdraw Fail","error":"你不是作者（ID不正确）"}
+{"level":"INFO","time":"2024-05-04T11:27:33.704+0800","caller":"article/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"ERROR","time":"2024-05-04T11:28:00.788+0800","caller":"dao/article_mongodb.go:107","msg":"创作者ID不正确"}
+{"level":"ERROR","time":"2024-05-04T11:28:00.788+0800","caller":"service/article.go:76","msg":"Withdraw Withdraw Fail","error":"你不是作者（ID不正确）"}
+{"level":"ERROR","time":"2024-05-04T11:28:00.789+0800","caller":"service/article.go:74","msg":"WithdrawArticle Withdraw Fail","error":"你不是作者（ID不正确）"}
+{"level":"INFO","time":"2024-05-04T11:28:33.080+0800","caller":"article/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"ERROR","time":"2024-05-04T11:28:34.656+0800","caller":"dao/article_mongodb.go:109","msg":"创作者ID不正确"}
+{"level":"ERROR","time":"2024-05-04T11:28:34.656+0800","caller":"service/article.go:76","msg":"Withdraw Withdraw Fail","error":"你不是作者（ID不正确）"}
+{"level":"ERROR","time":"2024-05-04T11:28:34.656+0800","caller":"service/article.go:74","msg":"WithdrawArticle Withdraw Fail","error":"你不是作者（ID不正确）"}
+{"level":"INFO","time":"2024-05-04T11:29:45.344+0800","caller":"article/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"INFO","time":"2024-05-04T17:28:14.956+0800","caller":"article/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"ERROR","time":"2024-05-04T17:29:31.687+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"INFO","time":"2024-05-04T18:16:30.924+0800","caller":"article/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"INFO","time":"2024-05-04T18:18:41.625+0800","caller":"article/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"INFO","time":"2024-05-04T18:20:01.421+0800","caller":"article/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"INFO","time":"2024-05-04T18:22:38.513+0800","caller":"article/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"INFO","time":"2024-05-04T18:23:19.787+0800","caller":"article/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"INFO","time":"2024-05-04T18:23:36.907+0800","caller":"article/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"INFO","time":"2024-05-04T18:26:33.946+0800","caller":"article/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"INFO","time":"2024-05-04T18:26:40.597+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-04T18:26:44.925+0800","caller":"article/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"INFO","time":"2024-05-04T18:28:47.815+0800","caller":"article/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"INFO","time":"2024-05-04T18:32:29.940+0800","caller":"article/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"INFO","time":"2024-05-04T18:32:30.701+0800","caller":"article/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"INFO","time":"2024-05-04T18:36:51.900+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-04T18:36:55.203+0800","caller":"article/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"INFO","time":"2024-05-04T18:42:15.025+0800","caller":"article/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"ERROR","time":"2024-05-04T18:42:17.190+0800","caller":"service/article.go:63","msg":"Publish Publish Fail","error":"write exception: write errors: [Updating the path 'created_at' would create a conflict at 'created_at']"}
+{"level":"ERROR","time":"2024-05-04T18:45:17.597+0800","caller":"service/article.go:63","msg":"Publish Publish Fail","error":"write exception: write errors: [Updating the path 'created_at' would create a conflict at 'created_at']"}
+{"level":"INFO","time":"2024-05-04T18:45:23.087+0800","caller":"article/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"ERROR","time":"2024-05-04T18:45:24.020+0800","caller":"service/article.go:59","msg":"Publish Publish Fail","error":"write exception: write errors: [Updating the path 'created_at' would create a conflict at 'created_at']"}
+{"level":"ERROR","time":"2024-05-04T18:45:24.020+0800","caller":"service/article.go:63","msg":"Publish Publish Fail","error":"write exception: write errors: [Updating the path 'created_at' would create a conflict at 'created_at']"}
+{"level":"ERROR","time":"2024-05-04T18:47:21.836+0800","caller":"service/article.go:59","msg":"Publish Publish Fail","error":"write exception: write errors: [Updating the path 'created_at' would create a conflict at 'created_at']"}
+{"level":"ERROR","time":"2024-05-04T18:47:21.836+0800","caller":"service/article.go:63","msg":"Publish Publish Fail","error":"write exception: write errors: [Updating the path 'created_at' would create a conflict at 'created_at']"}
+{"level":"ERROR","time":"2024-05-04T18:51:25.480+0800","caller":"service/article.go:59","msg":"Publish Publish Fail","error":"write exception: write errors: [Updating the path 'created_at' would create a conflict at 'created_at']"}
+{"level":"ERROR","time":"2024-05-04T18:51:25.480+0800","caller":"service/article.go:63","msg":"Publish Publish Fail","error":"write exception: write errors: [Updating the path 'created_at' would create a conflict at 'created_at']"}
+{"level":"ERROR","time":"2024-05-04T18:51:48.879+0800","caller":"service/article.go:59","msg":"Publish Publish Fail","error":"write exception: write errors: [Updating the path 'created_at' would create a conflict at 'created_at']"}
+{"level":"ERROR","time":"2024-05-04T18:51:48.880+0800","caller":"service/article.go:63","msg":"Publish Publish Fail","error":"write exception: write errors: [Updating the path 'created_at' would create a conflict at 'created_at']"}
+{"level":"ERROR","time":"2024-05-04T18:52:06.351+0800","caller":"service/article.go:59","msg":"Publish Publish Fail","error":"write exception: write errors: [Updating the path 'created_at' would create a conflict at 'created_at']"}
+{"level":"ERROR","time":"2024-05-04T18:52:06.351+0800","caller":"service/article.go:63","msg":"Publish Publish Fail","error":"write exception: write errors: [Updating the path 'created_at' would create a conflict at 'created_at']"}
+{"level":"INFO","time":"2024-05-04T18:53:30.713+0800","caller":"article/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"INFO","time":"2024-05-04T18:56:08.873+0800","caller":"article/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"ERROR","time":"2024-05-04T18:56:11.538+0800","caller":"service/article.go:59","msg":"Publish Publish Fail","error":"write exception: write errors: [Updating the path 'created_at' would create a conflict at 'created_at']"}
+{"level":"ERROR","time":"2024-05-04T18:56:11.540+0800","caller":"service/article.go:63","msg":"Publish Publish Fail","error":"write exception: write errors: [Updating the path 'created_at' would create a conflict at 'created_at']"}
+{"level":"ERROR","time":"2024-05-04T18:57:54.783+0800","caller":"cache/article_redis.go:73","msg":"Set Set Fail","error":"context canceled"}
+{"level":"ERROR","time":"2024-05-04T18:57:54.784+0800","caller":"service/article.go:102","msg":"GetById Set Fail","error":"context canceled"}
+{"level":"ERROR","time":"2024-05-04T19:00:38.567+0800","caller":"cache/article_redis.go:73","msg":"Set Set Fail","error":"context canceled"}
+{"level":"ERROR","time":"2024-05-04T19:00:38.569+0800","caller":"service/article.go:102","msg":"GetById Set Fail","error":"context canceled"}
+{"level":"INFO","time":"2024-05-04T19:01:44.569+0800","caller":"article/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"INFO","time":"2024-05-04T19:01:45.518+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"ERROR","time":"2024-05-04T19:02:12.909+0800","caller":"service/article.go:59","msg":"Publish Publish Fail","error":"write exception: write errors: [Updating the path 'created_at' would create a conflict at 'created_at']"}
+{"level":"ERROR","time":"2024-05-04T19:02:12.909+0800","caller":"service/article.go:63","msg":"Publish Publish Fail","error":"write exception: write errors: [Updating the path 'created_at' would create a conflict at 'created_at']"}
+{"level":"INFO","time":"2024-05-04T19:07:52.080+0800","caller":"article/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"ERROR","time":"2024-05-04T19:07:53.691+0800","caller":"service/article.go:59","msg":"Publish Publish Fail","error":"write exception: write errors: [Updating the path 'created_at' would create a conflict at 'created_at']"}
+{"level":"ERROR","time":"2024-05-04T19:07:53.691+0800","caller":"service/article.go:63","msg":"Publish Publish Fail","error":"write exception: write errors: [Updating the path 'created_at' would create a conflict at 'created_at']"}
+{"level":"ERROR","time":"2024-05-04T19:07:56.195+0800","caller":"service/article.go:59","msg":"Publish Publish Fail","error":"write exception: write errors: [Updating the path 'created_at' would create a conflict at 'created_at']"}
+{"level":"ERROR","time":"2024-05-04T19:07:56.195+0800","caller":"service/article.go:63","msg":"Publish Publish Fail","error":"write exception: write errors: [Updating the path 'created_at' would create a conflict at 'created_at']"}
+{"level":"ERROR","time":"2024-05-04T19:08:05.853+0800","caller":"service/article.go:59","msg":"Publish Publish Fail","error":"write exception: write errors: [Updating the path 'created_at' would create a conflict at 'created_at']"}
+{"level":"ERROR","time":"2024-05-04T19:08:05.854+0800","caller":"service/article.go:63","msg":"Publish Publish Fail","error":"write exception: write errors: [Updating the path 'created_at' would create a conflict at 'created_at']"}
+{"level":"INFO","time":"2024-05-04T19:10:39.251+0800","caller":"article/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"ERROR","time":"2024-05-04T20:59:50.068+0800","caller":"cache/article_redis.go:73","msg":"Set Set Fail","error":"context canceled"}
+{"level":"ERROR","time":"2024-05-04T20:59:50.069+0800","caller":"service/article.go:102","msg":"GetById Set Fail","error":"context canceled"}
+{"level":"ERROR","time":"2024-05-04T21:08:05.920+0800","caller":"cache/article_redis.go:73","msg":"Set Set Fail","error":"context canceled"}
+{"level":"ERROR","time":"2024-05-04T21:08:05.921+0800","caller":"service/article.go:102","msg":"GetById Set Fail","error":"context canceled"}
+{"level":"ERROR","time":"2024-05-04T21:08:25.481+0800","caller":"cache/article_redis.go:73","msg":"Set Set Fail","error":"context canceled"}
+{"level":"ERROR","time":"2024-05-04T21:08:25.482+0800","caller":"service/article.go:102","msg":"GetById Set Fail","error":"context canceled"}
+{"level":"ERROR","time":"2024-05-04T21:34:19.190+0800","caller":"cache/article_redis.go:73","msg":"Set Set Fail","error":"context canceled"}
+{"level":"ERROR","time":"2024-05-04T21:34:19.190+0800","caller":"service/article.go:102","msg":"GetById Set Fail","error":"context canceled"}
+{"level":"INFO","time":"2024-05-04T21:42:25.469+0800","caller":"article/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"INFO","time":"2024-05-04T21:43:48.200+0800","caller":"article/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"INFO","time":"2024-05-04T21:44:57.845+0800","caller":"article/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"INFO","time":"2024-05-05T09:26:07.206+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-05T09:26:08.910+0800","caller":"article/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"INFO","time":"2024-05-05T11:08:36.400+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-05T11:08:39.200+0800","caller":"article/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"INFO","time":"2024-05-05T11:11:22.882+0800","caller":"article/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"INFO","time":"2024-05-05T11:12:35.240+0800","caller":"article/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"ERROR","time":"2024-05-05T11:14:46.214+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-05T11:22:10.348+0800","caller":"service/article.go:117","msg":"GetListByAuthor GetFirstPage Fail","error":"redis: nil"}
+{"level":"ERROR","time":"2024-05-05T11:25:29.657+0800","caller":"service/article.go:117","msg":"GetListByAuthor GetFirstPage Fail","error":"redis: nil"}
+{"level":"ERROR","time":"2024-05-05T11:25:48.750+0800","caller":"service/article.go:117","msg":"GetListByAuthor GetFirstPage Fail","error":"redis: nil"}
+{"level":"INFO","time":"2024-05-05T11:29:42.714+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-05T11:29:46.845+0800","caller":"article/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"INFO","time":"2024-05-05T11:30:30.328+0800","caller":"article/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"INFO","time":"2024-05-05T11:30:33.481+0800","caller":"service/article.go:93","msg":"创作者查询文章细节走了缓存"}
+{"level":"ERROR","time":"2024-05-05T11:30:48.430+0800","caller":"service/article.go:119","msg":"GetListByAuthor GetFirstPage Fail","error":"redis: nil"}
+{"level":"INFO","time":"2024-05-05T11:32:21.879+0800","caller":"article/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"ERROR","time":"2024-05-05T11:32:23.291+0800","caller":"cache/article_redis.go:79","msg":"GetFirstPage Get Fail","error":"redis: nil"}
+{"level":"ERROR","time":"2024-05-05T11:32:23.291+0800","caller":"service/article.go:119","msg":"GetListByAuthor GetFirstPage Fail","error":"redis: nil"}
+{"level":"ERROR","time":"2024-05-05T11:38:00.156+0800","caller":"cache/article_redis.go:79","msg":"GetFirstPage Get Fail","error":"redis: nil"}
+{"level":"ERROR","time":"2024-05-05T11:38:00.157+0800","caller":"service/article.go:119","msg":"GetListByAuthor GetFirstPage Fail","error":"redis: nil"}
+{"level":"ERROR","time":"2024-05-05T11:38:36.375+0800","caller":"cache/article_redis.go:79","msg":"GetFirstPage Get Fail","error":"redis: nil"}
+{"level":"ERROR","time":"2024-05-05T11:38:36.375+0800","caller":"service/article.go:119","msg":"GetListByAuthor GetFirstPage Fail","error":"redis: nil"}
+{"level":"INFO","time":"2024-05-05T11:39:07.952+0800","caller":"article/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"INFO","time":"2024-05-05T11:39:08.856+0800","caller":"article/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"ERROR","time":"2024-05-05T11:39:13.229+0800","caller":"cache/article_redis.go:79","msg":"GetFirstPage Get Fail","error":"redis: nil"}
+{"level":"ERROR","time":"2024-05-05T11:39:13.229+0800","caller":"service/article.go:119","msg":"GetListByAuthor GetFirstPage Fail","error":"redis: nil"}
+{"level":"INFO","time":"2024-05-05T11:39:20.473+0800","caller":"service/article.go:139","msg":"创作者查询文章列表 查询数据库 并设置了缓存"}
+{"level":"ERROR","time":"2024-05-05T11:39:28.893+0800","caller":"cache/article_redis.go:79","msg":"GetFirstPage Get Fail","error":"redis: nil"}
+{"level":"ERROR","time":"2024-05-05T11:39:28.893+0800","caller":"service/article.go:119","msg":"GetListByAuthor GetFirstPage Fail","error":"redis: nil"}
+{"level":"INFO","time":"2024-05-05T11:41:33.150+0800","caller":"article/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"ERROR","time":"2024-05-05T11:41:36.855+0800","caller":"cache/article_redis.go:79","msg":"GetFirstPage Get Fail","error":"redis: nil"}
+{"level":"ERROR","time":"2024-05-05T11:41:36.855+0800","caller":"service/article.go:119","msg":"创作者查询文章列表没查到缓存"}
+{"level":"INFO","time":"2024-05-05T11:41:36.866+0800","caller":"service/article.go:138","msg":"创作者查询文章列表 在没查到缓存的情况 查询了数据库 并设置了缓存"}
+{"level":"ERROR","time":"2024-05-05T11:41:40.636+0800","caller":"service/article.go:116","msg":"创作者查询文章列表走了缓存"}
+{"level":"ERROR","time":"2024-05-05T11:41:58.260+0800","caller":"service/article.go:116","msg":"创作者查询文章列表走了缓存"}
+{"level":"INFO","time":"2024-05-05T14:38:38.207+0800","caller":"service/article.go:138","msg":"创作者查询文章列表 在没查到缓存的情况 查询了数据库 并设置了缓存"}
+{"level":"INFO","time":"2024-05-05T14:38:47.537+0800","caller":"service/article.go:138","msg":"创作者查询文章列表 在没查到缓存的情况 查询了数据库 并设置了缓存"}
+{"level":"INFO","time":"2024-05-05T14:38:54.142+0800","caller":"service/article.go:138","msg":"创作者查询文章列表 在没查到缓存的情况 查询了数据库 并设置了缓存"}
+{"level":"ERROR","time":"2024-05-05T14:39:04.035+0800","caller":"cache/article_redis.go:79","msg":"GetFirstPage Get Fail","error":"redis: nil"}
+{"level":"ERROR","time":"2024-05-05T14:39:04.035+0800","caller":"service/article.go:119","msg":"创作者查询文章列表没查到缓存"}
+{"level":"INFO","time":"2024-05-05T14:39:04.037+0800","caller":"service/article.go:138","msg":"创作者查询文章列表 在没查到缓存的情况 查询了数据库 并设置了缓存"}
+{"level":"ERROR","time":"2024-05-05T14:39:08.339+0800","caller":"service/article.go:116","msg":"创作者查询文章列表走了缓存"}
+{"level":"ERROR","time":"2024-05-05T14:39:10.090+0800","caller":"service/article.go:116","msg":"创作者查询文章列表走了缓存"}
+{"level":"INFO","time":"2024-05-05T14:44:02.683+0800","caller":"article/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"INFO","time":"2024-05-05T14:44:04.026+0800","caller":"cache/article_redis.go:26","msg":"删除首页缓存"}
+{"level":"INFO","time":"2024-05-05T15:54:23.434+0800","caller":"article/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"INFO","time":"2024-05-05T15:54:24.938+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"ERROR","time":"2024-05-05T15:57:30.251+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-05T15:57:40.244+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-05T15:57:47.114+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-05T15:58:25.785+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-05T16:02:21.921+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-05T16:02:49.878+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"INFO","time":"2024-05-05T16:09:17.364+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-05T16:09:19.495+0800","caller":"article/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"INFO","time":"2024-05-05T16:09:48.743+0800","caller":"cache/article_redis.go:26","msg":"删除首页缓存"}
+{"level":"ERROR","time":"2024-05-05T16:09:58.931+0800","caller":"service/user.go:40","msg":"CheckUserNameExits 用户名存在"}
+{"level":"ERROR","time":"2024-05-05T16:10:01.731+0800","caller":"service/user.go:40","msg":"CheckUserNameExits 用户名存在"}
+{"level":"ERROR","time":"2024-05-05T16:10:02.451+0800","caller":"service/user.go:40","msg":"CheckUserNameExits 用户名存在"}
+{"level":"INFO","time":"2024-05-05T16:10:05.457+0800","caller":"cache/article_redis.go:26","msg":"删除首页缓存"}
+{"level":"INFO","time":"2024-05-05T16:10:07.955+0800","caller":"cache/article_redis.go:26","msg":"删除首页缓存"}
+{"level":"INFO","time":"2024-05-05T17:43:13.649+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"ERROR","time":"2024-05-05T17:52:14.822+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"invalid character 'È' looking for beginning of value"}
+{"level":"INFO","time":"2024-05-05T19:41:17.411+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-06T19:48:13.386+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-06T19:53:20.017+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-06T20:56:17.309+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-06T21:02:41.890+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-06T21:45:51.349+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-07T18:16:45.915+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-07T20:49:51.042+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"ERROR","time":"2024-05-07T20:51:55.832+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"INFO","time":"2024-05-08T14:48:22.909+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-08T21:06:44.123+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-08T21:29:53.630+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-09T15:37:20.747+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"ERROR","time":"2024-05-09T15:42:59.877+0800","caller":"service/user.go:40","msg":"CheckUserNameExits 用户名存在"}
+{"level":"INFO","time":"2024-05-09T19:43:53.138+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-10T15:55:55.275+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-10T20:36:04.303+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}

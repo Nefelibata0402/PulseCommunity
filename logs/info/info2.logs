@@ -1,0 +1,36 @@
+{"level":"INFO","time":"2024-05-10T21:25:49.300+0800","caller":"router/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8302"}
+{"level":"INFO","time":"2024-05-11T10:24:55.764+0800","caller":"article/router.go:59","msg":"register grpc addr: ","addr":"127.0.0.1:8304"}
+{"level":"INFO","time":"2024-05-11T10:24:58.800+0800","caller":"samarax/batch_handler.go:31","msg":"消费者一个批次开始"}
+{"level":"INFO","time":"2024-05-11T10:24:59.815+0800","caller":"samarax/batch_handler.go:70","msg":"消费一批消息","消息值":[]}
+{"level":"INFO","time":"2024-05-11T10:24:59.815+0800","caller":"samarax/batch_handler.go:31","msg":"消费者一个批次开始"}
+{"level":"INFO","time":"2024-05-11T10:25:00.376+0800","caller":"service/article.go:202","msg":"从交互接口缓存中得到交互信息"}
+{"level":"INFO","time":"2024-05-11T10:25:00.392+0800","caller":"service/article.go:195","msg":"读者查询文章列表 在没查到缓存的情况 查询了数据库 并设置了缓存"}
+{"level":"INFO","time":"2024-05-11T10:25:00.817+0800","caller":"samarax/batch_handler.go:70","msg":"消费一批消息","消息值":[]}
+{"level":"INFO","time":"2024-05-11T10:25:00.817+0800","caller":"samarax/batch_handler.go:31","msg":"消费者一个批次开始"}
+{"level":"INFO","time":"2024-05-11T10:25:00.921+0800","caller":"article/producer.go:45","msg":"生产者发送一条消息","读发送的值":{"ArticleId":9179137432354817,"UserId":8611216658268161}}
+{"level":"INFO","time":"2024-05-11T10:25:01.843+0800","caller":"samarax/batch_handler.go:70","msg":"消费一批消息","消息值":[{"ArticleId":9179137432354817,"UserId":8611216658268161}]}
+{"level":"INFO","time":"2024-05-11T10:25:01.843+0800","caller":"samarax/batch_handler.go:31","msg":"消费者一个批次开始"}
+{"level":"INFO","time":"2024-05-11T10:25:02.847+0800","caller":"samarax/batch_handler.go:70","msg":"消费一批消息","消息值":[]}
+{"level":"INFO","time":"2024-05-11T10:25:02.847+0800","caller":"samarax/batch_handler.go:31","msg":"消费者一个批次开始"}
+{"level":"INFO","time":"2024-05-11T10:25:03.849+0800","caller":"samarax/batch_handler.go:70","msg":"消费一批消息","消息值":[]}
+{"level":"INFO","time":"2024-05-11T10:25:03.849+0800","caller":"samarax/batch_handler.go:31","msg":"消费者一个批次开始"}
+{"level":"INFO","time":"2024-05-11T10:25:04.851+0800","caller":"samarax/batch_handler.go:70","msg":"消费一批消息","消息值":[]}
+{"level":"INFO","time":"2024-05-11T10:25:04.851+0800","caller":"samarax/batch_handler.go:31","msg":"消费者一个批次开始"}
+{"level":"INFO","time":"2024-05-11T10:25:05.854+0800","caller":"samarax/batch_handler.go:70","msg":"消费一批消息","消息值":[]}
+{"level":"INFO","time":"2024-05-11T10:25:05.854+0800","caller":"samarax/batch_handler.go:31","msg":"消费者一个批次开始"}
+{"level":"INFO","time":"2024-05-11T10:25:06.857+0800","caller":"samarax/batch_handler.go:70","msg":"消费一批消息","消息值":[]}
+{"level":"INFO","time":"2024-05-11T10:25:06.857+0800","caller":"samarax/batch_handler.go:31","msg":"消费者一个批次开始"}
+{"level":"INFO","time":"2024-05-11T10:25:07.859+0800","caller":"samarax/batch_handler.go:70","msg":"消费一批消息","消息值":[]}
+{"level":"INFO","time":"2024-05-11T10:25:07.859+0800","caller":"samarax/batch_handler.go:31","msg":"消费者一个批次开始"}
+{"level":"INFO","time":"2024-05-11T10:25:08.862+0800","caller":"samarax/batch_handler.go:70","msg":"消费一批消息","消息值":[]}
+{"level":"INFO","time":"2024-05-11T10:25:08.862+0800","caller":"samarax/batch_handler.go:31","msg":"消费者一个批次开始"}
+{"level":"INFO","time":"2024-05-11T10:25:09.864+0800","caller":"samarax/batch_handler.go:70","msg":"消费一批消息","消息值":[]}
+{"level":"INFO","time":"2024-05-11T10:25:09.864+0800","caller":"samarax/batch_handler.go:31","msg":"消费者一个批次开始"}
+{"level":"INFO","time":"2024-05-11T10:25:10.867+0800","caller":"samarax/batch_handler.go:70","msg":"消费一批消息","消息值":[]}
+{"level":"INFO","time":"2024-05-11T10:25:10.867+0800","caller":"samarax/batch_handler.go:31","msg":"消费者一个批次开始"}
+{"level":"INFO","time":"2024-05-11T10:25:11.870+0800","caller":"samarax/batch_handler.go:70","msg":"消费一批消息","消息值":[]}
+{"level":"INFO","time":"2024-05-11T10:25:11.870+0800","caller":"samarax/batch_handler.go:31","msg":"消费者一个批次开始"}
+{"level":"INFO","time":"2024-05-11T10:25:12.873+0800","caller":"samarax/batch_handler.go:70","msg":"消费一批消息","消息值":[]}
+{"level":"INFO","time":"2024-05-11T10:25:12.873+0800","caller":"samarax/batch_handler.go:31","msg":"消费者一个批次开始"}
+{"level":"INFO","time":"2024-05-11T10:25:13.876+0800","caller":"samarax/batch_handler.go:70","msg":"消费一批消息","消息值":[]}
+{"level":"INFO","time":"2024-05-11T10:25:13.876+0800","caller":"samarax/batch_handler.go:31","msg":"消费者一个批次开始"}

@@ -1,6 +1,7 @@
 package config
 
 import (
+	"github.com/redis/go-redis/v9"
 	"github.com/spf13/viper"
 	"log"
 	"newsCenter/logs"
@@ -53,6 +54,7 @@ func InitConfig() *Config {
 	conf.InitZapLog()
 	conf.ReadEtcdConfig()
 	conf.InitJaegerConfig()
+	conf.ReadRedisConfig()
 	return conf
 }
 
@@ -88,6 +90,14 @@ func (c *Config) ReadEtcdConfig() {
 	}
 	ec.Addr = addr
 	c.EtcdConfig = ec
+}
+
+func (c *Config) ReadRedisConfig() *redis.Options {
+	return &redis.Options{
+		Addr:     c.viper.GetString("redis.host") + ":" + c.viper.GetString("redis.port"),
+		Password: c.viper.GetString("redis.password"),
+		DB:       c.viper.GetInt("db"),
+	}
 }
 
 func (c *Config) InitJaegerConfig() {

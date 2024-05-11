@@ -2,17 +2,15 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
+	"newsCenter/cmd/interfaces/article"
 	"newsCenter/cmd/interfaces/user"
-	"newsCenter/cmd/middlewares"
 )
 
 func initRouter(r *gin.Engine) {
-	router := r.Group("/newsCenter")
-	usr := router.Group("user")
-	usr.POST("/register", user.Register)
-	usr.POST("/login", user.Login)
-
-	art := router.Group("/article")
-	art.Use(middlewares.TokenVerify())
-	//art.POST("/publish", article.Publish)
+	user.InitUserRouter(r)
+	//redisClient := redis.NewClient(config.ApiConfig.ReadRedisConfig())
+	//builder := ratelimit.NewBuilder(redisClient, time.Second, 1)
+	//slideWindow := builder.Build()
+	//r.Use(slideWindow)
+	article.InitArticleRouter(r)
 }

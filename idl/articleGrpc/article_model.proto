@@ -1,0 +1,20 @@
+syntax = "proto3";
+package articleGrpc;
+option go_package = "article/application/service/article";
+
+import "userGrpc/user_model.proto";
+
+message Article {
+  int64 id = 1; // 文章唯一标识
+  userGrpc.User author = 2; // 文章作者信息
+  string content = 3; // 文章内容
+  string category = 4; // 文章分类
+  string title = 5; // 文章标题
+  int64 read_cnt = 6; // 阅读数
+  int64 like_cnt = 7; //喜欢数
+  int64 collect_cnt = 8;//收藏数
+  bool liked = 9;//是否喜欢
+  bool collected = 10; //是否收藏
+  string create_at = 11;
+  string update_at = 12;
+}

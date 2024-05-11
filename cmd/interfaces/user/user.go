@@ -21,6 +21,14 @@ func Register(c *gin.Context) {
 		return
 	}
 	//2.校验参数
+	if err := userModel.ValidateRegisterRequest(&registerReq); err != nil {
+		c.JSON(http.StatusOK, gin.H{
+			"status_code": unierr.UserNameOrPasswordOrConfirmPassword.ErrCode,
+			"status_msg":  unierr.UserNameOrPasswordOrConfirmPassword.ErrMsg,
+		})
+		return
+	}
+
 	err := registerReq.Verify()
 	if err != nil {
 		c.JSON(http.StatusOK, gin.H{
@@ -39,7 +47,10 @@ func Register(c *gin.Context) {
 	}
 	resp, err := UserServiceClient.Register(ctx, req)
 	if err != nil {
-		c.JSON(http.StatusOK, unierr.ErrorInternal)
+		c.JSON(http.StatusOK, gin.H{
+			"status_code": unierr.ErrorInternal.ErrCode,
+			"status_msg":  unierr.UserNameOrPassword.ErrMsg,
+		})
 		return
 	}
 	//4.返回结果
@@ -59,8 +70,16 @@ func Login(c *gin.Context) {
 			"status_code": unierr.ErrorParams.ErrCode,
 			"status_msg":  unierr.ErrorParams.ErrMsg,
 		})
+		return
 	}
 	//2.校验参数
+	if err := userModel.ValidateLoginRequest(&LoginReq); err != nil {
+		c.JSON(http.StatusOK, gin.H{
+			"status_code": unierr.UserNameOrPassword.ErrCode,
+			"status_msg":  unierr.UserNameOrPassword.ErrMsg,
+		})
+		return
+	}
 	//3.调用grpc服务
 	ctx, cancel := context.WithTimeout(context.Background(), 180*time.Second)
 	defer cancel()
@@ -70,7 +89,10 @@ func Login(c *gin.Context) {
 	}
 	resp, err := UserServiceClient.Login(ctx, req)
 	if err != nil {
-		c.JSON(http.StatusOK, unierr.ErrorInternal)
+		c.JSON(http.StatusOK, gin.H{
+			"status_code": unierr.ErrorInternal.ErrCode,
+			"status_msg":  unierr.UserNameOrPassword.ErrMsg,
+		})
 		return
 	}
 	//4.返回结果

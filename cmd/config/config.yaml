@@ -2,9 +2,9 @@ server:
   name: "interfaces"
   addr: "127.0.0.1:8300"
 zap:
-  debugFileName: "/newsCenter/logs/debug/newsCenter-debug.logs"
-  infoFileName: "/newsCenter/logs/info/newsCenter-info.logs"
-  warnFileName: "/newsCenter/logs/error/newsCenter-error.logs"
+  debugFileName: "/Users/wangcheng/Documents/golang/src/newsCenter/logs/error/error.logs"
+  infoFileName: "/Users/wangcheng/Documents/golang/src/newsCenter/logs/error/error.logs"
+  warnFileName: "/Users/wangcheng/Documents/golang/src/newsCenter/logs/error/error.logs"
   maxSize: 500,
   maxAge: 28,
   MaxBackups: 3,
@@ -17,5 +17,10 @@ mysql:
   host: 127.0.0.1
   port: 3310
   db: newsCenter
+redis:
+  host: "localhost"
+  port: 6379
+  password: ""
+  db: 0
 jaeger:
   endpoints: "http://localhost:14268/api/traces"

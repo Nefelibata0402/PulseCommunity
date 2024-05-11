@@ -70,7 +70,7 @@ func (r *Register) Stop() {
 
 // register 注册节点
 func (r *Register) register() error {
-	leaseCtx, cancel := context.WithTimeout(context.Background(), time.Duration(r.DialTimeout)*time.Second)
+	leaseCtx, cancel := context.WithTimeout(context.Background(), time.Duration(r.DialTimeout)*time.Second*180)
 	defer cancel()
 
 	leaseResp, err := r.cli.Grant(leaseCtx, r.srvTTL)

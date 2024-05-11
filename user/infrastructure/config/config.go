@@ -1,7 +1,6 @@
 package config
 
 import (
-	"fmt"
 	"github.com/go-redis/redis/v8"
 	"github.com/spf13/viper"
 	"log"
@@ -64,8 +63,6 @@ func InitConfig() *Config {
 	conf.Viper.AddConfigPath(workDir + "/user/infrastructure/config")
 	err := conf.Viper.ReadInConfig()
 	if err != nil {
-
-		fmt.Println("1")
 		log.Fatalln(err)
 	}
 	if err != nil {
