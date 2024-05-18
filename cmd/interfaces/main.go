@@ -4,6 +4,8 @@ import (
 	"github.com/gin-gonic/gin"
 	"newsCenter/cmd/config"
 	"newsCenter/cmd/interfaces/article"
+	"newsCenter/cmd/interfaces/ranking"
+	"newsCenter/cmd/interfaces/search"
 	"newsCenter/cmd/interfaces/user"
 )
 
@@ -11,6 +13,8 @@ func initAll(r *gin.Engine) {
 	initRouter(r)
 	user.InitRpcUserClient()
 	article.InitRpcArticleClient()
+	ranking.InitRpcRankingClient()
+	search.InitRpcSearchClient()
 	config.InitConfig()
 }
 

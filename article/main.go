@@ -11,7 +11,7 @@ import (
 	"newsCenter/common/snowflake"
 )
 
-func initAll(r *gin.Engine) {
+func initAll() {
 	config.InitConfig()
 	//grpc服务注册
 	RegisterGrpc()
@@ -42,8 +42,7 @@ func initAll(r *gin.Engine) {
 
 func main() {
 	r := gin.New()
-	//r.Use(logs.GinLogger())
-	initAll(r)
+	initAll()
 	err := r.Run(config.ArticleConfig.ServerConfig.Addr)
 	if err != nil {
 		return

@@ -1,0 +1,10 @@
+syntax = "proto3";
+package searchGrpc;
+option go_package = "search/application/service/search";
+
+message User {
+  int64 id = 1;
+  string nickname = 2;
+  string email = 3;
+  string phone = 4;
+}

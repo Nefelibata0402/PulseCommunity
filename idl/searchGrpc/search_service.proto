@@ -1,0 +1,30 @@
+syntax = "proto3";
+package searchGrpc;
+option go_package = "search/application/service/search";
+
+import "user_m.proto";
+import "article_m.proto";
+
+//message UserResult {
+//  repeated User users =1;
+//}
+//
+//message ArticleResult {
+//  repeated Article articles = 1;
+//}
+
+message SearchRequest {
+  string expression = 1;
+  int64 uid = 2;
+}
+
+message SearchResponse {
+  repeated User user = 1;
+  repeated Article article = 2;
+  int32 status_code = 3;
+  string status_msg = 4;
+}
+
+service SearchService {
+  rpc Search(SearchRequest) returns (SearchResponse);
+}

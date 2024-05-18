@@ -31,7 +31,7 @@ func (b *BatchHandler[T]) ConsumeClaim(session sarama.ConsumerGroupSession, clai
 		zap.L().Info("消费者一个批次开始")
 		batch := make([]*sarama.ConsumerMessage, 0, batchSize)
 		ts := make([]T, 0, batchSize)
-		ctx, cancel := context.WithTimeout(context.Background(), time.Second)
+		ctx, cancel := context.WithTimeout(context.Background(), 60*time.Second)
 		var done = false
 		for i := 0; i < batchSize && !done; i++ {
 			select {

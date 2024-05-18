@@ -22,13 +22,24 @@ const _ = grpc.SupportPackageIsVersion7
 //
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
 type ArticleServiceClient interface {
+	// 编辑文章
 	Edit(ctx context.Context, in *EditRequest, opts ...grpc.CallOption) (*EditResponse, error)
+	// 发布文章
 	Publish(ctx context.Context, in *PublishRequest, opts ...grpc.CallOption) (*PublishResponse, error)
+	// 获得文章具体信息
 	GetDetail(ctx context.Context, in *GetDetailRequest, opts ...grpc.CallOption) (*GetDetailResponse, error)
+	// 撤回文章
 	WithdrawArticle(ctx context.Context, in *WithdrawRequest, opts ...grpc.CallOption) (*WithdrawResponse, error)
+	// 作者得到自己发布的文章
 	GetList(ctx context.Context, in *GetListByAuthorRequest, opts ...grpc.CallOption) (*GetListByAuthorResponse, error)
+	// 阅读计数
 	Read(ctx context.Context, in *ReadRequest, opts ...grpc.CallOption) (*ReadResponse, error)
+	// 喜欢
 	Like(ctx context.Context, in *LikeRequest, opts ...grpc.CallOption) (*LikeResponse, error)
+	// 获取文章列表根据偏移量和时间 给热榜模块调用
+	GetArticleList(ctx context.Context, in *GetArticleListRequest, opts ...grpc.CallOption) (*GetArticleListResponse, error)
+	// 根据文章id获取交互接口
+	GetInteractiveByIds(ctx context.Context, in *GetInteractiveByIdsRequest, opts ...grpc.CallOption) (*GetInteractiveByIdsResponse, error)
 }
 
 type articleServiceClient struct {
@@ -102,17 +113,46 @@ func (c *articleServiceClient) Like(ctx context.Context, in *LikeRequest, opts .
 	return out, nil
 }
 
+func (c *articleServiceClient) GetArticleList(ctx context.Context, in *GetArticleListRequest, opts ...grpc.CallOption) (*GetArticleListResponse, error) {
+	out := new(GetArticleListResponse)
+	err := c.cc.Invoke(ctx, "/articleGrpc.ArticleService/GetArticleList", in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *articleServiceClient) GetInteractiveByIds(ctx context.Context, in *GetInteractiveByIdsRequest, opts ...grpc.CallOption) (*GetInteractiveByIdsResponse, error) {
+	out := new(GetInteractiveByIdsResponse)
+	err := c.cc.Invoke(ctx, "/articleGrpc.ArticleService/GetInteractiveByIds", in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // ArticleServiceServer is the server API for ArticleService service.
 // All implementations must embed UnimplementedArticleServiceServer
 // for forward compatibility
 type ArticleServiceServer interface {
+	// 编辑文章
 	Edit(context.Context, *EditRequest) (*EditResponse, error)
+	// 发布文章
 	Publish(context.Context, *PublishRequest) (*PublishResponse, error)
+	// 获得文章具体信息
 	GetDetail(context.Context, *GetDetailRequest) (*GetDetailResponse, error)
+	// 撤回文章
 	WithdrawArticle(context.Context, *WithdrawRequest) (*WithdrawResponse, error)
+	// 作者得到自己发布的文章
 	GetList(context.Context, *GetListByAuthorRequest) (*GetListByAuthorResponse, error)
+	// 阅读计数
 	Read(context.Context, *ReadRequest) (*ReadResponse, error)
+	// 喜欢
 	Like(context.Context, *LikeRequest) (*LikeResponse, error)
+	// 获取文章列表根据偏移量和时间 给热榜模块调用
+	GetArticleList(context.Context, *GetArticleListRequest) (*GetArticleListResponse, error)
+	// 根据文章id获取交互接口
+	GetInteractiveByIds(context.Context, *GetInteractiveByIdsRequest) (*GetInteractiveByIdsResponse, error)
 	mustEmbedUnimplementedArticleServiceServer()
 }
 
@@ -140,6 +180,12 @@ func (UnimplementedArticleServiceServer) Read(context.Context, *ReadRequest) (*R
 }
 func (UnimplementedArticleServiceServer) Like(context.Context, *LikeRequest) (*LikeResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method Like not implemented")
+}
+func (UnimplementedArticleServiceServer) GetArticleList(context.Context, *GetArticleListRequest) (*GetArticleListResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method GetArticleList not implemented")
+}
+func (UnimplementedArticleServiceServer) GetInteractiveByIds(context.Context, *GetInteractiveByIdsRequest) (*GetInteractiveByIdsResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method GetInteractiveByIds not implemented")
 }
 func (UnimplementedArticleServiceServer) mustEmbedUnimplementedArticleServiceServer() {}
 
@@ -280,6 +326,42 @@ func _ArticleService_Like_Handler(srv interface{}, ctx context.Context, dec func
 	return interceptor(ctx, in, info, handler)
 }
 
+func _ArticleService_GetArticleList_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(GetArticleListRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ArticleServiceServer).GetArticleList(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/articleGrpc.ArticleService/GetArticleList",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ArticleServiceServer).GetArticleList(ctx, req.(*GetArticleListRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _ArticleService_GetInteractiveByIds_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(GetInteractiveByIdsRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(ArticleServiceServer).GetInteractiveByIds(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/articleGrpc.ArticleService/GetInteractiveByIds",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(ArticleServiceServer).GetInteractiveByIds(ctx, req.(*GetInteractiveByIdsRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // ArticleService_ServiceDesc is the grpc.ServiceDesc for ArticleService service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -314,6 +396,14 @@ var ArticleService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "Like",
 			Handler:    _ArticleService_Like_Handler,
+		},
+		{
+			MethodName: "GetArticleList",
+			Handler:    _ArticleService_GetArticleList_Handler,
+		},
+		{
+			MethodName: "GetInteractiveByIds",
+			Handler:    _ArticleService_GetInteractiveByIds_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},

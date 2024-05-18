@@ -1,0 +1,46 @@
+server:
+  name: "search"
+  addr: "127.0.0.1:8307"
+zap:
+  debugFileName: "/Users/wangcheng/Documents/golang/src/newsCenter/logs/debug/debug.logs"
+  infoFileName: "/Users/wangcheng/Documents/golang/src/newsCenter/logs/info/info.logs"
+  warnFileName: "/Users/wangcheng/Documents/golang/src/newsCenter/logs/error/error.logs"
+  maxSize: 5,
+  maxAge: 280,
+  MaxBackups: 3,
+etcd:
+  addr:
+    - "127.0.0.1:12379"
+mysql:
+  username: root
+  password: root
+  host: 127.0.0.1
+  port: 3310
+  db: newsCenter
+redis:
+  host: "localhost"
+  port: 6379
+  password: ""
+  db: 0
+grpc:
+  addr: "127.0.0.1:8308"
+  name: "search"
+  version: "1.0.0"
+  weight: 2
+jwt:
+  accessExp: 7
+  refreshExp: 14
+  accessSecret: newsCenter
+  refreshSecret: newsCenter
+mongodb:
+  username: root
+  password: 123456
+  host: 127.0.0.1
+  port: 27017
+  db: newsCenter
+elasticsearch:
+  username: ""
+  password: ""
+  host: "localhost"
+  port: 9201
+

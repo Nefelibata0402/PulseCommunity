@@ -8,6 +8,7 @@ import (
 	"golang.org/x/sync/errgroup"
 	"newsCenter/article/domain/entity"
 	articleEvent "newsCenter/article/domain/event/article"
+	"newsCenter/article/domain/event/search"
 	"newsCenter/article/domain/service"
 	"newsCenter/article/infrastructure/persistence/mq"
 	"newsCenter/article/infrastructure/rpc"
@@ -19,18 +20,20 @@ import (
 
 type ArticleService struct {
 	articleGrpc.UnimplementedArticleServiceServer
-	prodecer articleEvent.Producer
-	biz      string
-	mq       sarama.Client
-	repo     service.ArticleServiceRepository
+	producerArticle articleEvent.Producer
+	producerSearch  search.Producer
+	biz             string
+	mq              sarama.Client
+	repo            service.ArticleServiceRepository
 }
 
 func New() *ArticleService {
 	return &ArticleService{
-		biz:      "article",
-		mq:       mq.New(),
-		prodecer: articleEvent.NewSaramaSyncProducer(mq.InitSyncProducer(mq.New())),
-		repo:     service.New(),
+		biz:             "article",
+		mq:              mq.New(),
+		producerArticle: articleEvent.NewSaramaSyncProducer(mq.InitSyncProducer(mq.New())),
+		producerSearch:  search.NewSaramaSyncProducer(mq.InitSyncProducer(mq.New())),
+		repo:            service.New(),
 	}
 }
 
@@ -75,6 +78,18 @@ func (article *ArticleService) Publish(c context.Context, req *articleGrpc.Publi
 		zap.L().Error("Publish Publish Fail", zap.Error(err))
 		return nil, err
 	}
+	go func() {
+		err = article.producerSearch.ProduceReadEvent(search.ReadEvent{
+			Id:      int64(req.ArticleId),
+			Title:   req.Title,
+			Status:  2,
+			Content: req.Data,
+		})
+		if err != nil {
+			zap.L().Error("Read ProduceReadEvent Fail 发送读事件失败", zap.Error(err))
+			return
+		}
+	}()
 	resp = &articleGrpc.PublishResponse{
 		StatusCode: unierr.Success.ErrCode,
 		StatusMsg:  unierr.Success.ErrMsg,
@@ -162,7 +177,7 @@ func (article *ArticleService) Read(c context.Context, req *articleGrpc.ReadRequ
 		//向消费者发送一条消息
 		//别等 太费时了
 		go func() {
-			err = article.prodecer.ProduceReadEvent(articleEvent.ReadEvent{
+			err = article.producerArticle.ProduceReadEvent(articleEvent.ReadEvent{
 				ArticleId: int64(req.ArticleId),
 				UserId:    int64(req.UserId),
 			})
@@ -281,6 +296,57 @@ func (article *ArticleService) Like(c context.Context, req *articleGrpc.LikeRequ
 	resp = &articleGrpc.LikeResponse{
 		StatusCode: unierr.Success.ErrCode,
 		StatusMsg:  unierr.Success.ErrMsg,
+	}
+	return resp, nil
+}
+
+// 获得文章列表 给热榜用
+func (article *ArticleService) GetArticleList(ctx context.Context, req *articleGrpc.GetArticleListRequest) (resp *articleGrpc.GetArticleListResponse, err error) {
+	artList, err := article.repo.GetList(ctx, req.StartTime, req.Offset, req.Limit)
+	if err != nil {
+		zap.L().Error("GetArticleList GetList Fail", zap.Error(err))
+		return nil, err
+	}
+	List := make([]*articleGrpc.Article, 0)
+	for i := 0; i < len(artList); i++ {
+		List = append(List, &articleGrpc.Article{
+			Id:       int64(artList[i].Id),
+			Author:   &userGrpc.User{Id: int64(artList[i].Author.Id)},
+			Content:  artList[i].Content,
+			Category: artList[i].Category,
+			Title:    artList[i].Title,
+			CreateAt: artList[i].CreatedAt.Format("2006-01-02 15:04:05"),
+			UpdateAt: artList[i].UpdatedAt.Format("2006-01-02 15:04:05"),
+		})
+	}
+	resp = &articleGrpc.GetArticleListResponse{
+		StatusCode:  unierr.Success.ErrCode,
+		StatusMsg:   unierr.Success.ErrMsg,
+		ArticleList: List,
+	}
+	return resp, nil
+}
+
+// 获得交互列表 给热榜用
+func (article *ArticleService) GetInteractiveByIds(c context.Context, req *articleGrpc.GetInteractiveByIdsRequest) (resp *articleGrpc.GetInteractiveByIdsResponse, err error) {
+	interactiveList, err := article.repo.GetInteractiveByIds(c, req.Biz, req.IdsList)
+	if err != nil {
+		zap.L().Error("GetInteractiveByIds GetInteractiveByIds Fail", zap.Error(err))
+		return nil, err
+	}
+	List := make([]*articleGrpc.Interactive, 0)
+	for i := 0; i < len(interactiveList); i++ {
+		List = append(List, &articleGrpc.Interactive{
+			BizId:      interactiveList[i].BizId,
+			ReadCnt:    interactiveList[i].ReadCnt,
+			LikeCnt:    interactiveList[i].LikeCnt,
+			CollectCnt: interactiveList[i].CollectCnt,
+		})
+	}
+	resp = &articleGrpc.GetInteractiveByIdsResponse{
+		StatusCode:      unierr.Success.ErrCode,
+		StatusMsg:       unierr.Success.ErrMsg,
+		InteractiveList: List,
 	}
 	return resp, nil
 }

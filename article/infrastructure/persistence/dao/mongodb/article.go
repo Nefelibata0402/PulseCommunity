@@ -148,3 +148,27 @@ func (article *ArticleMongoDB) GetPubById(ctx context.Context, id int64) (art en
 	art = convertor.ToEntity(res)
 	return art, nil
 }
+
+func (article *ArticleMongoDB) GetList(ctx context.Context, startTime int64, offset int64, limit int64) (artList []entity.Article, err error) {
+	const ArticleStatusPublished = 2
+	filter := bson.D{
+		bson.E{Key: "updated_at", Value: bson.M{"$lt": startTime}},
+		bson.E{Key: "status", Value: ArticleStatusPublished},
+	}
+	List, err := article.pubCol.Find(ctx, filter, options.Find().SetSkip(offset).SetLimit(limit))
+	if err != nil {
+		return nil, err
+	}
+	defer List.Close(ctx)
+	for List.Next(ctx) {
+		var art artil.Article
+		if err = List.Decode(&art); err != nil {
+			return nil, err
+		}
+		artList = append(artList, convertor.ToEntity(art))
+	}
+	if err = List.Err(); err != nil {
+		return nil, err
+	}
+	return artList, nil
+}

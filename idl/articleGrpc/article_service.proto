@@ -97,13 +97,55 @@ message CollectResponse{
   string status_msg = 2;
 }
 
+message GetArticleListRequest {
+  int64 start_time = 1;
+  int64 offset = 2;
+  int64 limit = 3;
+}
+
+message GetArticleListResponse {
+  int32 status_code = 1;
+  string status_msg = 2;
+  repeated Article article_list = 3;
+}
+
+message GetInteractiveByIdsRequest {
+  repeated int64 ids_list = 1;
+  string biz = 2;
+}
+
+message GetInteractiveByIdsResponse {
+  int32 status_code = 1;
+  string status_msg = 2;
+  repeated Interactive interactive_list = 3;
+}
+
+message Interactive {
+  int64 biz_id = 1;
+  int64 readCnt = 2;
+  int64 likeCnt = 3;
+  int64 collect_cnt = 4;
+  bool liked = 5;
+  bool collected = 6;
+}
 
 service ArticleService {
+  //编辑文章
   rpc Edit(EditRequest) returns(EditResponse);
+  //发布文章
   rpc Publish(PublishRequest) returns(PublishResponse);
+  //获得文章具体信息
   rpc GetDetail(GetDetailRequest) returns(GetDetailResponse);
+  //撤回文章
   rpc WithdrawArticle(WithdrawRequest) returns(WithdrawResponse);
+  //作者得到自己发布的文章
   rpc GetList(GetListByAuthorRequest) returns(GetListByAuthorResponse);
+  //阅读计数
   rpc Read(ReadRequest) returns(ReadResponse);
+  //喜欢
   rpc Like(LikeRequest) returns(LikeResponse);
+  //获取文章列表根据偏移量和时间 给热榜模块调用
+  rpc GetArticleList(GetArticleListRequest) returns(GetArticleListResponse);
+  //根据文章id获取交互接口 给热榜接口用
+  rpc GetInteractiveByIds(GetInteractiveByIdsRequest) returns(GetInteractiveByIdsResponse);
 }

@@ -1,0 +1,4 @@
+syntax = "proto3";
+package interactiveGrpc;
+//option go_package = "article/application/service/article";
+

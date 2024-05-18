@@ -1,0 +1,451 @@
+{"level":"ERROR","time":"2024-05-13T19:07:32.872+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-13T19:07:32.874+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-13T19:07:32.874+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-13T19:07:32.874+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-13T19:07:45.419+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"Token is expired"}
+{"level":"ERROR","time":"2024-05-13T19:07:45.419+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = Token is expired"}
+{"level":"ERROR","time":"2024-05-13T19:07:45.419+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = Token is expired"}
+{"level":"ERROR","time":"2024-05-13T19:07:45.419+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = Token is expired"}
+{"level":"ERROR","time":"2024-05-13T19:07:46.834+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"Token is expired"}
+{"level":"ERROR","time":"2024-05-13T19:07:46.834+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = Token is expired"}
+{"level":"ERROR","time":"2024-05-13T19:07:46.834+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = Token is expired"}
+{"level":"ERROR","time":"2024-05-13T19:07:46.834+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = Token is expired"}
+{"level":"ERROR","time":"2024-05-13T19:32:44.657+0800","caller":"discover/discover.go:115","msg":"register failed","error":"etcdserver: requested lease not found"}
+{"level":"ERROR","time":"2024-05-13T20:19:42.069+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-13T20:19:42.070+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-13T20:19:42.070+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-13T20:19:42.070+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-14T10:51:24.483+0800","caller":"cache/ranking_local_cache.go:35","msg":"Get 本地缓存失效"}
+{"level":"ERROR","time":"2024-05-14T11:04:23.682+0800","caller":"cache/ranking_local_cache.go:35","msg":"Get 本地缓存失效"}
+{"level":"ERROR","time":"2024-05-14T11:05:10.073+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"Token is expired"}
+{"level":"ERROR","time":"2024-05-14T11:05:10.073+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = Token is expired"}
+{"level":"ERROR","time":"2024-05-14T11:05:10.073+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = Token is expired"}
+{"level":"ERROR","time":"2024-05-14T11:05:10.073+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = Token is expired"}
+{"level":"ERROR","time":"2024-05-14T11:05:18.695+0800","caller":"service/article.go:265","msg":"Like InsertLikeInfo Fail","error":"重复点赞"}
+{"level":"ERROR","time":"2024-05-14T11:11:46.017+0800","caller":"cache/ranking_local_cache.go:35","msg":"Get 本地缓存失效"}
+{"level":"ERROR","time":"2024-05-14T11:12:20.291+0800","caller":"service/article.go:323","msg":"GetInteractiveByIds GetInteractiveByIds Fail","error":"record not found"}
+{"level":"ERROR","time":"2024-05-14T11:12:20.291+0800","caller":"service/article.go:319","msg":"GetInteractiveByIds GetInteractiveByIds Fail","error":"record not found"}
+{"level":"ERROR","time":"2024-05-14T11:12:20.291+0800","caller":"service/ranking.go:160","msg":"TopN GetInteractiveByIds Fail","error":"rpc error: code = Unknown desc = record not found"}
+{"level":"ERROR","time":"2024-05-14T11:12:20.291+0800","caller":"service/ranking.go:84","msg":"TopN topN Fail","error":"rpc error: code = Unknown desc = record not found"}
+{"level":"ERROR","time":"2024-05-14T11:12:27.902+0800","caller":"service/article.go:323","msg":"GetInteractiveByIds GetInteractiveByIds Fail","error":"record not found"}
+{"level":"ERROR","time":"2024-05-14T11:12:27.903+0800","caller":"service/article.go:319","msg":"GetInteractiveByIds GetInteractiveByIds Fail","error":"record not found"}
+{"level":"ERROR","time":"2024-05-14T11:12:27.903+0800","caller":"service/ranking.go:160","msg":"TopN GetInteractiveByIds Fail","error":"rpc error: code = Unknown desc = record not found"}
+{"level":"ERROR","time":"2024-05-14T11:12:27.903+0800","caller":"service/ranking.go:84","msg":"TopN topN Fail","error":"rpc error: code = Unknown desc = record not found"}
+{"level":"ERROR","time":"2024-05-14T11:12:50.767+0800","caller":"service/article.go:323","msg":"GetInteractiveByIds GetInteractiveByIds Fail","error":"record not found"}
+{"level":"ERROR","time":"2024-05-14T11:12:50.768+0800","caller":"service/article.go:319","msg":"GetInteractiveByIds GetInteractiveByIds Fail","error":"record not found"}
+{"level":"ERROR","time":"2024-05-14T11:12:50.768+0800","caller":"service/ranking.go:160","msg":"TopN GetInteractiveByIds Fail","error":"rpc error: code = Unknown desc = record not found"}
+{"level":"ERROR","time":"2024-05-14T11:12:50.768+0800","caller":"service/ranking.go:84","msg":"TopN topN Fail","error":"rpc error: code = Unknown desc = record not found"}
+{"level":"ERROR","time":"2024-05-14T11:13:44.301+0800","caller":"service/article.go:323","msg":"GetInteractiveByIds GetInteractiveByIds Fail","error":"record not found"}
+{"level":"ERROR","time":"2024-05-14T11:13:44.301+0800","caller":"service/article.go:319","msg":"GetInteractiveByIds GetInteractiveByIds Fail","error":"record not found"}
+{"level":"ERROR","time":"2024-05-14T11:13:44.302+0800","caller":"service/ranking.go:160","msg":"TopN GetInteractiveByIds Fail","error":"rpc error: code = Unknown desc = record not found"}
+{"level":"ERROR","time":"2024-05-14T11:13:44.302+0800","caller":"service/ranking.go:84","msg":"TopN topN Fail","error":"rpc error: code = Unknown desc = record not found"}
+{"level":"ERROR","time":"2024-05-14T11:17:30.844+0800","caller":"service/article.go:209","msg":"GetInteractive Get Fail","error":"record not found"}
+{"level":"ERROR","time":"2024-05-14T11:17:30.845+0800","caller":"service/article.go:199","msg":"Read GetInteractive Fail","error":"record not found"}
+{"level":"ERROR","time":"2024-05-14T11:17:30.850+0800","caller":"service/article.go:241","msg":"Read Wait Fail","error":"record not found"}
+{"level":"ERROR","time":"2024-05-14T11:18:40.973+0800","caller":"service/article.go:209","msg":"GetInteractive Get Fail","error":"record not found"}
+{"level":"ERROR","time":"2024-05-14T11:18:40.973+0800","caller":"service/article.go:199","msg":"Read GetInteractive Fail","error":"record not found"}
+{"level":"ERROR","time":"2024-05-14T11:18:40.975+0800","caller":"service/article.go:241","msg":"Read Wait Fail","error":"record not found"}
+{"level":"ERROR","time":"2024-05-14T11:18:42.615+0800","caller":"service/article.go:209","msg":"GetInteractive Get Fail","error":"record not found"}
+{"level":"ERROR","time":"2024-05-14T11:18:42.616+0800","caller":"service/article.go:199","msg":"Read GetInteractive Fail","error":"record not found"}
+{"level":"ERROR","time":"2024-05-14T11:18:42.616+0800","caller":"service/article.go:241","msg":"Read Wait Fail","error":"record not found"}
+{"level":"ERROR","time":"2024-05-14T11:18:53.082+0800","caller":"service/article.go:209","msg":"GetInteractive Get Fail","error":"record not found"}
+{"level":"ERROR","time":"2024-05-14T11:18:53.082+0800","caller":"service/article.go:199","msg":"Read GetInteractive Fail","error":"record not found"}
+{"level":"ERROR","time":"2024-05-14T11:18:53.082+0800","caller":"service/article.go:241","msg":"Read Wait Fail","error":"record not found"}
+{"level":"ERROR","time":"2024-05-14T11:19:01.955+0800","caller":"service/article.go:209","msg":"GetInteractive Get Fail","error":"record not found"}
+{"level":"ERROR","time":"2024-05-14T11:19:01.955+0800","caller":"service/article.go:199","msg":"Read GetInteractive Fail","error":"record not found"}
+{"level":"ERROR","time":"2024-05-14T11:19:01.955+0800","caller":"service/article.go:241","msg":"Read Wait Fail","error":"record not found"}
+{"level":"ERROR","time":"2024-05-14T11:25:11.719+0800","caller":"cache/ranking_local_cache.go:35","msg":"Get 本地缓存失效"}
+{"level":"ERROR","time":"2024-05-14T11:49:42.421+0800","caller":"discover/discover.go:115","msg":"register failed","error":"etcdserver: requested lease not found"}
+{"level":"ERROR","time":"2024-05-14T12:16:44.936+0800","caller":"discover/discover.go:115","msg":"register failed","error":"etcdserver: requested lease not found"}
+{"level":"ERROR","time":"2024-05-16T18:50:26.981+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-16T18:50:26.983+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-16T18:50:26.983+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-16T18:50:26.983+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-16T18:52:47.439+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-16T18:52:47.440+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-16T18:52:47.440+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-16T18:52:47.440+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-16T18:53:23.881+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-16T18:53:23.882+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-16T18:53:23.882+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-16T18:53:23.882+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-16T19:10:01.745+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"Token is expired"}
+{"level":"ERROR","time":"2024-05-16T19:10:01.747+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = Token is expired"}
+{"level":"ERROR","time":"2024-05-16T19:10:01.747+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = Token is expired"}
+{"level":"ERROR","time":"2024-05-16T19:10:01.747+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = Token is expired"}
+{"level":"ERROR","time":"2024-05-16T19:10:12.171+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-16T19:10:12.172+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-16T19:10:12.172+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-16T19:10:12.172+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-16T19:10:19.457+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"Token is expired"}
+{"level":"ERROR","time":"2024-05-16T19:10:19.458+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = Token is expired"}
+{"level":"ERROR","time":"2024-05-16T19:10:19.458+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = Token is expired"}
+{"level":"ERROR","time":"2024-05-16T19:10:19.458+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = Token is expired"}
+{"level":"ERROR","time":"2024-05-16T19:11:46.890+0800","caller":"service/article.go:209","msg":"GetInteractive Get Fail","error":"record not found"}
+{"level":"ERROR","time":"2024-05-16T19:11:46.890+0800","caller":"service/article.go:199","msg":"Read GetInteractive Fail","error":"record not found"}
+{"level":"ERROR","time":"2024-05-16T19:11:46.901+0800","caller":"service/article.go:186","msg":"GetArticleById GetPubById Fail","error":"mongo: no documents in result"}
+{"level":"ERROR","time":"2024-05-16T19:11:46.905+0800","caller":"service/user.go:160","msg":"GetUserInfo GetUserInfo userJson Fail","error":"record not found"}
+{"level":"ERROR","time":"2024-05-16T19:11:46.905+0800","caller":"service/article.go:182","msg":"Read Info Fail","error":"rpc error: code = Unknown desc = record not found"}
+{"level":"ERROR","time":"2024-05-16T19:11:46.905+0800","caller":"service/article.go:241","msg":"Read Wait Fail","error":"record not found"}
+{"level":"ERROR","time":"2024-05-16T19:11:54.392+0800","caller":"service/article.go:209","msg":"GetInteractive Get Fail","error":"record not found"}
+{"level":"ERROR","time":"2024-05-16T19:11:54.393+0800","caller":"service/article.go:199","msg":"Read GetInteractive Fail","error":"record not found"}
+{"level":"ERROR","time":"2024-05-16T19:11:54.396+0800","caller":"service/article.go:186","msg":"GetArticleById GetPubById Fail","error":"mongo: no documents in result"}
+{"level":"ERROR","time":"2024-05-16T19:11:54.397+0800","caller":"service/user.go:160","msg":"GetUserInfo GetUserInfo userJson Fail","error":"record not found"}
+{"level":"ERROR","time":"2024-05-16T19:11:54.397+0800","caller":"service/article.go:182","msg":"Read Info Fail","error":"rpc error: code = Unknown desc = record not found"}
+{"level":"ERROR","time":"2024-05-16T19:11:54.397+0800","caller":"service/article.go:241","msg":"Read Wait Fail","error":"record not found"}
+{"level":"ERROR","time":"2024-05-16T19:13:24.490+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-16T19:13:24.491+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-16T19:13:24.491+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-16T19:13:24.491+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-16T19:41:10.317+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:41:11.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:41:12.310+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:41:13.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:41:14.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:41:15.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:41:16.310+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:41:17.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:41:18.312+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:41:19.311+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:41:20.310+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:41:21.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:41:22.311+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:41:23.313+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:41:24.311+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:41:29.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:41:30.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:41:31.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:41:32.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:41:33.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:45:15.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:45:16.310+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:45:17.306+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:45:18.306+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:45:19.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:45:20.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:45:21.311+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:45:22.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:45:23.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:45:24.311+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:45:25.311+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:45:26.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:45:32.313+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:45:33.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:45:34.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:45:35.310+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:45:36.310+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:45:37.305+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:45:38.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:45:39.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:45:40.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:45:41.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:45:42.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:45:43.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:45:44.306+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:45:45.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:45:46.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:45:47.306+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:45:48.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:45:49.313+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:45:50.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:45:51.310+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:45:52.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:45:53.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:45:54.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:45:55.306+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:45:56.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:50:41.332+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:55:18.313+0800","caller":"job/job.go:35","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:55:23.312+0800","caller":"job/job.go:35","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:55:28.310+0800","caller":"job/job.go:35","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:57:42.316+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T19:57:47.312+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:05:18.311+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:05:23.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:05:28.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:05:33.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:06:32.314+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:06:33.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:06:34.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:06:35.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:06:36.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:06:37.310+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:06:38.310+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:06:39.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:06:40.306+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:06:41.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:06:42.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:06:43.310+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:06:44.311+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:06:45.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:06:46.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:06:47.310+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:06:48.310+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:06:49.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:06:50.306+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:06:51.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:06:52.310+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:08:02.312+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:08:03.310+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:08:04.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:08:05.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:08:06.306+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:08:07.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:08:08.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:08:09.311+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:08:10.306+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:08:11.310+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:08:12.311+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:08:13.310+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:08:14.311+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:08:15.311+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:08:16.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:08:17.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:08:18.310+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:08:19.312+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:08:20.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:08:21.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:08:22.310+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:08:50.308+0800","caller":"job/job.go:35","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:09:18.313+0800","caller":"job/job.go:35","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:09:21.317+0800","caller":"job/job.go:35","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:09:24.318+0800","caller":"job/job.go:35","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:09:26.317+0800","caller":"job/job.go:35","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:09:28.311+0800","caller":"job/job.go:35","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:11:00.321+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:11:01.310+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:11:02.306+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:11:04.311+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:11:05.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:11:06.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:11:07.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:11:08.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:11:09.310+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:11:10.305+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:11:11.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:11:12.314+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:11:13.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:11:14.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:11:15.310+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:16:26.310+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:16:27.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:16:28.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:16:29.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:16:30.306+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:16:31.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:16:32.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:16:33.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:16:34.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:16:35.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:16:36.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:16:37.311+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:16:38.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:16:39.311+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:16:40.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:16:41.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:16:42.311+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:17:27.306+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:17:28.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:17:29.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:17:30.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:17:31.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:17:32.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:17:33.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:17:34.310+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:17:35.310+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:17:36.311+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:17:37.310+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:17:38.305+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:17:39.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:17:40.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:17:41.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:17:42.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:17:43.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:17:44.306+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:17:45.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:17:46.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:17:47.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:17:48.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:17:49.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:17:50.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:17:51.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:19:17.321+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:19:18.314+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:19:19.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:19:20.312+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:19:21.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:19:22.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:19:23.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:19:24.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:19:25.312+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:19:26.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:19:27.311+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:19:28.310+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:19:29.310+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:19:30.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:19:31.313+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:19:32.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:19:33.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:25:07.316+0800","caller":"job/job.go:35","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:25:19.318+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:25:20.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:25:21.310+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:25:22.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:25:23.312+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:25:24.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:25:25.310+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:25:26.320+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:25:27.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:25:28.311+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:25:29.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:25:30.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:25:31.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:30:35.310+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:30:36.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:30:37.310+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:30:38.310+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:30:39.310+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:30:40.310+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:30:41.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:30:42.310+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:30:43.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:30:44.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:30:45.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:30:46.310+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:30:47.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:30:48.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:30:49.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:30:50.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:30:51.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:30:52.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:30:53.310+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:30:54.310+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:30:55.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:30:56.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:30:57.311+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:30:58.310+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:30:59.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:31:00.323+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:31:01.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:31:11.316+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:31:12.310+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:31:13.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:31:14.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:31:15.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:31:16.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:31:17.311+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:31:18.310+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:31:19.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:31:20.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:31:21.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:31:22.311+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:31:23.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:31:24.306+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:31:25.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:31:26.306+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:31:27.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:31:28.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:31:29.306+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:31:30.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:31:31.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:40:37.312+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:40:38.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:40:39.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:40:40.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:40:41.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:40:42.311+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:40:43.306+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:40:44.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:40:45.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:40:46.311+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:40:47.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:40:48.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:40:49.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:40:50.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:40:51.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:40:52.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:40:53.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:40:54.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:40:55.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:40:56.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:40:57.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:40:58.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:40:59.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:41:00.311+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:41:01.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:41:02.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:52:45.310+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:52:50.310+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:52:55.306+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:54:03.312+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:54:04.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:54:05.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:54:06.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:54:07.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:54:08.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:54:09.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:54:10.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:54:11.306+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:54:12.310+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:54:13.311+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:54:14.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:54:15.314+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:54:16.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:54:17.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:54:18.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:54:19.315+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:54:20.309+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:54:21.311+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:54:22.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:54:23.310+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:54:24.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:54:25.310+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:54:26.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:54:27.307+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:54:28.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T20:54:29.312+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T21:36:23.316+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T21:36:33.308+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T21:38:05.314+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T21:40:35.320+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-16T21:41:39.027+0800","caller":"job/job.go:34","msg":"获取分布式锁失败","error":"rlock: 重试机会耗尽，锁被人持有: rlock: 抢锁失败"}
+{"level":"ERROR","time":"2024-05-17T16:26:32.059+0800","caller":"search/search.go:27","msg":"es Init Fail","error":"health check timeout: Head \"http://:0\": dial tcp :0: connect: can't assign requested address: no Elasticsearch node available","errorVerbose":"no Elasticsearch node available\ngithub.com/olivere/elastic/v7.init\n\t<autogenerated>:1\nruntime.doInit1\n\t/usr/local/go/src/runtime/proc.go:7176\nruntime.doInit\n\t/usr/local/go/src/runtime/proc.go:7143\nruntime.main\n\t/usr/local/go/src/runtime/proc.go:253\nruntime.goexit\n\t/usr/local/go/src/runtime/asm_arm64.s:1222\nhealth check timeout: Head \"http://:0\": dial tcp :0: connect: can't assign requested address\ngithub.com/olivere/elastic/v7.(*Client).startupHealthcheck\n\t/Users/wangcheng/go/pkg/mod/github.com/olivere/elastic/v7@v7.0.32/client.go:1228\ngithub.com/olivere/elastic/v7.DialContext\n\t/Users/wangcheng/go/pkg/mod/github.com/olivere/elastic/v7@v7.0.32/client.go:372\ngithub.com/olivere/elastic/v7.NewClient\n\t/Users/wangcheng/go/pkg/mod/github.com/olivere/elastic/v7@v7.0.32/client.go:207\nnewsCenter/search/infrastructure/persistence/database/search.init.0\n\t/Users/wangcheng/Documents/golang/src/newsCenter/search/infrastructure/persistence/database/search/search.go:25\nruntime.doInit1\n\t/usr/local/go/src/runtime/proc.go:7176\nruntime.doInit\n\t/usr/local/go/src/runtime/proc.go:7143\nruntime.main\n\t/usr/local/go/src/runtime/proc.go:253\nruntime.goexit\n\t/usr/local/go/src/runtime/asm_arm64.s:1222"}
+{"level":"ERROR","time":"2024-05-17T16:27:31.262+0800","caller":"search/search.go:28","msg":"es Init Fail","error":"health check timeout: Head \"http://:0\": dial tcp :0: connect: can't assign requested address: no Elasticsearch node available","errorVerbose":"no Elasticsearch node available\ngithub.com/olivere/elastic/v7.init\n\t<autogenerated>:1\nruntime.doInit1\n\t/usr/local/go/src/runtime/proc.go:7176\nruntime.doInit\n\t/usr/local/go/src/runtime/proc.go:7143\nruntime.main\n\t/usr/local/go/src/runtime/proc.go:253\nruntime.goexit\n\t/usr/local/go/src/runtime/asm_arm64.s:1222\nhealth check timeout: Head \"http://:0\": dial tcp :0: connect: can't assign requested address\ngithub.com/olivere/elastic/v7.(*Client).startupHealthcheck\n\t/Users/wangcheng/go/pkg/mod/github.com/olivere/elastic/v7@v7.0.32/client.go:1228\ngithub.com/olivere/elastic/v7.DialContext\n\t/Users/wangcheng/go/pkg/mod/github.com/olivere/elastic/v7@v7.0.32/client.go:372\ngithub.com/olivere/elastic/v7.NewClient\n\t/Users/wangcheng/go/pkg/mod/github.com/olivere/elastic/v7@v7.0.32/client.go:207\nnewsCenter/search/infrastructure/persistence/database/search.init.0\n\t/Users/wangcheng/Documents/golang/src/newsCenter/search/infrastructure/persistence/database/search/search.go:26\nruntime.doInit1\n\t/usr/local/go/src/runtime/proc.go:7176\nruntime.doInit\n\t/usr/local/go/src/runtime/proc.go:7143\nruntime.main\n\t/usr/local/go/src/runtime/proc.go:253\nruntime.goexit\n\t/usr/local/go/src/runtime/asm_arm64.s:1222"}
+{"level":"ERROR","time":"2024-05-18T09:39:18.677+0800","caller":"search/search.go:28","msg":"es Init Fail","error":"health check timeout: Head \"http://:0\": dial tcp :0: connect: can't assign requested address: no Elasticsearch node available","errorVerbose":"no Elasticsearch node available\ngithub.com/olivere/elastic/v7.init\n\t<autogenerated>:1\nruntime.doInit1\n\t/usr/local/go/src/runtime/proc.go:7176\nruntime.doInit\n\t/usr/local/go/src/runtime/proc.go:7143\nruntime.main\n\t/usr/local/go/src/runtime/proc.go:253\nruntime.goexit\n\t/usr/local/go/src/runtime/asm_arm64.s:1222\nhealth check timeout: Head \"http://:0\": dial tcp :0: connect: can't assign requested address\ngithub.com/olivere/elastic/v7.(*Client).startupHealthcheck\n\t/Users/wangcheng/go/pkg/mod/github.com/olivere/elastic/v7@v7.0.32/client.go:1228\ngithub.com/olivere/elastic/v7.DialContext\n\t/Users/wangcheng/go/pkg/mod/github.com/olivere/elastic/v7@v7.0.32/client.go:372\ngithub.com/olivere/elastic/v7.NewClient\n\t/Users/wangcheng/go/pkg/mod/github.com/olivere/elastic/v7@v7.0.32/client.go:207\nnewsCenter/search/infrastructure/persistence/database/search.init.0\n\t/Users/wangcheng/Documents/golang/src/newsCenter/search/infrastructure/persistence/database/search/search.go:26\nruntime.doInit1\n\t/usr/local/go/src/runtime/proc.go:7176\nruntime.doInit\n\t/usr/local/go/src/runtime/proc.go:7143\nruntime.main\n\t/usr/local/go/src/runtime/proc.go:253\nruntime.goexit\n\t/usr/local/go/src/runtime/asm_arm64.s:1222"}
+{"level":"ERROR","time":"2024-05-18T09:40:33.975+0800","caller":"search/search.go:29","msg":"es Init Fail","error":"health check timeout: Head \"http://:0\": dial tcp :0: connect: can't assign requested address: no Elasticsearch node available","errorVerbose":"no Elasticsearch node available\ngithub.com/olivere/elastic/v7.init\n\t<autogenerated>:1\nruntime.doInit1\n\t/usr/local/go/src/runtime/proc.go:7176\nruntime.doInit\n\t/usr/local/go/src/runtime/proc.go:7143\nruntime.main\n\t/usr/local/go/src/runtime/proc.go:253\nruntime.goexit\n\t/usr/local/go/src/runtime/asm_arm64.s:1222\nhealth check timeout: Head \"http://:0\": dial tcp :0: connect: can't assign requested address\ngithub.com/olivere/elastic/v7.(*Client).startupHealthcheck\n\t/Users/wangcheng/go/pkg/mod/github.com/olivere/elastic/v7@v7.0.32/client.go:1228\ngithub.com/olivere/elastic/v7.DialContext\n\t/Users/wangcheng/go/pkg/mod/github.com/olivere/elastic/v7@v7.0.32/client.go:372\ngithub.com/olivere/elastic/v7.NewClient\n\t/Users/wangcheng/go/pkg/mod/github.com/olivere/elastic/v7@v7.0.32/client.go:207\nnewsCenter/search/infrastructure/persistence/database/search.init.0\n\t/Users/wangcheng/Documents/golang/src/newsCenter/search/infrastructure/persistence/database/search/search.go:27\nruntime.doInit1\n\t/usr/local/go/src/runtime/proc.go:7176\nruntime.doInit\n\t/usr/local/go/src/runtime/proc.go:7143\nruntime.main\n\t/usr/local/go/src/runtime/proc.go:253\nruntime.goexit\n\t/usr/local/go/src/runtime/asm_arm64.s:1222"}
+{"level":"ERROR","time":"2024-05-18T09:41:56.708+0800","caller":"search/search.go:29","msg":"es Init Fail","error":"health check timeout: Head \"http://:0\": dial tcp :0: connect: can't assign requested address: no Elasticsearch node available","errorVerbose":"no Elasticsearch node available\ngithub.com/olivere/elastic/v7.init\n\t<autogenerated>:1\nruntime.doInit1\n\t/usr/local/go/src/runtime/proc.go:7176\nruntime.doInit\n\t/usr/local/go/src/runtime/proc.go:7143\nruntime.main\n\t/usr/local/go/src/runtime/proc.go:253\nruntime.goexit\n\t/usr/local/go/src/runtime/asm_arm64.s:1222\nhealth check timeout: Head \"http://:0\": dial tcp :0: connect: can't assign requested address\ngithub.com/olivere/elastic/v7.(*Client).startupHealthcheck\n\t/Users/wangcheng/go/pkg/mod/github.com/olivere/elastic/v7@v7.0.32/client.go:1228\ngithub.com/olivere/elastic/v7.DialContext\n\t/Users/wangcheng/go/pkg/mod/github.com/olivere/elastic/v7@v7.0.32/client.go:372\ngithub.com/olivere/elastic/v7.NewClient\n\t/Users/wangcheng/go/pkg/mod/github.com/olivere/elastic/v7@v7.0.32/client.go:207\nnewsCenter/search/infrastructure/persistence/database/search.init.0\n\t/Users/wangcheng/Documents/golang/src/newsCenter/search/infrastructure/persistence/database/search/search.go:27\nruntime.doInit1\n\t/usr/local/go/src/runtime/proc.go:7176\nruntime.doInit\n\t/usr/local/go/src/runtime/proc.go:7143\nruntime.main\n\t/usr/local/go/src/runtime/proc.go:253\nruntime.goexit\n\t/usr/local/go/src/runtime/asm_arm64.s:1222"}
+{"level":"ERROR","time":"2024-05-18T09:44:52.253+0800","caller":"event/search.go:45","msg":"退出了消费循环异常","error":"kafka server: Request was for a topic or partition that does not exist on this broker"}
+{"level":"ERROR","time":"2024-05-18T10:17:32.227+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"Token is expired"}
+{"level":"ERROR","time":"2024-05-18T10:17:32.229+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = Token is expired"}
+{"level":"ERROR","time":"2024-05-18T10:17:32.229+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = Token is expired"}
+{"level":"ERROR","time":"2024-05-18T10:17:32.229+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = Token is expired"}
+{"level":"ERROR","time":"2024-05-18T10:17:47.417+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"illegal base64 data at input byte 0"}
+{"level":"ERROR","time":"2024-05-18T10:17:47.418+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = illegal base64 data at input byte 0"}
+{"level":"ERROR","time":"2024-05-18T10:17:47.418+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = illegal base64 data at input byte 0"}
+{"level":"ERROR","time":"2024-05-18T10:17:47.418+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = illegal base64 data at input byte 0"}
+{"level":"ERROR","time":"2024-05-18T10:17:55.233+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"illegal base64 data at input byte 0"}
+{"level":"ERROR","time":"2024-05-18T10:17:55.235+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = illegal base64 data at input byte 0"}
+{"level":"ERROR","time":"2024-05-18T10:17:55.235+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = illegal base64 data at input byte 0"}
+{"level":"ERROR","time":"2024-05-18T10:17:55.235+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = illegal base64 data at input byte 0"}
+{"level":"ERROR","time":"2024-05-18T10:17:59.737+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"illegal base64 data at input byte 0"}
+{"level":"ERROR","time":"2024-05-18T10:17:59.737+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = illegal base64 data at input byte 0"}
+{"level":"ERROR","time":"2024-05-18T10:17:59.737+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = illegal base64 data at input byte 0"}
+{"level":"ERROR","time":"2024-05-18T10:17:59.737+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = illegal base64 data at input byte 0"}
+{"level":"ERROR","time":"2024-05-18T10:18:16.733+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"illegal base64 data at input byte 0"}
+{"level":"ERROR","time":"2024-05-18T10:18:16.733+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = illegal base64 data at input byte 0"}
+{"level":"ERROR","time":"2024-05-18T10:18:16.733+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = illegal base64 data at input byte 0"}
+{"level":"ERROR","time":"2024-05-18T10:18:16.733+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = illegal base64 data at input byte 0"}
+{"level":"ERROR","time":"2024-05-18T10:19:11.348+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"Token is expired"}
+{"level":"ERROR","time":"2024-05-18T10:19:11.348+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = Token is expired"}
+{"level":"ERROR","time":"2024-05-18T10:19:11.348+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = Token is expired"}
+{"level":"ERROR","time":"2024-05-18T10:19:11.348+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = Token is expired"}
+{"level":"ERROR","time":"2024-05-18T10:31:29.811+0800","caller":"event/article.go:44","msg":"article 退出了消费 循环异常","error":"kafka: broker not connected"}
+{"level":"ERROR","time":"2024-05-18T10:58:09.763+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-18T10:58:09.764+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-18T10:58:09.764+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-18T10:58:09.764+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = token contains an invalid number of segments"}
+{"level":"ERROR","time":"2024-05-18T11:06:47.089+0800","caller":"cache/ranking_local_cache.go:35","msg":"Get 本地缓存失效"}
+{"level":"ERROR","time":"2024-05-18T11:58:20.099+0800","caller":"service/search.go:31","msg":"Search Search Fail","error":"elastic: Error 400 (Bad Request): [1:95] [bool] failed to parse field [must] [type=x_content_parse_exception]"}
+{"level":"ERROR","time":"2024-05-18T11:58:27.517+0800","caller":"service/search.go:31","msg":"Search Search Fail","error":"elastic: Error 400 (Bad Request): [1:95] [bool] failed to parse field [must] [type=x_content_parse_exception]"}
+{"level":"ERROR","time":"2024-05-18T12:09:39.001+0800","caller":"rpc/article.go:33","msg":"ArticleList GetArticleList Fail","error":"rpc error: code = Unavailable desc = name resolver error: produced zero addresses"}
+{"level":"ERROR","time":"2024-05-18T16:03:52.269+0800","caller":"cache/ranking_local_cache.go:38","msg":"Get 本地缓存失效"}

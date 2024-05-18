@@ -1,0 +1,26 @@
+syntax = "proto3";
+package searchGrpc;
+option go_package = "search/application/service/sync";
+
+import "user_m.proto";
+import "article_m.proto";
+
+message InputUserRequest {
+  User user = 1;
+}
+
+message InputUserResponse {
+}
+
+message InputArticleRequest {
+  Article article = 1;
+}
+
+message InputArticleResponse {
+}
+
+service SyncService{
+  rpc InputUser (InputUserRequest) returns (InputUserResponse);
+  rpc InputArticle (InputArticleRequest) returns (InputArticleResponse);
+}
+

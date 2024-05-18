@@ -30,12 +30,11 @@ func (h *Handler[T]) ConsumeClaim(session sarama.ConsumerGroupSession, claim sar
 		err := json.Unmarshal(msg.Value, &t)
 		if err != nil {
 			// 你也可以在这里引入重试的逻辑
-			zap.L().Error("反序列消息体失败")
-			//h.l.Error("反序列消息体失败",
-			//	logger.String("topic", msg.Topic),
-			//	logger.Int32("partition", msg.Partition),
-			//	logger.Int64("offset", msg.Offset),
-			//	logger.Error(err))
+			zap.L().Error("反序列消息体失败",
+				zap.String("topic", msg.Topic),
+				zap.Int32("partition", msg.Partition),
+				zap.Int64("offset", msg.Offset),
+				zap.Error(err))
 		}
 		err = h.fn(msg, t)
 		if err != nil {

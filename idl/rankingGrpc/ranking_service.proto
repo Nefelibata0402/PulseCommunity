@@ -1,0 +1,29 @@
+syntax = "proto3";
+package rankingGrpc;
+option go_package = "ranking/application/service/ranking";
+
+import "articleGrpc/article_model.proto";
+
+message GetTopNRequest {
+  uint64 user_id = 1;
+}
+
+message GetTopNResponse {
+  int32 status_code = 1;
+  string status_msg = 2;
+  repeated articleGrpc.Article article_list = 3;
+}
+
+message TopNRequest {
+  uint64 user_id = 1;
+}
+
+message TopNResponse {
+  int32 status_code = 1;
+  string status_msg = 2;
+}
+
+service RankingService {
+  rpc GetTopN(GetTopNRequest) returns(GetTopNResponse);
+  rpc TopN(TopNRequest) returns(TopNResponse);
+}

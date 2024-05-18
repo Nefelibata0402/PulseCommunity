@@ -1,0 +1,10 @@
+syntax = "proto3";
+package searchGrpc;
+option go_package = "search/application/service/search";
+
+message Article {
+  int64 id = 1;
+  string title = 2;
+  string content = 3;
+  int32 status = 4;
+}

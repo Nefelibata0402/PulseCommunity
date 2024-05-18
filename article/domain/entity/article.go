@@ -37,6 +37,7 @@ const (
 )
 
 type Interactive struct {
+	BizId      int64
 	ReadCnt    int64
 	LikeCnt    int64
 	CollectCnt int64

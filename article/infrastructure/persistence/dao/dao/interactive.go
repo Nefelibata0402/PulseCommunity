@@ -33,7 +33,7 @@ func (i *InteractiveGorm) Get(ctx context.Context, biz string, articleId int64) 
 	if err != nil {
 		return entity.Interactive{}, err
 	}
-	inter = convertor.ToInteractiveEntity(&res)
+	inter = convertor.ToInteractiveEntity(res)
 	return inter, nil
 }
 
@@ -161,4 +161,16 @@ func (i *InteractiveGorm) BatchIncrReadCnt(ctx context.Context, biz []string, Ar
 		return nil
 	})
 	return err
+}
+
+func (i *InteractiveGorm) GetInteractiveByIds(ctx context.Context, biz string, ids []int64) (res []entity.Interactive, err error) {
+	var tmp []interactive.Interactive
+	err = i.conn.Session(ctx).Where("biz = ? AND biz_id IN ?", biz, ids).First(&tmp).Error
+	if err != nil {
+		return nil, err
+	}
+	for _, val := range tmp {
+		res = append(res, convertor.ToInteractiveEntity(val))
+	}
+	return res, nil
 }

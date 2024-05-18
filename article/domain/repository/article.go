@@ -12,7 +12,8 @@ type ArticleRepository interface {
 	Publish(c context.Context, art entity.Article) error
 	Withdraw(c context.Context, uid int64, id int64, status uint8) error
 	GetById(ctx context.Context, id int64) (art entity.Article, err error)
-	GetByAuthor(ctx context.Context, id int64, offset int64, limit int64) (artList []entity.Article, err error)
+	GetByAuthor(ctx context.Context, id int64, offset int64, limit int64) ([]entity.Article, error)
+	GetList(ctx context.Context, startTime int64, offset int64, limit int64) ([]entity.Article, error)
 	GetPubById(ctx context.Context, id int64) (art entity.Article, err error)
 }
 
@@ -36,6 +37,7 @@ type InteractiveRepository interface {
 	InsertLikeInfo(ctx context.Context, biz string, ArticleId int64, UserId int64) error
 	DeleteLikeInfo(ctx context.Context, biz string, ArticleId int64, UserId int64) error
 	BatchIncrReadCnt(ctx context.Context, biz []string, ArticleId []int64) (err error)
+	GetInteractiveByIds(ctx context.Context, biz string, ids []int64) ([]entity.Interactive, error)
 }
 
 // CacheInteractiveRepository 交互接口 Redis

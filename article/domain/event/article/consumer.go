@@ -38,8 +38,7 @@ func (i *InteractiveReadEventConsumer) Start() error {
 	return err
 }
 
-func (i *InteractiveReadEventConsumer) BatchConsume(msgs []*sarama.ConsumerMessage,
-	events []ReadEvent) error {
+func (i *InteractiveReadEventConsumer) BatchConsume(msgs []*sarama.ConsumerMessage, events []ReadEvent) error {
 	bizs := make([]string, 0, len(events))
 	bizIds := make([]int64, 0, len(events))
 	for _, evt := range events {

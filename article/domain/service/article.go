@@ -34,18 +34,20 @@ type ArticleServiceRepository interface {
 	Create(c context.Context, art entity.Article) (err error)
 	Publish(c context.Context, art entity.Article) (err error)
 	Withdraw(ctx context.Context, uid int64, id int64) (err error)
-	GetById(ctx context.Context, id int64) (art entity.Article, err error)
-	GetListByAuthor(ctx context.Context, id int64, offset int64, limit int64) (artList []entity.Article, err error)
+	GetById(ctx context.Context, id int64) (entity.Article, error)
+	GetListByAuthor(ctx context.Context, id int64, offset int64, limit int64) ([]entity.Article, error)
 	preCache(ctx context.Context, arts []entity.Article)
-	GetArticleById(ctx context.Context, id int64) (art entity.Article, err error, flag bool)
+	GetArticleById(ctx context.Context, id int64) (entity.Article, error, bool)
 	SetPub(ctx context.Context, art entity.Article) (err error)
-	GetInteractive(ctx context.Context, biz string, ArticleId int64, UserId int64) (interactive entity.Interactive, flag bool, err error)
-	Liked(ctx context.Context, biz string, ArticleId int64, UserId int64) (flag bool, err error)
-	Collected(ctx context.Context, biz string, ArticleId int64, UserId int64) (flag bool, err error)
+	GetInteractive(ctx context.Context, biz string, ArticleId int64, UserId int64) (entity.Interactive, bool, error)
+	Liked(ctx context.Context, biz string, ArticleId int64, UserId int64) (bool, error)
+	Collected(ctx context.Context, biz string, ArticleId int64, UserId int64) (bool, error)
 	UpdateReadCnt(ctx context.Context, biz string, ArticleId int64) (err error)
-	Like(c context.Context, biz string, Id int64, UserId int64) (err error)
-	CancelLike(c context.Context, biz string, Id int64, UserId int64) (err error)
+	Like(ctx context.Context, biz string, Id int64, UserId int64) (err error)
+	CancelLike(ctx context.Context, biz string, Id int64, UserId int64) (err error)
 	BatchIncrReadCnt(ctx context.Context, biz []string, ArticleId []int64) error
+	GetList(ctx context.Context, StartTime int64, Offset int64, Limit int64) ([]entity.Article, error)
+	GetInteractiveByIds(ctx context.Context, biz string, ids []int64) ([]entity.Interactive, error)
 }
 
 func (article *ArticleService) Update(c context.Context, art entity.Article) (err error) {
@@ -304,4 +306,22 @@ func (article *ArticleService) BatchIncrReadCnt(ctx context.Context, biz []strin
 		}
 	}()
 	return nil
+}
+
+func (article *ArticleService) GetList(ctx context.Context, startTime int64, offset int64, limit int64) (artList []entity.Article, err error) {
+	artList, err = article.articleRepo.GetList(ctx, startTime, offset, limit)
+	if err != nil {
+		zap.L().Error("GetListByAuthor GetByAuthor Fail", zap.Error(err))
+		return nil, err
+	}
+	return artList, nil
+}
+
+func (article *ArticleService) GetInteractiveByIds(ctx context.Context, biz string, ids []int64) ([]entity.Interactive, error) {
+	interactiveList, err := article.interactiveRepo.GetInteractiveByIds(ctx, biz, ids)
+	if err != nil {
+		zap.L().Error("GetInteractiveByIds GetInteractiveByIds Fail", zap.Error(err))
+		return nil, err
+	}
+	return interactiveList, nil
 }
