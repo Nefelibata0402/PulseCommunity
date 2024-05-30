@@ -65,7 +65,7 @@ func (r *RankingJob) Run() error {
 	//	}()
 	//}
 	//拿到了锁
-	zap.L().Info("拿到了分布式锁")
+	//zap.L().Info("拿到了分布式锁")
 	ctx, cancel := context.WithTimeout(context.Background(), 180*time.Second)
 	defer cancel()
 	req := &rankingGrpc.TopNRequest{}

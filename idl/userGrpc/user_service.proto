@@ -26,7 +26,8 @@ message LoginResponse{
   int32 status_code = 1; // 状态码，0-成功，其他值-失败
   string status_msg = 2; // 返回状态描述
   uint64 user_id = 3;
-  TokenMessage token = 4;
+  string ssid = 4; //ssid  退出登陆使用
+  TokenMessage token = 5;
 }
 
 message TokenMessage{
@@ -44,6 +45,7 @@ message TokenResponse {
   int32 status_code = 1; // 状态码，0-成功，其他值-失败
   string status_msg = 2; // 返回状态描述
   uint64 user_id = 3;
+  string ssid = 4;
 }
 
 message UserInfoRequest {
@@ -57,6 +59,14 @@ message UserInfoResponse {
   User user = 3; // 用户信息
 }
 
+message LogoutJWTRequest {
+  string ssid = 1;
+}
+
+message LogoutJWTResponse {
+  int32 status_code = 1; // 状态码，0-成功，其他值-失败
+  string status_msg = 2; // 返回状态描述
+}
 
 
 service UserService {
@@ -64,4 +74,5 @@ service UserService {
   rpc Login(LoginRequest) returns (LoginResponse){}
   rpc TokenAuth(TokenRequest) returns (TokenResponse) {}
   rpc GetUserinfo(UserInfoRequest) returns (UserInfoResponse) {}
+  rpc LogoutJWT(LogoutJWTRequest) returns (LogoutJWTResponse) {}
 }

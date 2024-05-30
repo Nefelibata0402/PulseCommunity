@@ -449,3 +449,17 @@
 {"level":"ERROR","time":"2024-05-18T11:58:27.517+0800","caller":"service/search.go:31","msg":"Search Search Fail","error":"elastic: Error 400 (Bad Request): [1:95] [bool] failed to parse field [must] [type=x_content_parse_exception]"}
 {"level":"ERROR","time":"2024-05-18T12:09:39.001+0800","caller":"rpc/article.go:33","msg":"ArticleList GetArticleList Fail","error":"rpc error: code = Unavailable desc = name resolver error: produced zero addresses"}
 {"level":"ERROR","time":"2024-05-18T16:03:52.269+0800","caller":"cache/ranking_local_cache.go:38","msg":"Get 本地缓存失效"}
+{"level":"ERROR","time":"2024-05-27T20:02:48.001+0800","caller":"rpc/article.go:33","msg":"ArticleList GetArticleList Fail","error":"rpc error: code = Unavailable desc = name resolver error: produced zero addresses"}
+{"level":"ERROR","time":"2024-05-27T20:11:00.001+0800","caller":"rpc/article.go:33","msg":"ArticleList GetArticleList Fail","error":"rpc error: code = Unavailable desc = name resolver error: produced zero addresses"}
+{"level":"ERROR","time":"2024-05-27T20:13:37.336+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"Token is expired"}
+{"level":"ERROR","time":"2024-05-27T20:13:37.338+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = Token is expired"}
+{"level":"ERROR","time":"2024-05-27T20:13:37.338+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = Token is expired"}
+{"level":"ERROR","time":"2024-05-27T20:13:37.338+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = Token is expired"}
+{"level":"ERROR","time":"2024-05-27T20:14:49.003+0800","caller":"rpc/article.go:33","msg":"ArticleList GetArticleList Fail","error":"rpc error: code = Unavailable desc = name resolver error: produced zero addresses"}
+{"level":"ERROR","time":"2024-05-27T20:34:38.230+0800","caller":"service/user.go:111","msg":"TokenAuth ParseToken error","error":"Token is expired"}
+{"level":"ERROR","time":"2024-05-27T20:34:38.230+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = Token is expired"}
+{"level":"ERROR","time":"2024-05-27T20:34:38.230+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = Token is expired"}
+{"level":"ERROR","time":"2024-05-27T20:34:38.230+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = Token is expired"}
+{"level":"ERROR","time":"2024-05-28T18:15:46.267+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = token 无效"}
+{"level":"ERROR","time":"2024-05-28T18:15:46.267+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = token 无效"}
+{"level":"ERROR","time":"2024-05-28T18:15:46.267+0800","caller":"tokenVerify/midd.go:24","msg":"TokenVerify TokenAuth Fail","error":"rpc error: code = Unknown desc = token 无效"}

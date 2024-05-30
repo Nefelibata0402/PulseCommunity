@@ -26,6 +26,7 @@ type UserServiceClient interface {
 	Login(ctx context.Context, in *LoginRequest, opts ...grpc.CallOption) (*LoginResponse, error)
 	TokenAuth(ctx context.Context, in *TokenRequest, opts ...grpc.CallOption) (*TokenResponse, error)
 	GetUserinfo(ctx context.Context, in *UserInfoRequest, opts ...grpc.CallOption) (*UserInfoResponse, error)
+	LogoutJWT(ctx context.Context, in *LogoutJWTRequest, opts ...grpc.CallOption) (*LogoutJWTResponse, error)
 }
 
 type userServiceClient struct {
@@ -72,6 +73,15 @@ func (c *userServiceClient) GetUserinfo(ctx context.Context, in *UserInfoRequest
 	return out, nil
 }
 
+func (c *userServiceClient) LogoutJWT(ctx context.Context, in *LogoutJWTRequest, opts ...grpc.CallOption) (*LogoutJWTResponse, error) {
+	out := new(LogoutJWTResponse)
+	err := c.cc.Invoke(ctx, "/userGrpc.UserService/LogoutJWT", in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // UserServiceServer is the server API for UserService service.
 // All implementations must embed UnimplementedUserServiceServer
 // for forward compatibility
@@ -80,6 +90,7 @@ type UserServiceServer interface {
 	Login(context.Context, *LoginRequest) (*LoginResponse, error)
 	TokenAuth(context.Context, *TokenRequest) (*TokenResponse, error)
 	GetUserinfo(context.Context, *UserInfoRequest) (*UserInfoResponse, error)
+	LogoutJWT(context.Context, *LogoutJWTRequest) (*LogoutJWTResponse, error)
 	mustEmbedUnimplementedUserServiceServer()
 }
 
@@ -98,6 +109,9 @@ func (UnimplementedUserServiceServer) TokenAuth(context.Context, *TokenRequest) 
 }
 func (UnimplementedUserServiceServer) GetUserinfo(context.Context, *UserInfoRequest) (*UserInfoResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetUserinfo not implemented")
+}
+func (UnimplementedUserServiceServer) LogoutJWT(context.Context, *LogoutJWTRequest) (*LogoutJWTResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method LogoutJWT not implemented")
 }
 func (UnimplementedUserServiceServer) mustEmbedUnimplementedUserServiceServer() {}
 
@@ -184,6 +198,24 @@ func _UserService_GetUserinfo_Handler(srv interface{}, ctx context.Context, dec 
 	return interceptor(ctx, in, info, handler)
 }
 
+func _UserService_LogoutJWT_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(LogoutJWTRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(UserServiceServer).LogoutJWT(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/userGrpc.UserService/LogoutJWT",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(UserServiceServer).LogoutJWT(ctx, req.(*LogoutJWTRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // UserService_ServiceDesc is the grpc.ServiceDesc for UserService service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -206,6 +238,10 @@ var UserService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "GetUserinfo",
 			Handler:    _UserService_GetUserinfo_Handler,
+		},
+		{
+			MethodName: "LogoutJWT",
+			Handler:    _UserService_LogoutJWT_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},

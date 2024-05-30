@@ -2,6 +2,7 @@ package user
 
 import (
 	"context"
+	"fmt"
 	"github.com/gin-gonic/gin"
 	"net/http"
 	"newsCenter/cmd/model/userModel"
@@ -90,7 +91,7 @@ func Login(c *gin.Context) {
 	resp, err := UserServiceClient.Login(ctx, req)
 	if err != nil {
 		c.JSON(http.StatusOK, gin.H{
-			"status_code": unierr.ErrorInternal.ErrCode,
+			"status_code": unierr.UserNameOrPassword.ErrCode,
 			"status_msg":  unierr.UserNameOrPassword.ErrMsg,
 		})
 		return
@@ -101,5 +102,29 @@ func Login(c *gin.Context) {
 		"status_msg":  resp.StatusMsg,
 		"user_id":     resp.UserId,
 		"token":       resp.Token,
+	})
+}
+
+func LogoutJWT(c *gin.Context) {
+	ssid, _ := c.Get("Ssid")
+	fmt.Printf("Type of resp.Ssid: %T\n", ssid)
+	fmt.Println("SsidGet", ssid)
+	req := &userGrpc.LogoutJWTRequest{
+		Ssid: ssid.(string),
+	}
+	ctx, cancel := context.WithTimeout(context.Background(), 180*time.Second)
+	defer cancel()
+	resp, err := UserServiceClient.LogoutJWT(ctx, req)
+	if err != nil {
+		c.JSON(http.StatusOK, gin.H{
+			"status_code": unierr.ErrorInternal.ErrCode,
+			"status_msg":  unierr.ErrorInternal.ErrMsg,
+		})
+		return
+	}
+	//4.返回结果
+	c.JSON(http.StatusOK, gin.H{
+		"status_code": resp.StatusCode,
+		"status_msg":  resp.StatusMsg,
 	})
 }

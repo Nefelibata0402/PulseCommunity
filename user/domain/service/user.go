@@ -3,6 +3,9 @@ package service
 import (
 	"context"
 	"encoding/json"
+	"errors"
+	"fmt"
+	"github.com/redis/go-redis/v9"
 	"go.uber.org/zap"
 	"newsCenter/common/jwts"
 	"newsCenter/common/unierr"
@@ -19,12 +22,14 @@ import (
 )
 
 type UserService struct {
+	client   redis.Cmdable
 	userRepo repository.UserRepository
 	cache    repository.Cache
 }
 
 func New() *UserService {
 	return &UserService{
+		client:   dao.Cmd,
 		userRepo: dao.NewUserDao(),
 		cache:    dao.Rc,
 	}
@@ -102,16 +107,16 @@ func (user *UserService) CacheUserInfo(c context.Context, userInfo *entity.UserI
 	return
 }
 
-func (user *UserService) ParseToken(token string) (parseToken string, err error) {
+func (user *UserService) ParseToken(token string) (parseToken string, ssid string, err error) {
 	if strings.Contains(token, "bearer ") {
 		token = strings.ReplaceAll(token, "bearer ", "")
 	}
-	parseToken, err = jwts.ParseToken(token, config.UserConfig.JwtConfig.AccessSecret)
+	parseToken, ssid, err = jwts.ParseToken(token, config.UserConfig.JwtConfig.AccessSecret)
 	if err != nil {
 		zap.L().Error("TokenAuth ParseToken error", zap.Error(err))
-		return parseToken, err
+		return parseToken, ssid, err
 	}
-	return parseToken, err
+	return parseToken, ssid, err
 }
 
 func (user *UserService) GetCacheUserInfo(c context.Context, parseToken string) (resp *userGrpc.TokenResponse, userInfo *entity.UserInfo, err error) {
@@ -146,11 +151,11 @@ func (user *UserService) GetCacheUserInfo(c context.Context, parseToken string) 
 	return resp, userInfo, err
 }
 
-func CreateToken(userInfo *entity.UserInfo) (token *jwts.JwtToken, err error) {
+func CreateToken(userInfo *entity.UserInfo, ssid string) (token *jwts.JwtToken, err error) {
 	userIdString := strconv.FormatInt(int64(userInfo.Id), 10)
 	expirationTime := time.Duration(config.UserConfig.JwtConfig.AccessExp*3600*24) * time.Second
 	refreshExpirationTime := time.Duration(config.UserConfig.JwtConfig.RefreshExp*3600*24) * time.Second
-	token, err = jwts.CreateToken(userIdString, expirationTime, config.UserConfig.JwtConfig.AccessSecret, refreshExpirationTime, config.UserConfig.JwtConfig.RefreshSecret)
+	token, err = jwts.CreateToken(userIdString, expirationTime, config.UserConfig.JwtConfig.AccessSecret, refreshExpirationTime, config.UserConfig.JwtConfig.RefreshSecret, ssid)
 	return token, err
 }
 
@@ -161,4 +166,21 @@ func (user *UserService) GetUserInfo(c context.Context, userId int64) (userInfo 
 		return nil, err
 	}
 	return userInfo, err
+}
+
+func (user *UserService) CheckSsid(c context.Context, ssid string) (err error) {
+	cnt, err := user.client.Exists(c, fmt.Sprintf("users:ssid:%s", ssid)).Result()
+	if err != nil {
+		return err
+	}
+	if cnt > 0 {
+		return errors.New("token 无效")
+	}
+	return nil
+}
+
+func (user *UserService) ClearToken(c context.Context, ssid string) (err error) {
+	return user.client.Set(c,
+		fmt.Sprintf("users:ssid:%s", ssid),
+		"", time.Hour*24*7).Err()
 }

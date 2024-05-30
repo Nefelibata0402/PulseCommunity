@@ -3,7 +3,6 @@ package cache
 import (
 	"context"
 	"errors"
-	"fmt"
 	"go.uber.org/zap"
 	"newsCenter/ranking/domain/entity"
 	"time"
@@ -24,7 +23,6 @@ func NewRankingLocalCache() *RankingLocalCache {
 }
 
 func (r *RankingLocalCache) Set(ctx context.Context, arts []entity.Article) error {
-	fmt.Println("调用Set初始化ddl")
 	r.topN.Store(arts)
 	r.ddl.Store(time.Now().Add(r.expiration))
 	return nil

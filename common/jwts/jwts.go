@@ -14,11 +14,12 @@ type JwtToken struct {
 	RefreshExp   int64
 }
 
-func CreateToken(val string, exp time.Duration, secret string, refreshExp time.Duration, refreshSecret string) (*JwtToken, error) {
+func CreateToken(val string, exp time.Duration, secret string, refreshExp time.Duration, refreshSecret string, ssid string) (*JwtToken, error) {
 	aExp := time.Now().Add(exp).Unix()
 	accessToken := jwt.NewWithClaims(jwt.SigningMethodHS256, jwt.MapClaims{
 		"token": val,
 		"exp":   aExp,
+		"ssid":  ssid,
 	})
 	aToken, err := accessToken.SignedString([]byte(secret))
 	if err != nil {
@@ -28,6 +29,7 @@ func CreateToken(val string, exp time.Duration, secret string, refreshExp time.D
 	refreshToken := jwt.NewWithClaims(jwt.SigningMethodHS256, jwt.MapClaims{
 		"token": val,
 		"exp":   rExp,
+		"ssid":  ssid,
 	})
 	rToken, err := refreshToken.SignedString([]byte(refreshSecret))
 	if err != nil {
@@ -41,7 +43,7 @@ func CreateToken(val string, exp time.Duration, secret string, refreshExp time.D
 	}, nil
 }
 
-func ParseToken(tokenString string, secret string) (string, error) {
+func ParseToken(tokenString string, secret string) (string, string, error) {
 	//解析token 验证签名
 	token, err := jwt.Parse(tokenString, func(token *jwt.Token) (interface{}, error) {
 		if _, ok := token.Method.(*jwt.SigningMethodHMAC); !ok {
@@ -50,16 +52,17 @@ func ParseToken(tokenString string, secret string) (string, error) {
 		return []byte(secret), nil
 	})
 	if err != nil {
-		return "", err
+		return "", "", err
 	}
 	if claims, ok := token.Claims.(jwt.MapClaims); ok && token.Valid {
 		val := claims["token"].(string)
 		exp := int64(claims["exp"].(float64))
+		Ssid := claims["ssid"].(string)
 		if exp <= time.Now().Unix() {
-			return "", errors.New("token过期了")
+			return "", "", errors.New("token过期了")
 		}
-		return val, nil
+		return val, Ssid, nil
 	} else {
-		return "", err
+		return "", "", err
 	}
 }

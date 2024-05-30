@@ -31,6 +31,7 @@ func TokenVerify() func(*gin.Context) {
 		}
 		//3. 处理结果，认证通过 将信息放入gin上下文，失败返回未登录
 		c.Set("userId", response.UserId)
+		c.Set("Ssid", response.Ssid)
 		c.Next()
 	}
 }

@@ -5,11 +5,11 @@ import (
 	"newsCenter/cmd/interfaces/article"
 	"newsCenter/cmd/interfaces/ranking"
 	"newsCenter/cmd/interfaces/search"
-	"newsCenter/cmd/interfaces/user"
+	"newsCenter/cmd/interfaces/user/router"
 )
 
 func initRouter(r *gin.Engine) {
-	user.InitUserRouter(r)
+	router.InitUserRouter(r)
 	//限流
 	//redisClient := redis.NewClient(config.ApiConfig.ReadRedisConfig())
 	//builder := ratelimit.NewBuilder(redisClient, time.Second, 1)

@@ -5,6 +5,7 @@ go 1.22
 require (
 	github.com/IBM/sarama v1.43.2
 	github.com/gin-gonic/gin v1.9.1
+	github.com/go-kratos/aegis v0.2.0
 	github.com/go-playground/validator/v10 v10.14.0
 	github.com/go-redis/redis/v8 v8.11.5
 	github.com/golang-jwt/jwt/v4 v4.5.0

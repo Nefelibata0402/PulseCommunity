@@ -2,7 +2,6 @@ package router
 
 import (
 	grpcMiddleware "github.com/grpc-ecosystem/go-grpc-middleware"
-	"go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc"
 	"go.uber.org/zap"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/resolver"
@@ -27,9 +26,7 @@ func RegisterGrpc() *grpc.Server {
 		RegisterFunc: func(g *grpc.Server) {
 			userGrpc.RegisterUserServiceServer(g, service.New())
 		}}
-	s := grpc.NewServer(grpc.UnaryInterceptor(grpcMiddleware.ChainUnaryServer(
-		otelgrpc.UnaryServerInterceptor(),
-	)))
+	s := grpc.NewServer(grpc.UnaryInterceptor(grpcMiddleware.ChainUnaryServer()))
 	c.RegisterFunc(s)
 	lis, err := net.Listen("tcp", c.Addr)
 	if err != nil {

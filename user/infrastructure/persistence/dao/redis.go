@@ -2,12 +2,13 @@ package dao
 
 import (
 	"context"
-	"github.com/go-redis/redis/v8"
+	"github.com/redis/go-redis/v9"
 	"newsCenter/user/infrastructure/config"
 	"time"
 )
 
 var Rc *RedisCache
+var Cmd redis.Cmdable
 
 type RedisCache struct {
 	rdb *redis.Client
@@ -18,6 +19,7 @@ func init() {
 	Rc = &RedisCache{
 		rdb: rdb,
 	}
+	Cmd = rdb
 }
 
 func (rc *RedisCache) Put(ctx context.Context, key, value string, expire time.Duration) error {

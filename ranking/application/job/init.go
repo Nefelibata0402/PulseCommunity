@@ -27,7 +27,7 @@ func InitJobs(rjob *RankingJob) *cron.Cron {
 		},
 	})
 	expr := cron.New(cron.WithSeconds())
-	_, err := expr.AddJob("@every 20s", builder.Build(rjob))
+	_, err := expr.AddJob("@every 1m", builder.Build(rjob))
 	if err != nil {
 		panic(err)
 	}
