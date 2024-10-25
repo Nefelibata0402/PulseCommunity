@@ -139,19 +139,19 @@ services:
       ELASTICSEARCH_HOSTS: http://es01:9200
     ports:
       - 5601:5601
-  minio:
-    container_name: minio
-    image: bitnami/minio:2023
-    networks:
-      my-custom-network:
-    ports:
-      - '9009:9000'
-      - '9001:9001'
-    environment:
-      - MINIO_ROOT_USER=admin
-      - MINIO_ROOT_PASSWORD=admin123456
-    volumes:
-      - /Users/wangcheng/minio/data:/Applications/Docker.app/minio/data
+#  minio:
+#    container_name: minio
+#    image: bitnami/minio:2023
+#    networks:
+#      my-custom-network:
+#    ports:
+#      - '9009:9000'
+#      - '9001:9001'
+#    environment:
+#      - MINIO_ROOT_USER=admin
+#      - MINIO_ROOT_PASSWORD=admin123456
+#    volumes:
+#      - /Users/wangcheng/minio/data:/Applications/Docker.app/minio/data
   Etcd:
     container_name: etcd3
     image: bitnami/etcd:latest
@@ -167,44 +167,28 @@ services:
     ports:
       - 12379:2379
       - 12380:2380
-  Jaeger:
-    container_name: jaeger
-    image: jaegertracing/all-in-one:1.41
-    restart: always
-    environment:
-      - COLLECTOR_ZIPKIN_HTTP_PORT=9411
-      - SPAN_STORAGE_TYPE=badger
-      - BADGER_EPHEMERAL=false
-      - BADGER_DIRECTORY_VALUE=/badger/data
-      - BADGER_DIRECTORY_KEY=/badger/key
-    privileged: true
-    volumes:
-      - /Users/wangcheng/jaeger:/Applications/Docker.app/jaeger/badger
-    ports:
-      - "5775:5775/udp"
-      - "6831:6831/udp"
-      - "6832:6832/udp"
-      - "5778:5778"
-      - "16686:16686"
-      - "14268:14268"
-      - "14269:14269"
-      - "9411:9411"
-#  kafka:
-#    container_name: kafka
-#    image: obsidiandynamics/kafka
-#    restart: "no"
-#    ports:
-#      - "2181:2181"
-#      - "9092:9092"
+#  Jaeger:
+#    container_name: jaeger
+#    image: jaegertracing/all-in-one:1.41
+#    restart: always
 #    environment:
-#      KAFKA_LISTENERS: "INTERNAL://:29092,EXTERNAL://:9092"
-#      KAFKA_ADVERTISED_LISTENERS: "INTERNAL://kafka:29092,EXTERNAL://localhost:9092"
-#      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: "INTERNAL:PLAINTEXT,EXTERNAL:PLAINTEXT"
-#      KAFKA_INTER_BROKER_LISTENER_NAME: "INTERNAL"
-#      KAFKA_ZOOKEEPER_SESSION_TIMEOUT: "6000"
-#      KAFKA_RESTART_ATTEMPTS: "10"
-#      KAFKA_RESTART_DELAY: "5"
-#      ZOOKEEPER_AUTOPURGE_PURGE_INTERVAL: "0"
+#      - COLLECTOR_ZIPKIN_HTTP_PORT=9411
+#      - SPAN_STORAGE_TYPE=badger
+#      - BADGER_EPHEMERAL=false
+#      - BADGER_DIRECTORY_VALUE=/badger/data
+#      - BADGER_DIRECTORY_KEY=/badger/key
+#    privileged: true
+#    volumes:
+#      - /Users/wangcheng/jaeger:/Applications/Docker.app/jaeger/badger
+#    ports:
+#      - "5775:5775/udp"
+#      - "6831:6831/udp"
+#      - "6832:6832/udp"
+#      - "5778:5778"
+#      - "16686:16686"
+#      - "14268:14268"
+#      - "14269:14269"
+#      - "9411:9411"
   kafka:
     container_name: kafka-arm
     image: 'bitnami/kafka:3.6.0'
@@ -231,10 +215,23 @@ services:
 #      KAFKA_BROKERCONNECT: "kafka:29092"
 #    depends_on:
 #      - "kafka"
+  prometheus:
+    container_name: prometheus
+    image: prom/prometheus:v2.47.2
+    volumes:
+      - /Users/wangcheng/prometheus/prometheus.yaml:/etc/prometheus/prometheus.yml
+
+    ports:
+      - '9090:9090'
+  grafana:
+    container_name: grafana
+    image: grafana/grafana-enterprise:10.2.0
+    ports:
+      - '3000:3000'
 networks:
   my-custom-network:
     driver: bridge
-  minio:
+
 
 #docker exec -u 0 -it {容器id} /bin/bash
 #apt-get update

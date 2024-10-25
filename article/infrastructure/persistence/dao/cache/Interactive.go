@@ -82,6 +82,7 @@ func (i *InteractiveRedis) UpdateLikeCntIfPresent(ctx context.Context, biz strin
 
 func (i *InteractiveRedis) DeleteLikeCntIfPresent(ctx context.Context, biz string, id int64) (err error) {
 	key := i.key(biz, id)
+	//return fmt.Sprintf("interactive:%s:%d", biz, bizId) article:
 	err = i.rdb.Eval(ctx, luaIncrCnt, []string{key}, fieldLikeCnt, -1).Err()
 	return err
 }

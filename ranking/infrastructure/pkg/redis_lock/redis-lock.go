@@ -117,9 +117,11 @@ func (c *Client) Lock(ctx context.Context, key string, expiration time.Duration,
 	}
 }
 
-func (c *Client) TryLock(ctx context.Context,
-	key string, expiration time.Duration) (*Lock, error) {
+func (c *Client) TryLock(ctx context.Context, key string, expiration time.Duration) (*Lock, error) {
 	val := c.valuer()
+	//尝试将 key 设置为 val，并设置过期时间为 expiration。
+	//如果成功设置了值，并且返回的 ok 为 true，则表示获取到了锁；
+	//否则，表示锁已经被其他客户端持有，或者当前客户端尝试获取锁失败。
 	ok, err := c.client.SetNX(ctx, key, val, expiration).Result()
 	if err != nil {
 		// 网络问题，服务器问题，或者超时，都会走过来这里
@@ -201,8 +203,7 @@ func (l *Lock) AutoRefresh(interval time.Duration, timeout time.Duration) error 
 }
 
 func (l *Lock) Refresh(ctx context.Context) error {
-	res, err := l.client.Eval(ctx, luaRefresh,
-		[]string{l.key}, l.value, l.expiration.Seconds()).Int64()
+	res, err := l.client.Eval(ctx, luaRefresh, []string{l.key}, l.value, l.expiration.Seconds()).Int64()
 	if err != nil {
 		return err
 	}
@@ -214,6 +215,7 @@ func (l *Lock) Refresh(ctx context.Context) error {
 
 // Unlock 解锁
 func (l *Lock) Unlock(ctx context.Context) error {
+	//使用 Redis 的 EVAL 命令执行 Lua 脚本 luaUnlock 来释放锁。该 Lua 脚本会检查当前锁的值是否和预期值一致，
 	res, err := l.client.Eval(ctx, luaUnlock, []string{l.key}, l.value).Int64()
 	defer func() {
 		// 避免重复解锁引起 panic
