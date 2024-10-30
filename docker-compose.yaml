@@ -152,16 +152,11 @@ services:
     container_name: logstash
     volumes:
       - /Users/wangcheng/logstash:/usr/share/logstash/pipeline
-    #      - ./logstash-logs:/usr/share/logstash/logs
-    #      - 如果你不用 filebeat 来采集日志，那么就要把本地日志文件映射进去 docker 里面
-    #    或者不用 docker 来部署 logstash
-    #      - ./app.log:/usr/share/logstash/app.log
     environment:
       - "xpack.monitoring.elasticsearch.hosts=http://elasticsearch:9200"
     ports:
       - 5044:5044
   kibana:
-    #    注意检查你的 ElasticSearch 版本，这边我将 ES 也改到了这个版本
     image: docker.elastic.co/kibana/kibana:7.13.0
     container_name: kibana
     environment:
