@@ -2,8 +2,8 @@ package rediscache
 
 import (
 	"github.com/redis/go-redis/v9"
-	"newsCenter/ranking/infrastructure/config"
-	"newsCenter/ranking/infrastructure/pkg/redis_lock"
+	"pulseCommunity/ranking/infrastructure/config"
+	"pulseCommunity/ranking/infrastructure/pkg/redis_lock"
 )
 
 var Rc *redis.Client

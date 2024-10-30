@@ -5,7 +5,7 @@ import (
 	"github.com/olivere/elastic/v7"
 	"go.uber.org/zap"
 	"log"
-	"newsCenter/search/infrastructure/config"
+	"pulseCommunity/search/infrastructure/config"
 	"time"
 )
 

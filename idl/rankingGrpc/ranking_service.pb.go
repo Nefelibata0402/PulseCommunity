@@ -7,9 +7,9 @@
 package rankingGrpc
 
 import (
-	article "newsCenter/idl/articleGrpc"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
+	article "pulseCommunity/idl/articleGrpc"
 	reflect "reflect"
 	sync "sync"
 )

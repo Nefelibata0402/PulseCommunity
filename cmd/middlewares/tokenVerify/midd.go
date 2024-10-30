@@ -5,9 +5,9 @@ import (
 	"github.com/gin-gonic/gin"
 	"go.uber.org/zap"
 	"net/http"
-	"newsCenter/cmd/interfaces/user"
-	"newsCenter/common/unierr"
-	"newsCenter/idl/userGrpc"
+	"pulseCommunity/cmd/interfaces/user"
+	"pulseCommunity/common/unierr"
+	"pulseCommunity/idl/userGrpc"
 	"time"
 )
 

@@ -6,12 +6,12 @@ import (
 	"go.uber.org/zap"
 	"gorm.io/gorm"
 	"gorm.io/gorm/clause"
-	"newsCenter/article/domain/entity"
-	"newsCenter/article/infrastructure/persistence/convertor"
-	"newsCenter/article/infrastructure/persistence/database/collection"
-	"newsCenter/article/infrastructure/persistence/database/gorms"
-	"newsCenter/article/infrastructure/persistence/database/interactive"
-	"newsCenter/article/infrastructure/persistence/database/like"
+	"pulseCommunity/article/domain/entity"
+	"pulseCommunity/article/infrastructure/persistence/convertor"
+	"pulseCommunity/article/infrastructure/persistence/database/collection"
+	"pulseCommunity/article/infrastructure/persistence/database/gorms"
+	"pulseCommunity/article/infrastructure/persistence/database/interactive"
+	"pulseCommunity/article/infrastructure/persistence/database/like"
 	"time"
 )
 

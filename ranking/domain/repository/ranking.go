@@ -2,7 +2,7 @@ package repository
 
 import (
 	"context"
-	"newsCenter/ranking/domain/entity"
+	"pulseCommunity/ranking/domain/entity"
 )
 
 type RankingRedisCacheRepository interface {

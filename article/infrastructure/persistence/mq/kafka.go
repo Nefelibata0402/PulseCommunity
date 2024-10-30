@@ -3,7 +3,7 @@ package mq
 import (
 	"github.com/IBM/sarama"
 	"go.uber.org/zap"
-	eventArticle "newsCenter/article/domain/event/article"
+	eventArticle "pulseCommunity/article/domain/event/article"
 )
 
 var c sarama.Client

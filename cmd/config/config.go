@@ -4,8 +4,7 @@ import (
 	"github.com/redis/go-redis/v9"
 	"github.com/spf13/viper"
 	"log"
-	"newsCenter/logs"
-	"os"
+	"pulseCommunity/logs"
 )
 
 var ApiConfig = InitConfig()
@@ -38,10 +37,11 @@ type EtcdConfig struct {
 func InitConfig() *Config {
 	v := viper.New()
 	conf := &Config{viper: v}
-	workDir, _ := os.Getwd()
-	conf.viper.SetConfigName("config")
-	conf.viper.SetConfigType("yaml")
-	conf.viper.AddConfigPath(workDir + "/cmd/config")
+	//workDir, _ := os.Getwd()
+	//conf.viper.SetConfigName("config")
+	//conf.viper.SetConfigType("yaml")
+	//conf.viper.AddConfigPath(workDir + "/cmd/config")
+	conf.viper.AddConfigPath("/Users/wangcheng/Documents/golang/src/pulseCommunity/cmd/config")
 	err := conf.viper.ReadInConfig()
 	if err != nil {
 		log.Fatalln(err)

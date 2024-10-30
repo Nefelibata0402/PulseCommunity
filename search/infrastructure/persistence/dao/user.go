@@ -4,9 +4,9 @@ import (
 	"context"
 	"encoding/json"
 	"github.com/olivere/elastic/v7"
-	"newsCenter/search/domain/entity"
-	"newsCenter/search/infrastructure/persistence/convertor"
-	"newsCenter/search/infrastructure/persistence/database/search"
+	"pulseCommunity/search/domain/entity"
+	"pulseCommunity/search/infrastructure/persistence/convertor"
+	"pulseCommunity/search/infrastructure/persistence/database/search"
 	"strconv"
 	"strings"
 )

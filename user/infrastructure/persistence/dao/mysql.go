@@ -4,8 +4,8 @@ import (
 	"context"
 	"errors"
 	"gorm.io/gorm"
-	"newsCenter/user/domain/entity"
-	"newsCenter/user/infrastructure/persistence/database/gorms"
+	"pulseCommunity/user/domain/entity"
+	"pulseCommunity/user/infrastructure/persistence/database/gorms"
 )
 
 type UserDao struct {

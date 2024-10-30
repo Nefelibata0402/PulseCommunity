@@ -8,10 +8,10 @@ import (
 	"google.golang.org/grpc/credentials/insecure"
 	"google.golang.org/grpc/resolver"
 	"log"
-	"newsCenter/cmd/config"
-	"newsCenter/common/discover"
-	"newsCenter/idl/articleGrpc"
-	"newsCenter/logs"
+	"pulseCommunity/cmd/config"
+	"pulseCommunity/common/discover"
+	"pulseCommunity/idl/articleGrpc"
+	"pulseCommunity/logs"
 )
 
 var ArticleServiceClient articleGrpc.ArticleServiceClient

@@ -69,7 +69,9 @@ func (b *Builder) BuildActiveRequest() gin.HandlerFunc {
 	prometheus.MustRegister(gauge)
 	return func(ctx *gin.Context) {
 		gauge.Inc()
-		defer gauge.Dec()
+		defer func() {
+			gauge.Dec() // 请求完成时 -1
+		}()
 		ctx.Next()
 	}
 }

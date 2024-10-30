@@ -2,7 +2,7 @@ package ranking
 
 import (
 	"github.com/gin-gonic/gin"
-	"newsCenter/cmd/middlewares/tokenVerify"
+	"pulseCommunity/cmd/middlewares/tokenVerify"
 )
 
 func InitRankingRouter(r *gin.Engine) {

@@ -5,8 +5,8 @@ import (
 	_ "embed"
 	"fmt"
 	"github.com/redis/go-redis/v9"
-	"newsCenter/article/domain/entity"
-	"newsCenter/article/infrastructure/persistence/database/rediscache"
+	"pulseCommunity/article/domain/entity"
+	"pulseCommunity/article/infrastructure/persistence/database/rediscache"
 	"strconv"
 	"time"
 )

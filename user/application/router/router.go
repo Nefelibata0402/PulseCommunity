@@ -7,11 +7,11 @@ import (
 	"google.golang.org/grpc/resolver"
 	"log"
 	"net"
-	discover2 "newsCenter/common/discover"
-	"newsCenter/idl/userGrpc"
-	"newsCenter/logs"
-	"newsCenter/user/application/service"
-	"newsCenter/user/infrastructure/config"
+	discover2 "pulseCommunity/common/discover"
+	"pulseCommunity/idl/userGrpc"
+	"pulseCommunity/logs"
+	"pulseCommunity/user/application/service"
+	"pulseCommunity/user/infrastructure/config"
 )
 
 type gRPCConfig struct {

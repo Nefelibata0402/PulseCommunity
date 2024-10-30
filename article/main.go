@@ -3,12 +3,13 @@ package main
 import (
 	"github.com/gin-gonic/gin"
 	"go.uber.org/zap"
-	articleEvent "newsCenter/article/domain/event/article"
-	"newsCenter/article/domain/service"
-	"newsCenter/article/infrastructure/config"
-	"newsCenter/article/infrastructure/persistence/mq"
-	"newsCenter/article/infrastructure/rpc"
-	"newsCenter/common/snowflake"
+	articleEvent "pulseCommunity/article/domain/event/article"
+	"pulseCommunity/article/domain/service"
+	"pulseCommunity/article/infrastructure/config"
+	"pulseCommunity/article/infrastructure/persistence/mq"
+	"pulseCommunity/article/infrastructure/rpc"
+	"pulseCommunity/common/prometheus/new_prometheus"
+	"pulseCommunity/common/snowflake"
 )
 
 func initAll() {
@@ -29,6 +30,7 @@ func initAll() {
 	//	zap.L().Error("consumer.Start() Fail", zap.Error(err))
 	//	return
 	//}
+	new_prometheus.InitPrometheusArticle()
 	consumer := articleEvent.NewInteractiveReadEventConsumer(service.New(), mq.New())
 	consumers := mq.InitConsumers(consumer)
 	for _, c := range consumers {

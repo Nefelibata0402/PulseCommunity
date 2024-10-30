@@ -4,7 +4,7 @@ import (
 	"context"
 	"errors"
 	"go.uber.org/zap"
-	"newsCenter/ranking/domain/entity"
+	"pulseCommunity/ranking/domain/entity"
 	"time"
 )
 

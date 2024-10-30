@@ -2,7 +2,7 @@ package mongodb
 
 import (
 	"go.mongodb.org/mongo-driver/mongo"
-	"newsCenter/article/infrastructure/persistence/database/mongodb"
+	"pulseCommunity/article/infrastructure/persistence/database/mongodb"
 )
 
 type TopMongoDB struct {

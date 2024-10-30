@@ -4,8 +4,8 @@ import (
 	"github.com/redis/go-redis/v9"
 	"github.com/spf13/viper"
 	"log"
-	"newsCenter/logs"
 	"os"
+	"pulseCommunity/logs"
 )
 
 var UserConfig = InitConfig()
@@ -61,6 +61,7 @@ func InitConfig() *Config {
 	conf.Viper.SetConfigName("config")
 	conf.Viper.SetConfigType("yaml")
 	conf.Viper.AddConfigPath(workDir + "/user/infrastructure/config")
+
 	err := conf.Viper.ReadInConfig()
 	if err != nil {
 		log.Fatalln(err)

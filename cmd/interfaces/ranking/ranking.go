@@ -4,8 +4,8 @@ import (
 	"context"
 	"github.com/gin-gonic/gin"
 	"net/http"
-	"newsCenter/common/unierr"
-	"newsCenter/idl/rankingGrpc"
+	"pulseCommunity/common/unierr"
+	"pulseCommunity/idl/rankingGrpc"
 	"time"
 )
 

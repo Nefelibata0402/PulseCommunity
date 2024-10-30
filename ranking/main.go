@@ -3,12 +3,13 @@ package main
 import (
 	"github.com/gin-gonic/gin"
 	"go.uber.org/zap"
-	"newsCenter/common/snowflake"
-	"newsCenter/ranking/application/job"
-	"newsCenter/ranking/application/service"
-	"newsCenter/ranking/infrastructure/config"
-	"newsCenter/ranking/infrastructure/persistence/database/rediscache"
-	"newsCenter/ranking/infrastructure/rpc"
+	"pulseCommunity/common/prometheus/new_prometheus"
+	"pulseCommunity/common/snowflake"
+	"pulseCommunity/ranking/application/job"
+	"pulseCommunity/ranking/application/service"
+	"pulseCommunity/ranking/infrastructure/config"
+	"pulseCommunity/ranking/infrastructure/persistence/database/rediscache"
+	"pulseCommunity/ranking/infrastructure/rpc"
 )
 
 func initAll() {
@@ -22,6 +23,7 @@ func initAll() {
 		zap.L().Error("snowflake.Init Fail", zap.Error(err))
 	}
 	rpc.InitRpcArticleClient()
+	new_prometheus.InitPrometheusRanking()
 }
 
 func main() {

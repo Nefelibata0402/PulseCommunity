@@ -2,8 +2,8 @@ package queue
 
 import (
 	"errors"
-	"newsCenter/ranking/infrastructure/pkg/pri_que"
-	"newsCenter/ranking/infrastructure/pkg/slice"
+	"pulseCommunity/ranking/infrastructure/pkg/pri_que"
+	"pulseCommunity/ranking/infrastructure/pkg/slice"
 )
 
 var (

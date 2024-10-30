@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"net/http"
-	"newsCenter/cmd/model/userModel"
-	"newsCenter/common/unierr"
-	"newsCenter/idl/userGrpc"
+	"pulseCommunity/cmd/model/userModel"
+	"pulseCommunity/common/unierr"
+	"pulseCommunity/idl/userGrpc"
 	"time"
 )
 

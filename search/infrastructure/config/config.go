@@ -5,8 +5,8 @@ import (
 	"github.com/spf13/viper"
 	"go.uber.org/zap"
 	"log"
-	"newsCenter/logs"
 	"os"
+	"pulseCommunity/logs"
 )
 
 var SearchConfig = InitConfig()

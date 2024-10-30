@@ -2,7 +2,7 @@ package repository
 
 import (
 	"context"
-	"newsCenter/article/domain/entity"
+	"pulseCommunity/article/domain/entity"
 )
 
 // ArticleRepository 文章接口MongoDB

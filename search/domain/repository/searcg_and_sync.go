@@ -2,7 +2,7 @@ package repository
 
 import (
 	"context"
-	"newsCenter/search/domain/entity"
+	"pulseCommunity/search/domain/entity"
 )
 
 type UserRepository interface {

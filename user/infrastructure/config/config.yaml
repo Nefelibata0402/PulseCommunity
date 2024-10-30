@@ -2,9 +2,9 @@ server:
   name: "user"
   addr: "127.0.0.1:8301"
 zap:
-  debugFileName: "/Users/wangcheng/Documents/golang/src/newsCenter/logs/debug/debug.logs"
-  infoFileName: "/Users/wangcheng/Documents/golang/src/newsCenter/logs/info/info.logs"
-  warnFileName: "/Users/wangcheng/Documents/golang/src/newsCenter/logs/error/error.logs"
+  debugFileName: "/Users/wangcheng/Documents/golang/src/pulseCommunity/logs/debug/debug.logs"
+  infoFileName: "/Users/wangcheng/Documents/golang/src/pulseCommunity/logs/info/info.logs"
+  warnFileName: "/Users/wangcheng/Documents/golang/src/pulseCommunity/logs/error/error.logs"
   maxSize: 5,
   maxAge: 28,
   MaxBackups: 3,

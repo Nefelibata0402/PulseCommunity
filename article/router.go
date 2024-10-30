@@ -12,11 +12,11 @@ import (
 	"google.golang.org/grpc/status"
 	"log"
 	"net"
-	"newsCenter/article/application/service"
-	"newsCenter/article/infrastructure/config"
-	"newsCenter/common/discover"
-	"newsCenter/idl/articleGrpc"
-	"newsCenter/logs"
+	"pulseCommunity/article/application/service"
+	"pulseCommunity/article/infrastructure/config"
+	"pulseCommunity/common/discover"
+	"pulseCommunity/idl/articleGrpc"
+	"pulseCommunity/logs"
 )
 
 type gRPCConfig struct {
@@ -31,10 +31,10 @@ func RegisterGrpc() *grpc.Server {
 		RegisterFunc: func(g *grpc.Server) {
 			articleGrpc.RegisterArticleServiceServer(g, service.New())
 		}}
-	interceptorBuilder := NewInterceptorBuilder()
+	//interceptorBuilder := NewInterceptorBuilder()
 	s := grpc.NewServer(grpc.UnaryInterceptor(grpcMiddleware.ChainUnaryServer(
 		otelgrpc.UnaryServerInterceptor(),
-		interceptorBuilder.BuildServerUnaryInterceptor(),
+		//interceptorBuilder.BuildServerUnaryInterceptor(),
 	)))
 	c.RegisterFunc(s)
 	lis, err := net.Listen("tcp", c.Addr)

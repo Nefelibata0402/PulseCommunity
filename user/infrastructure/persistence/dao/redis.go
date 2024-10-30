@@ -3,7 +3,7 @@ package dao
 import (
 	"context"
 	"github.com/redis/go-redis/v9"
-	"newsCenter/user/infrastructure/config"
+	"pulseCommunity/user/infrastructure/config"
 	"time"
 )
 

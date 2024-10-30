@@ -15,6 +15,7 @@ type CronJobBuilder struct {
 func NewCronJobBuilder(opt prometheus.SummaryOpts) *CronJobBuilder {
 	vector := prometheus.NewSummaryVec(opt,
 		[]string{"job", "success"})
+	prometheus.MustRegister(vector) // 注册 SummaryVec 度量标准
 	return &CronJobBuilder{
 		vector: vector}
 }

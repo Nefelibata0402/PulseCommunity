@@ -3,10 +3,12 @@ package gorms
 import (
 	"context"
 	"fmt"
+	prometheus2 "github.com/prometheus/client_golang/prometheus"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
-	"newsCenter/user/infrastructure/config"
+	"pulseCommunity/common/prometheus/gorm_prometheus"
+	"pulseCommunity/user/infrastructure/config"
 )
 
 var _db *gorm.DB
@@ -23,6 +25,35 @@ func init() {
 	_db, err = gorm.Open(mysql.Open(dsn), &gorm.Config{
 		Logger: logger.Default.LogMode(logger.Info),
 	})
+	//err = _db.Use(prometheus.New(prometheus.Config{
+	//	DBName:          "pulse_community_user",
+	//	RefreshInterval: 15,
+	//	MetricsCollector: []prometheus.MetricsCollector{
+	//		&prometheus.MySQL{
+	//			VariableNames: []string{"thread_running"},
+	//		},
+	//	},
+	//}))
+	//if err != nil {
+	//	panic(err)
+	//}
+	cb := gorm_prometheus.NewCallbacks(prometheus2.SummaryOpts{
+		Namespace: "wang_cheng",
+		Subsystem: "pulse_community",
+		Name:      "gorm_db_user",
+		Help:      "统计 GORM 的数据库查询",
+		ConstLabels: map[string]string{
+			"instance_id": "my_instance",
+		},
+		Objectives: map[float64]float64{
+			0.5:   0.01,
+			0.75:  0.01,
+			0.9:   0.01,
+			0.99:  0.001,
+			0.999: 0.0001,
+		},
+	})
+	err = _db.Use(cb)
 	if err != nil {
 		panic("数据库连接失败, error=" + err.Error())
 	}
@@ -44,9 +75,10 @@ func (g *GormConn) Begin() {
 func New() *GormConn {
 	return &GormConn{db: GetDB()}
 }
-func NewTran() *GormConn {
-	return &GormConn{db: GetDB(), tx: GetDB()}
-}
+
+//	func NewTran() *GormConn {
+//		return &GormConn{db: GetDB(), tx: GetDB()}
+//	}
 func (g *GormConn) Session(ctx context.Context) *gorm.DB {
 	return g.db.Session(&gorm.Session{Context: ctx})
 }

@@ -5,10 +5,10 @@ import (
 	"google.golang.org/grpc/credentials/insecure"
 	"google.golang.org/grpc/resolver"
 	"log"
-	"newsCenter/cmd/config"
-	"newsCenter/common/discover"
-	"newsCenter/idl/rankingGrpc"
-	"newsCenter/logs"
+	"pulseCommunity/cmd/config"
+	"pulseCommunity/common/discover"
+	"pulseCommunity/idl/rankingGrpc"
+	"pulseCommunity/logs"
 )
 
 var RankingServiceClient rankingGrpc.RankingServiceClient

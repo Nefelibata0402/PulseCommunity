@@ -5,11 +5,11 @@ import (
 	"errors"
 	"go.uber.org/zap"
 	"gorm.io/gorm"
-	"newsCenter/article/domain/entity"
-	"newsCenter/article/domain/repository"
-	"newsCenter/article/infrastructure/persistence/dao/cache"
-	"newsCenter/article/infrastructure/persistence/dao/dao"
-	"newsCenter/article/infrastructure/persistence/dao/mongodb"
+	"pulseCommunity/article/domain/entity"
+	"pulseCommunity/article/domain/repository"
+	"pulseCommunity/article/infrastructure/persistence/dao/cache"
+	"pulseCommunity/article/infrastructure/persistence/dao/dao"
+	"pulseCommunity/article/infrastructure/persistence/dao/mongodb"
 	"time"
 )
 

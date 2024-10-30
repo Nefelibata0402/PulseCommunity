@@ -6,7 +6,7 @@ import (
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 	"log"
-	"newsCenter/article/infrastructure/config"
+	"pulseCommunity/article/infrastructure/config"
 )
 
 var db *mongo.Database

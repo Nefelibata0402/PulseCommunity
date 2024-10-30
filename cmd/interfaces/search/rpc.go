@@ -5,10 +5,10 @@ import (
 	"google.golang.org/grpc/credentials/insecure"
 	"google.golang.org/grpc/resolver"
 	"log"
-	"newsCenter/cmd/config"
-	"newsCenter/common/discover"
-	"newsCenter/idl/searchGrpc"
-	"newsCenter/logs"
+	"pulseCommunity/cmd/config"
+	"pulseCommunity/common/discover"
+	"pulseCommunity/idl/searchGrpc"
+	"pulseCommunity/logs"
 )
 
 var SearchServiceClient searchGrpc.SearchServiceClient

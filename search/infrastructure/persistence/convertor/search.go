@@ -1,8 +1,8 @@
 package convertor
 
 import (
-	"newsCenter/search/domain/entity"
-	"newsCenter/search/infrastructure/persistence/database/search"
+	"pulseCommunity/search/domain/entity"
+	"pulseCommunity/search/infrastructure/persistence/database/search"
 )
 
 //func ToDao(art entity.Article) article.Article {

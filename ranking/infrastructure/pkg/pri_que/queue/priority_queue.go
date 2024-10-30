@@ -1,8 +1,8 @@
 package queue
 
 import (
-	"newsCenter/ranking/infrastructure/pkg/pri_que"
-	"newsCenter/ranking/infrastructure/pkg/pri_que/internal/queue"
+	"pulseCommunity/ranking/infrastructure/pkg/pri_que"
+	"pulseCommunity/ranking/infrastructure/pkg/pri_que/internal/queue"
 )
 
 type PriorityQueue[T any] struct {

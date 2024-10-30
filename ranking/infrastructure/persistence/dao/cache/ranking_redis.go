@@ -4,8 +4,8 @@ import (
 	"context"
 	"encoding/json"
 	"github.com/redis/go-redis/v9"
-	"newsCenter/article/infrastructure/persistence/database/rediscache"
-	"newsCenter/ranking/domain/entity"
+	"pulseCommunity/ranking/domain/entity"
+	"pulseCommunity/ranking/infrastructure/persistence/database/rediscache"
 	"time"
 )
 

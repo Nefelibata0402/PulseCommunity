@@ -4,10 +4,9 @@ import (
 	"context"
 	"github.com/gin-gonic/gin"
 	"net/http"
-	_ "newsCenter/article/infrastructure/persistence/database/mongodb"
-	"newsCenter/cmd/model/articleModel"
-	"newsCenter/common/unierr"
-	"newsCenter/idl/articleGrpc"
+	"pulseCommunity/cmd/model/articleModel"
+	"pulseCommunity/common/unierr"
+	"pulseCommunity/idl/articleGrpc"
 	"strconv"
 	"time"
 )

@@ -2,14 +2,12 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"go.uber.org/zap"
-	"net/http"
-	"newsCenter/common/snowflake"
-	"newsCenter/search/domain/event"
-	"newsCenter/search/domain/service"
-	"newsCenter/search/infrastructure/config"
-	"newsCenter/search/infrastructure/persistence/mq"
+	"pulseCommunity/common/snowflake"
+	"pulseCommunity/search/domain/event"
+	"pulseCommunity/search/domain/service"
+	"pulseCommunity/search/infrastructure/config"
+	"pulseCommunity/search/infrastructure/persistence/mq"
 )
 
 func initAll() {
@@ -34,13 +32,13 @@ func initAll() {
 	}
 }
 
-func initPrometheus() {
-	go func() {
-		// 专门给 prometheus 用的端口
-		http.Handle("/metrics", promhttp.Handler())
-		http.ListenAndServe(":8081", nil)
-	}()
-}
+//func initPrometheus() {
+//	go func() {
+//		// 专门给 prometheus 用的端口
+//		http.Handle("/metrics", promhttp.Handler())
+//		http.ListenAndServe(":8081", nil)
+//	}()
+//}
 
 func main() {
 	r := gin.New()

@@ -4,9 +4,9 @@ import (
 	"context"
 	"github.com/IBM/sarama"
 	"go.uber.org/zap"
-	"newsCenter/search/domain/entity"
-	"newsCenter/search/domain/service"
-	saramax "newsCenter/search/infrastructure/pkg/samarax"
+	"pulseCommunity/search/domain/entity"
+	"pulseCommunity/search/domain/service"
+	saramax "pulseCommunity/search/infrastructure/pkg/samarax"
 	"time"
 )
 

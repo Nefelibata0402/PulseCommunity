@@ -4,9 +4,9 @@ import (
 	"context"
 	"github.com/gin-gonic/gin"
 	"net/http"
-	"newsCenter/cmd/model/searchModel"
-	"newsCenter/common/unierr"
-	"newsCenter/idl/searchGrpc"
+	"pulseCommunity/cmd/model/searchModel"
+	"pulseCommunity/common/unierr"
+	"pulseCommunity/idl/searchGrpc"
 	"time"
 )
 
@@ -20,6 +20,7 @@ func Search(c *gin.Context) {
 		})
 		return
 	}
+
 	ctx, cancel := context.WithTimeout(c, 180*time.Second)
 	defer cancel()
 	req := &searchGrpc.SearchRequest{

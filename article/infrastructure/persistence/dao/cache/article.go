@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"github.com/redis/go-redis/v9"
 	"go.uber.org/zap"
-	"newsCenter/article/domain/entity"
-	"newsCenter/article/infrastructure/persistence/database/rediscache"
+	"pulseCommunity/article/domain/entity"
+	"pulseCommunity/article/infrastructure/persistence/database/rediscache"
 	"time"
 )
 
@@ -105,6 +105,7 @@ func (art *ArticleRedis) SetFirstPage(ctx context.Context, id int64, artList []e
 }
 
 func (art *ArticleRedis) GetPub(ctx context.Context, id int64) (res entity.Article, err error) {
+	//ctx = context.WithValue(ctx, "biz", "article")
 	val, err := art.rdb.Get(ctx, art.pubKey(id)).Bytes()
 	if err != nil {
 		return entity.Article{}, err

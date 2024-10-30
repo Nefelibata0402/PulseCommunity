@@ -3,9 +3,9 @@ package service
 import (
 	"context"
 	"golang.org/x/sync/errgroup"
-	"newsCenter/search/domain/entity"
-	"newsCenter/search/domain/repository"
-	"newsCenter/search/infrastructure/persistence/dao"
+	"pulseCommunity/search/domain/entity"
+	"pulseCommunity/search/domain/repository"
+	"pulseCommunity/search/infrastructure/persistence/dao"
 	"strings"
 )
 

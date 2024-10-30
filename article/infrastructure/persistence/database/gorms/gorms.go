@@ -3,10 +3,12 @@ package gorms
 import (
 	"context"
 	"fmt"
+	prometheus2 "github.com/prometheus/client_golang/prometheus"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
-	"newsCenter/article/infrastructure/config"
+	"pulseCommunity/article/infrastructure/config"
+	"pulseCommunity/common/prometheus/gorm_prometheus"
 )
 
 var _db *gorm.DB
@@ -23,8 +25,25 @@ func init() {
 	_db, err = gorm.Open(mysql.Open(dsn), &gorm.Config{
 		Logger: logger.Default.LogMode(logger.Info),
 	})
+	cb := gorm_prometheus.NewCallbacks(prometheus2.SummaryOpts{
+		Namespace: "wang_cheng",
+		Subsystem: "pulse_community",
+		Name:      "article_gorm",
+		Help:      "统计 article 的数据库查询",
+		ConstLabels: map[string]string{
+			"instance_id": "my_instance_gorm",
+		},
+		Objectives: map[float64]float64{
+			0.5:   0.01,
+			0.75:  0.01,
+			0.9:   0.01,
+			0.99:  0.001,
+			0.999: 0.0001,
+		},
+	})
+	err = _db.Use(cb)
 	if err != nil {
-		panic("数据库连接失败, error=" + err.Error())
+		panic(err)
 	}
 }
 

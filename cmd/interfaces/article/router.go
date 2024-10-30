@@ -2,7 +2,7 @@ package article
 
 import (
 	"github.com/gin-gonic/gin"
-	"newsCenter/cmd/middlewares/tokenVerify"
+	"pulseCommunity/cmd/middlewares/tokenVerify"
 )
 
 func InitArticleRouter(r *gin.Engine) {

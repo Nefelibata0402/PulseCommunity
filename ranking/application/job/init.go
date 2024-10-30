@@ -3,8 +3,8 @@ package job
 import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/robfig/cron/v3"
-	"newsCenter/idl/rankingGrpc"
-	"newsCenter/ranking/infrastructure/pkg/redis_lock"
+	"pulseCommunity/idl/rankingGrpc"
+	"pulseCommunity/ranking/infrastructure/pkg/redis_lock"
 	"time"
 )
 
@@ -15,8 +15,8 @@ func InitRankingJob(svc rankingGrpc.RankingServiceServer, client *redis_lock.Cli
 func InitJobs(rjob *RankingJob) *cron.Cron {
 	builder := NewCronJobBuilder(
 		prometheus.SummaryOpts{
-			Namespace: "热榜模型",
-			Subsystem: "newsCenter",
+			Namespace: "wang_cheng",
+			Subsystem: "pulse_community",
 			Name:      "cron_job",
 			Help:      "定时任务执行",
 			Objectives: map[float64]float64{
@@ -28,7 +28,7 @@ func InitJobs(rjob *RankingJob) *cron.Cron {
 			},
 		})
 	expr := cron.New(cron.WithSeconds())
-	_, err := expr.AddJob("@every 1m", builder.Build(rjob))
+	_, err := expr.AddJob("@every 10s", builder.Build(rjob))
 	if err != nil {
 		panic(err)
 	}

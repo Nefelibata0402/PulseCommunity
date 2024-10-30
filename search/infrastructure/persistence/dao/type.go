@@ -2,7 +2,7 @@ package dao
 
 import (
 	"github.com/olivere/elastic/v7"
-	"newsCenter/search/infrastructure/persistence/database/search"
+	"pulseCommunity/search/infrastructure/persistence/database/search"
 )
 
 type SyncElastic struct {

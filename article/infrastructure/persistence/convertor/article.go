@@ -1,8 +1,8 @@
 package convertor
 
 import (
-	"newsCenter/article/domain/entity"
-	"newsCenter/article/infrastructure/persistence/database/article"
+	"pulseCommunity/article/domain/entity"
+	"pulseCommunity/article/infrastructure/persistence/database/article"
 	"time"
 )
 

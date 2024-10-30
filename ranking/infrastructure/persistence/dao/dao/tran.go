@@ -1,6 +1,6 @@
 package dao
 
-import "newsCenter/article/infrastructure/persistence/database/gorms"
+import "pulseCommunity/article/infrastructure/persistence/database/gorms"
 
 type Transaction struct {
 	conn gorms.DbConn

@@ -4,12 +4,12 @@ import (
 	"context"
 	"github.com/google/uuid"
 	"go.uber.org/zap"
-	"newsCenter/common/snowflake"
-	"newsCenter/common/unierr"
-	"newsCenter/idl/userGrpc"
-	"newsCenter/user/domain/entity"
-	"newsCenter/user/domain/service"
-	"newsCenter/user/infrastructure/pkg/encrypts"
+	"pulseCommunity/common/snowflake"
+	"pulseCommunity/common/unierr"
+	"pulseCommunity/idl/userGrpc"
+	"pulseCommunity/user/domain/entity"
+	"pulseCommunity/user/domain/service"
+	"pulseCommunity/user/infrastructure/pkg/encrypts"
 )
 
 type UserService struct {

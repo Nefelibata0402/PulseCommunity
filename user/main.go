@@ -2,9 +2,10 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	"newsCenter/common/snowflake"
-	"newsCenter/user/application/router"
-	"newsCenter/user/infrastructure/config"
+	"pulseCommunity/common/prometheus/new_prometheus"
+	"pulseCommunity/common/snowflake"
+	"pulseCommunity/user/application/router"
+	"pulseCommunity/user/infrastructure/config"
 )
 
 func initAll(r *gin.Engine) {
@@ -14,6 +15,7 @@ func initAll(r *gin.Engine) {
 	router.RegisterEtcdServer()
 	snowflake.Init(1)
 	config.InitConfig()
+	new_prometheus.InitPrometheusUser()
 }
 
 func main() {

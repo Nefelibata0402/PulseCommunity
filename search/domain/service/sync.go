@@ -3,9 +3,9 @@ package service
 import (
 	"context"
 	"go.uber.org/zap"
-	"newsCenter/search/domain/entity"
-	"newsCenter/search/domain/repository"
-	"newsCenter/search/infrastructure/persistence/dao"
+	"pulseCommunity/search/domain/entity"
+	"pulseCommunity/search/domain/repository"
+	"pulseCommunity/search/infrastructure/persistence/dao"
 )
 
 type SyncService struct {

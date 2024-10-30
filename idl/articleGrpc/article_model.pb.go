@@ -9,9 +9,9 @@ package articleGrpc
 import (
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
+	user "pulseCommunity/idl/userGrpc"
 	reflect "reflect"
 	sync "sync"
-	user "newsCenter/idl/userGrpc"
 )
 
 const (

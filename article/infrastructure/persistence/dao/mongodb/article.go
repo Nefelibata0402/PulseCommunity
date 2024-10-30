@@ -7,11 +7,11 @@ import (
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 	"go.uber.org/zap"
-	"newsCenter/article/domain/entity"
-	"newsCenter/article/infrastructure/persistence/convertor"
-	artil "newsCenter/article/infrastructure/persistence/database/article"
-	"newsCenter/article/infrastructure/persistence/database/mongodb"
-	"newsCenter/common/snowflake"
+	"pulseCommunity/article/domain/entity"
+	"pulseCommunity/article/infrastructure/persistence/convertor"
+	artil "pulseCommunity/article/infrastructure/persistence/database/article"
+	"pulseCommunity/article/infrastructure/persistence/database/mongodb"
+	"pulseCommunity/common/snowflake"
 	"time"
 )
 

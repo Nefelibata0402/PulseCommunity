@@ -1,8 +1,8 @@
 package convertor
 
 import (
-	"newsCenter/idl/articleGrpc"
-	"newsCenter/ranking/domain/entity"
+	"pulseCommunity/idl/articleGrpc"
+	"pulseCommunity/ranking/domain/entity"
 	"time"
 )
 

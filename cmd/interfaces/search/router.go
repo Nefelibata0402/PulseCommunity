@@ -2,7 +2,7 @@ package search
 
 import (
 	"github.com/gin-gonic/gin"
-	"newsCenter/cmd/middlewares/tokenVerify"
+	"pulseCommunity/cmd/middlewares/tokenVerify"
 )
 
 func InitSearchRouter(r *gin.Engine) {

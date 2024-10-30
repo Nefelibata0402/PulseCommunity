@@ -3,9 +3,9 @@ package service
 import (
 	"context"
 	"go.uber.org/zap"
-	"newsCenter/common/unierr"
-	"newsCenter/idl/searchGrpc"
-	"newsCenter/search/domain/service"
+	"pulseCommunity/common/unierr"
+	"pulseCommunity/idl/searchGrpc"
+	"pulseCommunity/search/domain/service"
 )
 
 type SearchService struct {

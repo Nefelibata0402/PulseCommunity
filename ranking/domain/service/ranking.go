@@ -3,9 +3,9 @@ package service
 import (
 	"context"
 	"go.uber.org/zap"
-	"newsCenter/ranking/domain/entity"
-	"newsCenter/ranking/domain/repository"
-	"newsCenter/ranking/infrastructure/persistence/dao/cache"
+	"pulseCommunity/ranking/domain/entity"
+	"pulseCommunity/ranking/domain/repository"
+	"pulseCommunity/ranking/infrastructure/persistence/dao/cache"
 )
 
 type RankingService struct {
