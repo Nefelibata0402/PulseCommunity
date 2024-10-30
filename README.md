@@ -6,6 +6,7 @@ fix: 修复bug
 refactor: 代码重构
 
 ```
+pulseCommunity
 ├── cmd #客户端表示层：处理用户请求并将请求转发到应用层
 │   ├── config #配置文件
 │   ├── interfaces #用户接口层
@@ -17,9 +18,10 @@ refactor: 代码重构
 │   │   └── router.go #初始化所有个rpc.go
 │   ├── middlewares #prometheus监控、tokenVerify、限流等等
 │   └── model 
+├── common #都有使用的 例如：服务发现
 ├── idl #接口描述语言
 ├── logs #日志文件
-├── article 文章模块
+├── article 文章模块 (以article为例，还有ranking、search、user等等)
 │   ├── application #应用层：处理应用程序的业务流程。协调领域模型和用户界面之间的交互，但不包含领域逻辑。
 │   │   └── service #连接interfaces与domain层
 │   ├── domain #领域层：包含核心的业务逻辑和领域模型。领域层封装了业务规则和领域逻辑
