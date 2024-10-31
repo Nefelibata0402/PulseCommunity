@@ -1,0 +1,8 @@
+zap:
+  debugFileName: "/Users/wangcheng/Documents/golang/src/pulseCommunity/logs/test/debug.log"
+  infoFileName: "/Users/wangcheng/Documents/golang/src/pulseCommunity/logs/test/info.log"
+  warnFileName: "/Users/wangcheng/Documents/golang/src/pulseCommunity/logs/test/error.log"
+  maxSize: 5,
+  maxAge: 280,
+  MaxBackups: 3,
+
